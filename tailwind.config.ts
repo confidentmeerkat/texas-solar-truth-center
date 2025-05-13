@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				bennett: {
+					navy: '#1a365d',
+					gold: '#c99a2e',
+					slate: '#4a5568',
+					lightBlue: '#e6f0ff',
+					lightGold: '#f7f2e4',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,8 +97,28 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			fontFamily: {
+				serif: ['Georgia', 'Cambria', 'serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+			},
+			typography: {
+				DEFAULT: {
+					css: {
+						maxWidth: '100ch',
+						h1: {
+							fontFamily: 'Georgia, serif',
+						},
+						h2: {
+							fontFamily: 'Georgia, serif',
+						},
+						h3: {
+							fontFamily: 'Georgia, serif',
+						},
+					},
+				},
+			},
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;
