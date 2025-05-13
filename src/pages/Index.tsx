@@ -24,7 +24,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-2/3">
-              <h1 className="sr-only">Texas Solar Panel Fraud Resource</h1>
+              <h1 className="sr-only">The Ultimate Guide to Understanding and Fighting Solar Panel Fraud in Texas</h1>
               
               <p className="text-lg md:text-xl text-bennett-slate mb-8 leading-relaxed">
                 As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. At Bennett Legal, we're dedicated to helping victims of solar fraud understand their rights and pursue justice.

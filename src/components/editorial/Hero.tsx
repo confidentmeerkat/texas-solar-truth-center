@@ -13,7 +13,7 @@ const Hero = () => {
             <span className="uppercase text-sm font-semibold tracking-wider">Consumer Protection</span>
           </div>
           <h1 className="text-white mb-6 leading-tight">
-            Empowering Texas Consumers: Understanding and Combating Solar Panel Fraud
+            The Ultimate Guide to Understanding and Fighting Solar Panel Fraud in Texas
           </h1>
           <p className="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed max-w-2xl">
             As solar energy grows in popularity across Texas, so do deceptive practices and outright scams. 
