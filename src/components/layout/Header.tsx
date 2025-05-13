@@ -24,7 +24,7 @@ const Header = () => {
             </ul>
           </nav>
           <Button className="bg-bennett-navy hover:bg-bennett-navy/90">
-            <Phone className="mr-2 h-4 w-4" /> (555) 123-4567
+            <Phone className="mr-2 h-4 w-4" /> (469) 253-7137
           </Button>
         </div>
         <div className="md:hidden">
