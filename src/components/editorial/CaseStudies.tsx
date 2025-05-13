@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 const CaseStudies = () => {
   return (
@@ -48,6 +49,12 @@ const CaseStudies = () => {
           <p>
             <strong>The Resolution:</strong> Through legal action, it was demonstrated that the solar company had violated Texas law by not properly disclosing the UCC filing and its implications. The family was able to recover damages based on the difference between their home's market value without the complications and the reduced price they were forced to accept.
           </p>
+        </div>
+        
+        <div className="mt-4 mb-8">
+          <a href="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+            Read more case studies and learn how to take action <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
         </div>
         
         <h3>Common Threads in Solar Fraud Cases</h3>

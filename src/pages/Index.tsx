@@ -8,6 +8,7 @@ import GrowingProblem from '@/components/editorial/GrowingProblem';
 import VictimSigns from '@/components/editorial/VictimSigns';
 import ConsumerRights from '@/components/editorial/ConsumerRights';
 import CaseStudies from '@/components/editorial/CaseStudies';
+import Prevention from '@/components/editorial/Prevention';
 import HowWeHelp from '@/components/editorial/HowWeHelp';
 import FAQ from '@/components/editorial/FAQ';
 import ContactForm from '@/components/editorial/ContactForm';
@@ -37,6 +38,7 @@ const Index = () => {
                 <VictimSigns />
                 <ConsumerRights />
                 <CaseStudies />
+                <Prevention />
                 <HowWeHelp />
                 <FAQ />
               </div>

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 const GrowingProblem = () => {
   return (
@@ -35,6 +36,12 @@ const GrowingProblem = () => {
             <strong>Abandonment After Sale:</strong> Companies that collect payments but then disappear without completing the installation or that go out of business shortly after installation, leaving warranty claims unfulfilled.
           </li>
         </ul>
+        
+        <div className="mt-4 mb-8">
+          <a href="/identifying-solar-scams" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+            Learn more about identifying solar panel scams in Texas <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
+        </div>
         
         <h3>Impact on Texas Homeowners</h3>
         

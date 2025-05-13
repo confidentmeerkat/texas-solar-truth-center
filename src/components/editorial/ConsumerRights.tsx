@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 const ConsumerRights = () => {
   return (
@@ -50,6 +51,12 @@ const ConsumerRights = () => {
           </li>
         </ul>
         
+        <div className="mt-4 mb-8">
+          <a href="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+            Explore the full guide to your legal rights and protections <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
+        </div>
+        
         <h3>Legal Recourse Options</h3>
         
         <p>
@@ -94,6 +101,12 @@ const ConsumerRights = () => {
           <li>Record details of all conversations with the company (including dates, names, and what was discussed)</li>
           <li>Obtain inspection reports or assessments from independent solar experts</li>
         </ul>
+        
+        <div className="mt-4 mb-8">
+          <a href="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+            Learn how to report fraud and seek legal help <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
+        </div>
         
         <p>
           Understanding your rights is the first step toward seeking justice if you've been defrauded. The legal system offers several protections for Texas consumers, but navigating these options often requires expertise and guidance from professionals who understand both consumer law and the technical aspects of solar energy systems.

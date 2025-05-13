@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 const VictimSigns = () => {
   return (
@@ -56,6 +57,12 @@ const VictimSigns = () => {
             <strong>Permitting problems:</strong> Discovering the company didn't obtain proper permits or inspections
           </li>
         </ul>
+        
+        <div className="mt-4 mb-8">
+          <a href="/identifying-solar-scams" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+            See our detailed guide on solar panel scam identification <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
+        </div>
         
         <h3>Contract and Financial Red Flags</h3>
         

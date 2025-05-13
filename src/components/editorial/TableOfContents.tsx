@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const TableOfContents = () => {
   return (
@@ -31,6 +32,12 @@ const TableOfContents = () => {
           </a>
         </li>
         <li>
+          <a href="#prevention" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center">
+            <span className="mr-2">•</span>
+            <span>Preventing Solar Panel Fraud</span>
+          </a>
+        </li>
+        <li>
           <a href="#how-we-help" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center">
             <span className="mr-2">•</span>
             <span>How Bennett Legal Fights for Victims of Solar Fraud</span>
@@ -43,6 +50,36 @@ const TableOfContents = () => {
           </a>
         </li>
       </ul>
+      
+      <div className="mt-6 pt-6 border-t border-bennett-navy/20">
+        <h4 className="text-sm font-semibold mb-3 text-bennett-navy">Detailed Guides:</h4>
+        <ul className="space-y-2">
+          <li>
+            <a href="/identifying-solar-scams" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+              <ArrowRight className="mr-1 h-4 w-4" />
+              <span>Identifying Solar Panel Scams in Texas</span>
+            </a>
+          </li>
+          <li>
+            <a href="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+              <ArrowRight className="mr-1 h-4 w-4" />
+              <span>Your Legal Rights & Protections</span>
+            </a>
+          </li>
+          <li>
+            <a href="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+              <ArrowRight className="mr-1 h-4 w-4" />
+              <span>Reporting Fraud & Seeking Legal Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="/prevention-guide" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+              <ArrowRight className="mr-1 h-4 w-4" />
+              <span>Prevention Guide: Protect Yourself</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </aside>
   );
 };
