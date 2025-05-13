@@ -23,7 +23,7 @@ const Hero = () => {
             <Button size="lg" className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-medium">
               Free Case Review
             </Button>
-            <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
               Learn About Your Rights
             </Button>
           </div>

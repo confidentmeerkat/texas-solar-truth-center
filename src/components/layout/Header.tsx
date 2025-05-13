@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center">
           <h1 className="text-2xl font-serif font-bold text-bennett-navy">
             <a href="/" className="flex items-center gap-2">
-              <span className="text-bennett-gold">Bennett</span>Legal
+              <span className="text-bennett-gold">Solar Panel</span>Consumer Resources
             </a>
           </h1>
         </div>
