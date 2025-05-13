@@ -10,14 +10,14 @@ const GrowingProblem = () => {
       <div className="article-body">
         <p>
           Texas has emerged as a leading state for solar energy adoption, with installations growing by over 40% annually in recent years. 
-          This boom in solar energy has unfortunately been accompanied by a concerning rise in fraudulent activities targeting homeowners eager to embrace renewable energy solutions.
+          This boom in solar energy has unfortunately been accompanied by a concerning rise in solar panel fraud in Texas, targeting homeowners eager to embrace renewable energy solutions.
         </p>
         
         <p>
-          According to the Texas Attorney General's Office, complaints about solar panel companies have increased by 45% since 2019, with hundreds of Texas homeowners reporting issues ranging from misleading sales tactics to outright fraud.
+          According to the Texas Attorney General's Office, complaints about Texas solar scams have increased by 45% since 2019, with hundreds of Texas homeowners reporting issues ranging from misleading sales tactics to outright fraud.
         </p>
         
-        <h3>Common Tactics Used by Solar Scammers</h3>
+        <h3>Common Tactics Used by Texas Solar Scammers</h3>
         
         <ul>
           <li>
@@ -43,10 +43,10 @@ const GrowingProblem = () => {
           </a>
         </div>
         
-        <h3>Impact on Texas Homeowners</h3>
+        <h3>Impact on Victims of Solar Fraud in Texas</h3>
         
         <p>
-          Victims of solar panel fraud often face devastating financial consequences. In many cases, homeowners are left with:
+          Victims of solar panel fraud in Texas often face devastating financial consequences. In many cases, homeowners are left with:
         </p>
         
         <ul>
@@ -59,7 +59,7 @@ const GrowingProblem = () => {
         </ul>
         
         <blockquote>
-          "Many homeowners report being trapped in contracts that leave them paying for systems that never delivered the promised savings, while simultaneously dealing with damaged roofs and increased utility bills."
+          "Many Texas homeowners report being trapped in contracts that leave them paying for systems that never delivered the promised savings, while simultaneously dealing with damaged roofs and increased utility bills."
         </blockquote>
         
         <p>

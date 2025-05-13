@@ -8,11 +8,11 @@ const CallToAction = () => {
     <section className="bg-bennett-navy text-white py-12 md:py-16 px-4 md:px-8 rounded-lg mt-16">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
-          Don't Let Solar Panel Fraud Compromise Your Financial Future
+          Don't Let Solar Panel Fraud in Texas Compromise Your Financial Future
         </h2>
         
         <p className="text-lg md:text-xl text-gray-100 mb-8">
-          Our team of experienced consumer protection attorneys is ready to evaluate your case and help you understand your legal options. Contact us today for a free, no-obligation consultation.
+          Our team of experienced Texas consumer protection attorneys is ready to evaluate your case and help you understand your legal options. Contact us today for legal help with solar panel fraud in Texas.
         </p>
         
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">

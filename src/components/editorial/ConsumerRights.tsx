@@ -9,13 +9,13 @@ const ConsumerRights = () => {
       
       <div className="article-body">
         <p>
-          Texas consumers have specific legal protections against deceptive business practices and fraud, including those in the solar energy industry. Understanding these protections is essential if you believe you've been victimized by a solar company.
+          Texas consumers have specific legal protections against deceptive business practices and fraud, including those in the solar energy industry. Understanding these solar panel consumer protections in Texas is essential if you believe you've been victimized by a solar company.
         </p>
         
-        <h3>Texas Consumer Protection Laws</h3>
+        <h3>Texas Consumer Protection Laws for Solar Panel Fraud</h3>
         
         <p>
-          The Texas Deceptive Trade Practices-Consumer Protection Act (DTPA) is one of the most powerful tools available to consumers who have been defrauded. Under this law:
+          The Texas Deceptive Trade Practices-Consumer Protection Act (DTPA) is one of the most powerful tools available to consumers who have been victims of solar fraud in Texas. Under this law:
         </p>
         
         <ul>
@@ -33,7 +33,7 @@ const ConsumerRights = () => {
           </li>
         </ul>
         
-        <h3>Federal Protections</h3>
+        <h3>Federal Protections Against Texas Solar Scams</h3>
         
         <p>
           In addition to state laws, several federal protections may apply:
@@ -53,14 +53,14 @@ const ConsumerRights = () => {
         
         <div className="mt-4 mb-8">
           <a href="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
-            Explore the full guide to your legal rights and protections <ExternalLink className="ml-1 h-4 w-4" />
+            Explore the full guide to your legal rights and protections for solar panel fraud in Texas <ExternalLink className="ml-1 h-4 w-4" />
           </a>
         </div>
         
-        <h3>Legal Recourse Options</h3>
+        <h3>Legal Recourse Options for Victims of Solar Fraud in Texas</h3>
         
         <p>
-          If you believe you've been defrauded by a solar company, you have several legal avenues available:
+          If you believe you've been defrauded by a solar company in Texas, you have several legal avenues available:
         </p>
         
         <ul>
@@ -88,10 +88,10 @@ const ConsumerRights = () => {
           </p>
         </div>
         
-        <h3>Documentation: The Key to a Strong Case</h3>
+        <h3>Documentation: The Key to a Strong Legal Case for Solar Fraud</h3>
         
         <p>
-          If you suspect you've been victimized by solar fraud, begin documenting everything immediately:
+          If you suspect you've been victimized by solar fraud in Texas, begin documenting everything immediately:
         </p>
         
         <ul>
@@ -104,7 +104,7 @@ const ConsumerRights = () => {
         
         <div className="mt-4 mb-8">
           <a href="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
-            Learn how to report fraud and seek legal help <ExternalLink className="ml-1 h-4 w-4" />
+            Learn how to report Texas solar scams and seek legal help for solar panel fraud <ExternalLink className="ml-1 h-4 w-4" />
           </a>
         </div>
         

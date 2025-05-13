@@ -7,12 +7,12 @@ const ShareYourStoryCTA = () => {
   return (
     <section className="bg-bennett-lightGold p-6 rounded-lg my-12">
       <h3 className="text-xl font-serif font-bold text-bennett-navy mb-4">
-        Expose Solar Scammers & Help Others: Share Your Story
+        Victims of Solar Fraud in Texas: Share Your Story & Help Others
       </h3>
       
       <p className="text-bennett-slate mb-6">
-        Have you been a victim of solar panel fraud? Your experience can help others avoid these traps. 
-        We invite you to share your story, and if you're comfortable, send us a video detailing what happened.
+        Have you been a victim of solar panel fraud in Texas? Your experience can help others avoid these traps. 
+        We invite you to share your story about Texas solar scams, and if you're comfortable, send us a video detailing what happened.
       </p>
       
       <div className="flex flex-col sm:flex-row gap-4">

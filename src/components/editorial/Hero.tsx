@@ -10,14 +10,14 @@ const Hero = () => {
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 text-bennett-gold mb-4">
             <AlertTriangle size={20} />
-            <span className="uppercase text-sm font-semibold tracking-wider">Consumer Protection</span>
+            <span className="uppercase text-sm font-semibold tracking-wider">Texas Solar Consumer Protection</span>
           </div>
           <h1 className="text-white mb-6 leading-tight">
             The Ultimate Guide to Understanding and Fighting Solar Panel Fraud in Texas
           </h1>
           <p className="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed max-w-2xl">
             As solar energy grows in popularity across Texas, so do deceptive practices and outright scams. 
-            Learn how to protect yourself and what legal options are available if you've been victimized.
+            Learn how to protect yourself from Texas solar scams and what legal options are available if you've been victimized.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-medium">
