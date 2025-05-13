@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone } from 'lucide-react';
+import { Phone, Clock, ArrowRight } from 'lucide-react';
 
 const CallToAction = () => {
   return (
@@ -15,12 +15,12 @@ const CallToAction = () => {
           Our team of experienced consumer protection attorneys is ready to evaluate your case and help you understand your legal options. Contact us today for a free, no-obligation consultation.
         </p>
         
-        <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
           <Button 
             size="lg" 
             className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-medium w-full md:w-auto"
           >
-            Schedule Free Consultation
+            Schedule Free Consultation <Clock className="ml-2 h-4 w-4" />
           </Button>
           
           <Button 
@@ -31,6 +31,10 @@ const CallToAction = () => {
             <Phone className="mr-2 h-4 w-4" /> Call (469) 253-7137
           </Button>
         </div>
+        
+        <p className="text-sm text-gray-300">
+          <em>Time is critical - Remember that the DTPA has a 2-year statute of limitations from date of discovery</em>
+        </p>
       </div>
     </section>
   );

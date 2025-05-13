@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { AlertTriangle } from 'lucide-react';
+import { AlertTriangle, ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -21,10 +21,10 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-medium">
-              Free Case Review
+              Get a Free Solar Fraud Case Review <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-              Learn About Your Rights
+              Learn About Your Rights <ArrowRight className="ml-1 h-4 w-4" />
             </Button>
           </div>
         </div>

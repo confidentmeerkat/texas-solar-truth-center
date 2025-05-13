@@ -14,6 +14,7 @@ import FAQ from '@/components/editorial/FAQ';
 import ContactForm from '@/components/editorial/ContactForm';
 import CallToAction from '@/components/editorial/CallToAction';
 import AuthorInfo from '@/components/editorial/AuthorInfo';
+import ShareYourStoryCTA from '@/components/editorial/ShareYourStoryCTA';
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
               <div className="my-8">
                 <GrowingProblem />
                 <VictimSigns />
+                <ShareYourStoryCTA />
                 <ConsumerRights />
                 <CaseStudies />
                 <Prevention />
