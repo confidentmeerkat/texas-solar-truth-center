@@ -1,7 +1,17 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Phone } from 'lucide-react';
+import { Phone, ChevronDown } from 'lucide-react';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
   return (
@@ -16,10 +26,36 @@ const Header = () => {
         </div>
         <div className="hidden md:flex items-center gap-8">
           <nav>
-            <ul className="flex gap-6">
+            <ul className="flex gap-6 items-center">
               <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-colors">About</a></li>
               <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-colors">Services</a></li>
-              <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-colors">Resources</a></li>
+              <li>
+                <NavigationMenu>
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent text-bennett-slate hover:text-bennett-navy transition-colors">
+                        Resources
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid w-[320px] gap-3 p-4 md:w-[400px]">
+                          <ListItem href="/identifying-solar-scams" title="Identifying Solar Panel Scams">
+                            Learn how to spot common solar panel fraud tactics in Texas
+                          </ListItem>
+                          <ListItem href="/legal-rights-protections" title="Your Legal Rights & Protections">
+                            Understand the laws that protect Texas consumers from solar fraud
+                          </ListItem>
+                          <ListItem href="/reporting-seeking-help" title="Reporting Fraud & Seeking Help">
+                            Step-by-step guide on reporting fraud and getting legal assistance
+                          </ListItem>
+                          <ListItem href="/prevention-guide" title="Prevention Guide: Protect Yourself">
+                            Practical tips to avoid falling victim to solar panel scams
+                          </ListItem>
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
+              </li>
               <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-colors">Contact</a></li>
             </ul>
           </nav>
@@ -41,5 +77,31 @@ const Header = () => {
     </header>
   );
 };
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a"> & { title: string }
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none text-bennett-navy">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-bennett-slate">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";
 
 export default Header;
