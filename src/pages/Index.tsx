@@ -35,10 +35,9 @@ const Index = () => {
               
               <AuthorInfo />
               
-              <LawyerExpertiseCTA />
-              
               <div className="my-8">
                 <GrowingProblem />
+                <LawyerExpertiseCTA />
                 <VictimSigns />
                 <ShareYourStoryCTA />
                 <ConsumerRights />
