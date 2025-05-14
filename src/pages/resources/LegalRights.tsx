@@ -1,8 +1,9 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import ContactForm from '@/components/editorial/ContactForm';
+import CallToAction from '@/components/editorial/CallToAction';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ExternalLink, Shield, GavelIcon, FileText, AlertTriangle, Clock } from 'lucide-react';
 

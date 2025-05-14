@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/layout/Header';
@@ -6,6 +5,8 @@ import Footer from '@/components/layout/Footer';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Shield, AlertTriangle, Search } from 'lucide-react';
+import ContactForm from '@/components/editorial/ContactForm';
+import CallToAction from '@/components/editorial/CallToAction';
 
 const PreventionGuide = () => {
   return (
@@ -302,6 +303,10 @@ const PreventionGuide = () => {
                 </Link>
               </div>
             </div>
+            
+            <ContactForm />
+            
+            <CallToAction />
           </div>
         </div>
       </main>

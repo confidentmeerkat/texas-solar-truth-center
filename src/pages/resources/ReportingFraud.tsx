@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/layout/Header';
@@ -8,6 +7,7 @@ import { ExternalLink, FileText, Shield, Info, AlertTriangle } from 'lucide-reac
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import ContactForm from '@/components/editorial/ContactForm';
 import ShareYourStoryCTA from '@/components/editorial/ShareYourStoryCTA';
+import CallToAction from '@/components/editorial/CallToAction';
 
 const ReportingFraud = () => {
   return (
@@ -297,11 +297,9 @@ const ReportingFraud = () => {
               </p>
               
               <p>
-                The good news is many cases resolve before trial. The combination of your strong evidence, the potential for hefty damages under Texas law, and pressure from authorities often motivate a scam company to settle and avoid further exposure.
+                The good news is many cases resolve before trial. The combination of your strong evidence, the potential for hefty damages under Texas law, and pressure from authorities often motivates a scam company to settle and avoid further exposure.
               </p>
             </section>
-
-            <ContactForm />
 
             <section id="sharing-story" className="my-8">
               <div className="flex items-center mb-4">
