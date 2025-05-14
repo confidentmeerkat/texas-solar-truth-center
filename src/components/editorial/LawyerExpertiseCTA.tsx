@@ -12,7 +12,7 @@ const LawyerExpertiseCTA = () => {
         <div className="flex flex-col md:flex-row gap-6 items-center mb-6">
           <div className="shrink-0">
             <Avatar className="h-24 w-24 border-2 border-bennett-gold">
-              <AvatarImage src="/lovable-uploads/5c4a0ecb-2333-49fb-80e0-ac14b7e0892b.png" alt="Charles Bennett" />
+              <AvatarImage src="/lovable-uploads/77fa516c-5dcc-4458-85cb-354052a73a84.png" alt="Charles Bennett" />
               <AvatarFallback className="bg-bennett-navy text-white text-xl">CB</AvatarFallback>
             </Avatar>
           </div>
