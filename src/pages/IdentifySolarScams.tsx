@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -5,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { AlertTriangle, ArrowRight, ExternalLink, Play, Phone, Clock, FileText, CheckCircle, Info } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import { Card, CardContent } from '@/components/ui/card';
-import { Link } from 'react-router-dom';
 
 const IdentifySolarScams = () => {
   return (
@@ -36,7 +36,7 @@ const IdentifySolarScams = () => {
             "dateModified": "2024-05-14",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://solarlegalhelp.com/identifying-solar-scams"
+              "@id": "https://yoursite.com/identifying-solar-scams"
             }
           }
         `}</script>
@@ -475,25 +475,25 @@ const IdentifySolarScams = () => {
                     <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
                       <h3 className="text-lg font-semibold text-bennett-navy mb-3">Your Legal Rights & Protections</h3>
                       <p className="text-sm text-bennett-slate mb-4">Learn about the laws that protect Texas homeowners from solar fraud and how to use them.</p>
-                      <Link to="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium text-sm">
+                      <a href="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium text-sm">
                         Read the guide <ArrowRight className="ml-1 h-4 w-4" />
-                      </Link>
+                      </a>
                     </div>
                     
                     <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
                       <h3 className="text-lg font-semibold text-bennett-navy mb-3">Reporting Fraud & Seeking Help</h3>
                       <p className="text-sm text-bennett-slate mb-4">Step-by-step guidance on how to report solar scams to authorities and get legal assistance.</p>
-                      <Link to="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium text-sm">
+                      <a href="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium text-sm">
                         Read the guide <ArrowRight className="ml-1 h-4 w-4" />
-                      </Link>
+                      </a>
                     </div>
                     
                     <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
                       <h3 className="text-lg font-semibold text-bennett-navy mb-3">Prevention Guide</h3>
                       <p className="text-sm text-bennett-slate mb-4">Proactive steps to protect yourself from becoming a victim of solar panel fraud in Texas.</p>
-                      <Link to="/prevention-guide" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium text-sm">
+                      <a href="/prevention-guide" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium text-sm">
                         Read the guide <ArrowRight className="ml-1 h-4 w-4" />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </section>

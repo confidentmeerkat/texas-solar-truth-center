@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const TableOfContents = () => {
   return (
@@ -56,28 +55,28 @@ const TableOfContents = () => {
         <h4 className="text-sm font-semibold mb-3 text-bennett-navy">Detailed Guides:</h4>
         <ul className="space-y-2">
           <li>
-            <Link to="/identifying-solar-scams" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+            <a href="/identifying-solar-scams" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
               <ArrowRight className="mr-1 h-4 w-4" />
               <span>Identifying Solar Panel Scams in Texas</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+            <a href="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
               <ArrowRight className="mr-1 h-4 w-4" />
               <span>Your Legal Rights & Protections</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+            <a href="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
               <ArrowRight className="mr-1 h-4 w-4" />
               <span>Reporting Fraud & Seeking Legal Help</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/prevention-guide" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
+            <a href="/prevention-guide" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center text-sm">
               <ArrowRight className="mr-1 h-4 w-4" />
               <span>Prevention Guide: Protect Yourself</span>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

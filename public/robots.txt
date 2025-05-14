@@ -15,4 +15,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://solarlegalhelp.com/sitemap.xml
+Sitemap: https://yoursite.com/sitemap.xml
