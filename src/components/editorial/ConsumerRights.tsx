@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ConsumerRights = () => {
   return (
@@ -52,9 +53,9 @@ const ConsumerRights = () => {
         </ul>
         
         <div className="mt-4 mb-8">
-          <a href="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+          <Link to="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
             Explore the full guide to your legal rights and protections for solar panel fraud in Texas <ExternalLink className="ml-1 h-4 w-4" />
-          </a>
+          </Link>
         </div>
         
         <h3>Legal Recourse Options for Victims of Solar Fraud in Texas</h3>
@@ -103,9 +104,9 @@ const ConsumerRights = () => {
         </ul>
         
         <div className="mt-4 mb-8">
-          <a href="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+          <Link to="/reporting-seeking-help" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
             Learn how to report Texas solar scams and seek legal help for solar panel fraud <ExternalLink className="ml-1 h-4 w-4" />
-          </a>
+          </Link>
         </div>
         
         <p>

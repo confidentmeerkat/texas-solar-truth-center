@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Prevention = () => {
   return (
@@ -44,8 +45,10 @@ const Prevention = () => {
             <div className="md:w-1/4 text-center">
               <Button 
                 className="bg-bennett-navy text-white hover:bg-bennett-navy/90"
-                onClick={() => window.location.href = '/prevention-guide'}>
-                Read Full Guide <ExternalLink className="ml-1 h-4 w-4" />
+                asChild>
+                <Link to="/prevention-guide">
+                  Read Full Guide <ExternalLink className="ml-1 h-4 w-4" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -57,9 +60,9 @@ const Prevention = () => {
         </p>
         
         <div className="mt-6 text-right">
-          <a href="/prevention-guide" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
+          <Link to="/prevention-guide" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center font-medium">
             Read our complete Prevention Guide <ExternalLink className="ml-1 h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
