@@ -10,7 +10,7 @@ const ShareYourStoryCTA = () => {
         <div className="flex items-center gap-2 mb-3">
           <Youtube className="text-bennett-navy h-5 w-5" />
           <h4 className="text-lg font-serif font-bold text-bennett-navy">
-            We talk to a Lawyer in Dallas to find out more
+            We talked to a Lawyer in Dallas to find out more about the Fraud
           </h4>
         </div>
         <div className="aspect-video w-full sm:w-4/5 mx-auto bg-gray-100 rounded overflow-hidden">
