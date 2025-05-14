@@ -11,7 +11,7 @@ const LawyerExpertiseCTA = () => {
           <div className="shrink-0">
             <div className="rounded-full border-2 border-bennett-gold overflow-hidden h-24 w-24">
               <img 
-                src="/lovable-uploads/d7dff2f2-c2d6-4b50-a5bb-0266705d4bf9.png" 
+                src="/lovable-uploads/cafd9240-68ad-4e1e-a695-6a0ba14f9afe.png" 
                 alt="Charles Bennett" 
                 className="w-full h-full object-cover" 
               />
