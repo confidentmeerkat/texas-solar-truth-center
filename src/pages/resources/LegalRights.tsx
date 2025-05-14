@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ContactForm from '@/components/editorial/ContactForm';
 import CallToAction from '@/components/editorial/CallToAction';
+import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { ExternalLink, Shield, GavelIcon, FileText, AlertTriangle, Clock } from 'lucide-react';
 
@@ -92,6 +93,8 @@ const LegalRights = () => {
                 In summary, the DTPA is a powerful tool for Texas consumers. It's essentially your legal "sword and shield" against solar scammers, providing remedies that go beyond just getting your money back.
               </p>
             </section>
+
+            <LawyerExpertiseCTA />
 
             <section id="breach-of-contract" className="my-8">
               <div className="flex items-center mb-4">

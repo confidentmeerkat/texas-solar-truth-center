@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/layout/Header';
@@ -8,6 +9,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import ContactForm from '@/components/editorial/ContactForm';
 import ShareYourStoryCTA from '@/components/editorial/ShareYourStoryCTA';
 import CallToAction from '@/components/editorial/CallToAction';
+import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
 
 const ReportingFraud = () => {
   return (
@@ -197,6 +199,9 @@ const ReportingFraud = () => {
                 Don't be discouraged if these complaints don't yield an immediate solution. The goal is to create a paper trail and put pressure on the company from multiple angles. Often, just knowing that you've complained to authorities will make a fraudulent company take you more seriously when it comes to resolving the issue.
               </p>
             </section>
+
+            {/* Added LawyerExpertiseCTA here after discussing reporting process and before legal help section */}
+            <LawyerExpertiseCTA />
 
             <section id="legal-help" className="my-8">
               <div className="flex items-center mb-4">

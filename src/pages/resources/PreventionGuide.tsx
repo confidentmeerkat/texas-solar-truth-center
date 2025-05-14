@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Check, Shield, AlertTriangle, Search } from 'lucide-react';
 import ContactForm from '@/components/editorial/ContactForm';
 import CallToAction from '@/components/editorial/CallToAction';
+import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
 
 const PreventionGuide = () => {
   return (
@@ -121,6 +122,8 @@ const PreventionGuide = () => {
                 </div>
               </div>
             </section>
+            
+            <LawyerExpertiseCTA />
             
             <section id="questions" className="mt-12">
               <h2 className="text-2xl font-bold text-bennett-navy">Top 10 Questions to Ask Before Signing a Solar Contract</h2>

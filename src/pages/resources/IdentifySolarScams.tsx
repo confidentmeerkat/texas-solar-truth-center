@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ContactForm from '@/components/editorial/ContactForm';
 import CallToAction from '@/components/editorial/CallToAction';
+import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
 
 const IdentifySolarScams = () => {
   return (
@@ -60,7 +62,14 @@ const IdentifySolarScams = () => {
                     Some fraudsters claim to be "working with" or "partnered with" your local utility company. They may wear clothing with similar colors or logos to create confusion. In reality, most utilities don't directly sell or install residential solar systems.
                   </p>
                 </div>
-                
+              </div>
+            </section>
+            
+            {/* Added LawyerExpertiseCTA here strategically after listing common scams */}
+            <LawyerExpertiseCTA />
+            
+            <section id="common-scams-continued" className="my-8">
+              <div className="my-6 space-y-6">
                 <div className="bg-white p-6 rounded-lg border">
                   <h3 className="text-xl font-semibold text-bennett-navy mb-2">Disappearing Tax Credit Scams</h3>
                   <p>
