@@ -2,6 +2,8 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const LawyerExpertiseCTA = () => {
   return (
@@ -9,13 +11,14 @@ const LawyerExpertiseCTA = () => {
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
           <div className="shrink-0">
-            <div className="rounded-full border-2 border-bennett-gold overflow-hidden h-24 w-24">
-              <img 
-                src="/lovable-uploads/cafd9240-68ad-4e1e-a695-6a0ba14f9afe.png" 
-                alt="Charles Bennett" 
-                className="w-full h-full object-cover" 
+            <Avatar className="h-24 w-24 border-2 border-bennett-gold">
+              <AvatarImage 
+                src="/lovable-uploads/b4023440-1afa-48f0-a8fc-91dbab310703.png" 
+                alt="Charles Bennett"
+                className="object-cover object-center" 
               />
-            </div>
+              <AvatarFallback>CB</AvatarFallback>
+            </Avatar>
           </div>
           
           <div>
