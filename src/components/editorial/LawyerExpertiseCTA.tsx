@@ -3,22 +3,20 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const LawyerExpertiseCTA = () => {
   return (
     <section className="bg-bennett-lightGold border-l-4 border-bennett-gold p-8 rounded-lg my-12">
       <div className="max-w-3xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
-          <div className="shrink-0">
-            <Avatar className="h-24 w-24 border-2 border-bennett-gold">
-              <AvatarImage 
+        <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-8">
+          <div className="shrink-0 relative">
+            <div className="h-28 w-28 rounded-full border-2 border-bennett-gold overflow-hidden">
+              <img 
                 src="/lovable-uploads/b4023440-1afa-48f0-a8fc-91dbab310703.png" 
                 alt="Charles Bennett"
-                className="object-cover object-center" 
+                className="object-cover w-full h-full"
               />
-              <AvatarFallback>CB</AvatarFallback>
-            </Avatar>
+            </div>
           </div>
           
           <div>
