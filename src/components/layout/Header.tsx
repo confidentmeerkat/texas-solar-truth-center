@@ -59,7 +59,7 @@ const Header = () => {
               <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-colors">Contact</a></li>
             </ul>
           </nav>
-          <Button className="bg-bennett-navy hover:bg-bennett-navy/90">
+          <Button className="bg-bennett-navy hover:bg-bennett-navy/90 text-white">
             <Phone className="mr-2 h-4 w-4" /> (469) 253-7137
           </Button>
         </div>
