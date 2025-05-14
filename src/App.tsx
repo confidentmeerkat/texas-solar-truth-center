@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import IdentifySolarScams from "./pages/IdentifySolarScams";
 
 // This is a placeholder component for routes that will be implemented later
 const ComingSoon = () => (
@@ -32,8 +31,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           
-          {/* Supporting Pillar Pages */}
-          <Route path="/identifying-solar-scams" element={<IdentifySolarScams />} />
+          {/* Supporting Pillar Pages - Currently using placeholder */}
+          <Route path="/identifying-solar-scams" element={<ComingSoon />} />
           <Route path="/legal-rights-protections" element={<ComingSoon />} />
           <Route path="/reporting-seeking-help" element={<ComingSoon />} />
           <Route path="/prevention-guide" element={<ComingSoon />} />
