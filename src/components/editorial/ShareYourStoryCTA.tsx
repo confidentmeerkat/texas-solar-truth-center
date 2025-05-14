@@ -1,11 +1,30 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Video, MessageSquare, ArrowRight } from 'lucide-react';
+import { Video, MessageSquare, ArrowRight, Youtube } from 'lucide-react';
 
 const ShareYourStoryCTA = () => {
   return (
     <section className="bg-bennett-lightGold p-6 rounded-lg my-12">
+      <div className="mb-6 border-b border-bennett-gold pb-4">
+        <div className="flex items-center gap-2 mb-3">
+          <Youtube className="text-bennett-navy h-5 w-5" />
+          <h4 className="text-lg font-serif font-bold text-bennett-navy">
+            We talk to a Lawyer in Dallas to find out more
+          </h4>
+        </div>
+        <div className="aspect-video w-full sm:w-4/5 mx-auto bg-gray-100 rounded overflow-hidden">
+          <iframe 
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="Interview with Dallas Lawyer about Solar Fraud" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen>
+          </iframe>
+        </div>
+      </div>
+      
       <h3 className="text-xl font-serif font-bold text-bennett-navy mb-4">
         Victims of Solar Fraud in Texas: Share Your Story & Help Others
       </h3>
