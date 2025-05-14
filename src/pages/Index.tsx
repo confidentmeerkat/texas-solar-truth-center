@@ -15,6 +15,7 @@ import ContactForm from '@/components/editorial/ContactForm';
 import CallToAction from '@/components/editorial/CallToAction';
 import AuthorInfo from '@/components/editorial/AuthorInfo';
 import ShareYourStoryCTA from '@/components/editorial/ShareYourStoryCTA';
+import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
 
 const Index = () => {
   return (
@@ -33,6 +34,8 @@ const Index = () => {
               </p>
               
               <AuthorInfo />
+              
+              <LawyerExpertiseCTA />
               
               <div className="my-8">
                 <GrowingProblem />
