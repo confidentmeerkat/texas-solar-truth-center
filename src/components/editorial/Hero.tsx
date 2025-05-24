@@ -53,7 +53,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-white/30 text-white hover:bg-white/10 font-semibold px-10 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              className="border-2 border-white/30 text-white hover:bg-white/10 hover:text-white font-semibold px-10 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300 hover:scale-105"
             >
               Learn Your Rights
               <ArrowRight className="ml-2 h-5 w-5" />
