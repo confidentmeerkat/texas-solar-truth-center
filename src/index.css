@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,7 +35,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -92,23 +92,25 @@
   }
 
   body {
-    @apply bg-white text-foreground font-sans;
+    @apply bg-gray-50 text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-bold text-bennett-navy;
+    font-family: 'Playfair Display', serif;
   }
 
   h1 {
-    @apply text-3xl md:text-4xl lg:text-5xl leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight;
   }
 
   h2 {
-    @apply text-2xl md:text-3xl leading-tight mt-12 mb-6;
+    @apply text-3xl md:text-4xl leading-tight mt-16 mb-8 tracking-tight;
   }
 
   h3 {
-    @apply text-xl md:text-2xl leading-snug mt-8 mb-4;
+    @apply text-2xl md:text-3xl leading-snug mt-12 mb-6 tracking-tight;
   }
 
   p {
@@ -116,22 +118,59 @@
   }
 
   .article-body p {
-    @apply my-6;
+    @apply my-8;
   }
 
   .article-body ul {
-    @apply list-disc pl-6 my-6 text-bennett-slate text-base md:text-lg;
+    @apply list-disc pl-6 my-8 text-bennett-slate text-base md:text-lg space-y-2;
   }
 
   .article-body ol {
-    @apply list-decimal pl-6 my-6 text-bennett-slate text-base md:text-lg;
+    @apply list-decimal pl-6 my-8 text-bennett-slate text-base md:text-lg space-y-2;
   }
 
   .article-body li {
-    @apply mb-2;
+    @apply mb-3;
   }
 
   blockquote {
-    @apply pl-4 italic border-l-4 border-bennett-gold my-8 text-bennett-slate;
+    @apply pl-6 italic border-l-4 border-bennett-gold my-12 text-bennett-slate bg-bennett-lightGold/50 py-4 rounded-r-lg;
   }
+
+  /* Custom grid pattern */
+  .bg-grid-white\/\[0\.02\] {
+    background-image: radial-gradient(circle, white 1px, transparent 1px);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c99a2e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8892a;
+}
+
+/* Smooth animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }

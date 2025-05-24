@@ -19,41 +19,77 @@ import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Header />
       <Hero />
       
-      <main className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="w-full md:w-2/3">
-              <h1 className="sr-only">The Ultimate Guide to Understanding and Fighting Solar Panel Fraud in Texas</h1>
-              
-              <p className="text-lg md:text-xl text-bennett-slate mb-8 leading-relaxed">
-                As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. At Bennett Legal, we're dedicated to helping victims of solar fraud understand their rights and pursue justice.
-              </p>
-              
-              <AuthorInfo />
-              
-              <div className="my-8">
-                <GrowingProblem />
-                <LawyerExpertiseCTA />
-                <VictimSigns />
-                <ShareYourStoryCTA />
-                <ConsumerRights />
-                <CaseStudies />
-                <Prevention />
-                <HowWeHelp />
-                <FAQ />
+      <main className="container mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Main Content */}
+            <div className="lg:col-span-2">
+              <div className="max-w-4xl">
+                <h1 className="sr-only">The Ultimate Guide to Understanding and Fighting Solar Panel Fraud in Texas</h1>
+                
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-xl md:text-2xl text-bennett-slate mb-12 leading-relaxed font-medium">
+                    As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. At Bennett Legal, we're dedicated to helping victims of solar fraud understand their rights and pursue justice.
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 mb-12">
+                  <AuthorInfo />
+                </div>
+                
+                <div className="space-y-16">
+                  <section className="animate-fade-in">
+                    <GrowingProblem />
+                  </section>
+                  
+                  <LawyerExpertiseCTA />
+                  
+                  <section className="animate-slide-up">
+                    <VictimSigns />
+                  </section>
+                  
+                  <ShareYourStoryCTA />
+                  
+                  <section className="animate-fade-in">
+                    <ConsumerRights />
+                  </section>
+                  
+                  <section className="animate-slide-up">
+                    <CaseStudies />
+                  </section>
+                  
+                  <section className="animate-fade-in">
+                    <Prevention />
+                  </section>
+                  
+                  <section className="animate-slide-up">
+                    <HowWeHelp />
+                  </section>
+                  
+                  <section className="animate-fade-in">
+                    <FAQ />
+                  </section>
+                </div>
+                
+                <div className="mt-16">
+                  <CallToAction />
+                </div>
               </div>
-              
-              <CallToAction />
             </div>
             
-            <div className="w-full md:w-1/3">
-              <div className="sticky top-8">
-                <TableOfContents />
-                <ContactForm />
+            {/* Sidebar */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24 space-y-8">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+                  <TableOfContents />
+                </div>
+                <div className="bg-gradient-to-br from-bennett-navy to-slate-800 rounded-2xl shadow-xl p-6">
+                  <ContactForm />
+                </div>
               </div>
             </div>
           </div>
