@@ -26,11 +26,11 @@ const LawyerExpertiseCTA = () => {
           
           <div className="space-y-6">
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight font-serif">
-              Work with an Experienced Solar Fraud Attorney
+              Work with Experienced Solar Fraud Attorneys
             </h2>
             
             <p className="text-xl text-gray-200 leading-relaxed">
-              Charles Bennett has successfully represented over 200 solar fraud victims in Texas. No upfront costs—you only pay if you win.
+              Bennett Legal has more than 50 years of combined experience with fraud cases, arbitration, trial, and consumer protection. We've successfully represented over 200 solar fraud victims in Texas. No upfront costs—you only pay if you win.
             </p>
           </div>
           
