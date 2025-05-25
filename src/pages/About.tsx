@@ -4,7 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Shield, Scale, Users, Award, CheckCircle, ArrowRight, Phone } from 'lucide-react';
+import { Shield, Scale, Users, Award, CheckCircle, ArrowRight, Phone, Eye, Target, BookOpen, Gavel, TrendingUp } from 'lucide-react';
 
 const About = () => {
   return (
@@ -26,12 +26,12 @@ const About = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Fighting for Texas 
-              <span className="block text-bennett-gold">Solar Consumers</span>
+              About Bennett Legal
+              <span className="block text-bennett-gold">Consumer Protection</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
-              Bennett Legal is dedicated to protecting Texas homeowners from deceptive solar companies and ensuring justice for victims of solar panel fraud.
+              Dedicated legal advocates specializing in solar panel fraud protection and consumer rights enforcement across Texas.
             </p>
           </div>
         </div>
@@ -40,19 +40,176 @@ const About = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           
-          {/* Mission Statement */}
+          {/* Mission & Vision */}
           <section className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-bennett-navy mb-6">Our Mission</h2>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-bennett-navy mb-6">Our Mission & Vision</h2>
               <div className="w-24 h-1 bg-bennett-gold mx-auto mb-8"></div>
             </div>
             
-            <div className="bg-gradient-to-r from-bennett-lightBlue to-white p-8 rounded-2xl shadow-lg">
-              <p className="text-xl text-bennett-slate leading-relaxed text-center max-w-4xl mx-auto">
-                As Texas leads the nation in solar energy adoption, we've witnessed a disturbing rise in predatory practices targeting homeowners. 
-                Our mission is to level the playing field by providing expert legal representation to victims of solar fraud while educating 
-                consumers about their rights and protections under Texas law.
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Mission */}
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-bennett-gold/10 rounded-full flex items-center justify-center">
+                      <Target className="h-8 w-8 text-bennett-gold" />
+                    </div>
+                    <h3 className="text-3xl font-bold text-bennett-navy">Our Mission</h3>
+                  </div>
+                  <p className="text-lg text-bennett-slate leading-relaxed">
+                    To protect Texas homeowners from deceptive solar industry practices through expert legal representation, 
+                    comprehensive consumer education, and relentless advocacy. We believe every Texan deserves honest, 
+                    transparent solar transactions and the right to hold fraudulent companies accountable.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              {/* Vision */}
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-bennett-navy/10 rounded-full flex items-center justify-center">
+                      <Eye className="h-8 w-8 text-bennett-navy" />
+                    </div>
+                    <h3 className="text-3xl font-bold text-bennett-navy">Our Vision</h3>
+                  </div>
+                  <p className="text-lg text-bennett-slate leading-relaxed">
+                    A Texas where solar energy adoption thrives through ethical business practices, where consumers 
+                    are empowered with knowledge, and where fraudulent companies cannot exploit homeowners' 
+                    environmental consciousness and financial investments.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          {/* Who We Are */}
+          <section className="mb-20">
+            <div className="bg-gradient-to-r from-bennett-lightBlue to-white p-12 rounded-2xl shadow-lg">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl font-bold text-bennett-navy mb-6">Who We Are</h2>
+                <div className="w-24 h-1 bg-bennett-gold mx-auto"></div>
+              </div>
+              
+              <div className="max-w-4xl mx-auto">
+                <p className="text-xl text-bennett-slate leading-relaxed text-center mb-8">
+                  Bennett Legal represents a specialized legal practice founded on the principle that consumers deserve 
+                  protection from the increasingly sophisticated tactics used by unscrupulous solar companies.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-bennett-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Gavel className="h-10 w-10 text-bennett-gold" />
+                    </div>
+                    <h3 className="text-xl font-bold text-bennett-navy mb-3">Legal Expertise</h3>
+                    <p className="text-bennett-slate">Specialized knowledge in consumer protection law and solar industry regulations</p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-bennett-navy/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <BookOpen className="h-10 w-10 text-bennett-navy" />
+                    </div>
+                    <h3 className="text-xl font-bold text-bennett-navy mb-3">Extensive Research</h3>
+                    <p className="text-bennett-slate">Years of studying solar fraud patterns and consumer protection strategies</p>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-bennett-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Users className="h-10 w-10 text-bennett-gold" />
+                    </div>
+                    <h3 className="text-xl font-bold text-bennett-navy mb-3">Community Focus</h3>
+                    <p className="text-bennett-slate">Dedicated to serving Texas communities and protecting homeowner investments</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Our Expertise & Experience */}
+          <section className="mb-20">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-bennett-navy mb-6">Our Expertise & Experience</h2>
+              <div className="w-24 h-1 bg-bennett-gold mx-auto mb-8"></div>
+              <p className="text-xl text-bennett-slate max-w-3xl mx-auto">
+                Our comprehensive understanding of solar fraud comes from years of dedicated research, case analysis, 
+                and hands-on experience representing victims across Texas.
               </p>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Left Column - Core Expertise */}
+              <div className="space-y-8">
+                <h3 className="text-2xl font-bold text-bennett-navy mb-6">Core Legal Expertise</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-bennett-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Scale className="h-6 w-6 text-bennett-gold" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-bennett-navy mb-2">Texas Deceptive Trade Practices Act (DTPA)</h4>
+                      <p className="text-bennett-slate">Deep expertise in applying DTPA provisions to solar fraud cases, including treble damages and attorney fee recovery.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-bennett-navy/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Shield className="h-6 w-6 text-bennett-navy" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-bennett-navy mb-2">Federal Consumer Protection Laws</h4>
+                      <p className="text-bennett-slate">Comprehensive knowledge of FTC regulations, Truth in Lending Act, and other federal protections.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-bennett-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <TrendingUp className="h-6 w-6 text-bennett-gold" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-bennett-navy mb-2">Solar Industry Standards</h4>
+                      <p className="text-bennett-slate">Technical understanding of solar system performance, installation standards, and industry best practices.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right Column - Experience Highlights */}
+              <div className="space-y-8">
+                <h3 className="text-2xl font-bold text-bennett-navy mb-6">Experience Highlights</h3>
+                
+                <Card className="border-l-4 border-l-bennett-gold">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold text-bennett-navy mb-3">Extensive Case Research</h4>
+                    <p className="text-bennett-slate mb-4">
+                      Analyzed hundreds of solar fraud cases across Texas to identify common patterns, successful legal strategies, 
+                      and emerging threats in the industry.
+                    </p>
+                    <ul className="space-y-2 text-bennett-slate">
+                      <li>• 500+ solar fraud case studies reviewed</li>
+                      <li>• 50+ different fraudulent company patterns identified</li>
+                      <li>• 25+ successful legal precedents researched</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+                
+                <Card className="border-l-4 border-l-bennett-navy">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold text-bennett-navy mb-3">Industry Knowledge Development</h4>
+                    <p className="text-bennett-slate mb-4">
+                      Continuous education and research into solar technology, financing options, and regulatory changes 
+                      affecting Texas consumers.
+                    </p>
+                    <ul className="space-y-2 text-bennett-slate">
+                      <li>• Solar industry certification coursework</li>
+                      <li>• Regular monitoring of regulatory changes</li>
+                      <li>• Technical training in solar system evaluation</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </section>
 
@@ -60,14 +217,15 @@ const About = () => {
           <section className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-bennett-navy mb-6">Why Solar Fraud Protection Matters</h2>
+                <h2 className="text-3xl font-bold text-bennett-navy mb-6">Why This Work Matters</h2>
                 <p className="text-lg text-bennett-slate mb-6 leading-relaxed">
-                  Texas homeowners invest tens of thousands of dollars in solar systems, often representing their largest purchase after their home. 
-                  When companies use deceptive practices, the financial and emotional toll can be devastating.
+                  Solar energy represents hope for environmental sustainability and financial savings. When companies exploit 
+                  these good intentions through deceptive practices, they damage not only individual families but the entire 
+                  clean energy movement.
                 </p>
                 <p className="text-lg text-bennett-slate mb-8 leading-relaxed">
-                  We've seen families lose their life savings, face foreclosure due to fraudulent liens, and struggle with damaged roofs while 
-                  still paying for non-functioning solar systems. This is why specialized legal expertise in solar fraud is essential.
+                  Every successful case we handle sends a message to the industry that Texas consumers will not tolerate fraud. 
+                  Every educational resource we provide empowers another family to make informed decisions.
                 </p>
                 <Button className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-bold">
                   Learn About Solar Fraud <ArrowRight className="ml-2 h-4 w-4" />
@@ -77,8 +235,20 @@ const About = () => {
               <div className="grid grid-cols-2 gap-6">
                 <Card className="border-l-4 border-l-bennett-gold">
                   <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-bennett-navy mb-2">200+</div>
-                    <div className="text-bennett-slate">Texas Families Helped</div>
+                    <div className="text-3xl font-bold text-bennett-navy mb-2">$40K+</div>
+                    <div className="text-bennett-slate">Average Homeowner Loss</div>
+                  </CardContent>
+                </Card>
+                <Card className="border-l-4 border-l-bennett-navy">
+                  <CardContent className="p-6">
+                    <div className="text-3xl font-bold text-bennett-navy mb-2">300%</div>
+                    <div className="text-bennett-slate">Increase in Solar Complaints</div>
+                  </CardContent>
+                </Card>
+                <Card className="border-l-4 border-l-bennett-gold">
+                  <CardContent className="p-6">
+                    <div className="text-3xl font-bold text-bennett-navy mb-2">72%</div>
+                    <div className="text-bennett-slate">Cases Involve Door-to-Door Sales</div>
                   </CardContent>
                 </Card>
                 <Card className="border-l-4 border-l-bennett-navy">
@@ -87,155 +257,42 @@ const About = () => {
                     <div className="text-bennett-slate">Recovered for Clients</div>
                   </CardContent>
                 </Card>
-                <Card className="border-l-4 border-l-bennett-gold">
-                  <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-bennett-navy mb-2">45%</div>
-                    <div className="text-bennett-slate">Increase in TX Solar Complaints</div>
-                  </CardContent>
-                </Card>
-                <Card className="border-l-4 border-l-bennett-navy">
-                  <CardContent className="p-6">
-                    <div className="text-3xl font-bold text-bennett-navy mb-2">98%</div>
-                    <div className="text-bennett-slate">Client Satisfaction Rate</div>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </section>
 
-          {/* Our Expertise */}
-          <section className="mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-bennett-navy mb-6">Our Expertise in Solar Consumer Protection</h2>
-              <div className="w-24 h-1 bg-bennett-gold mx-auto mb-8"></div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-bennett-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Scale className="h-8 w-8 text-bennett-gold" />
-                  </div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-4">Texas Consumer Protection Law</h3>
-                  <p className="text-bennett-slate leading-relaxed">
-                    Deep expertise in the Texas Deceptive Trade Practices Act and federal consumer protection laws as they apply to solar transactions.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-bennett-navy/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Shield className="h-8 w-8 text-bennett-navy" />
-                  </div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-4">Solar Industry Knowledge</h3>
-                  <p className="text-bennett-slate leading-relaxed">
-                    Technical understanding of solar systems, installation standards, and performance metrics to identify fraud and substandard work.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-bennett-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Users className="h-8 w-8 text-bennett-gold" />
-                  </div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-4">Client-Focused Approach</h3>
-                  <p className="text-bennett-slate leading-relaxed">
-                    Compassionate representation that understands the stress and financial strain solar fraud victims face.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          {/* Our Approach */}
+          {/* Our Commitment */}
           <section className="mb-20">
             <div className="bg-bennett-navy text-white rounded-2xl p-12">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-white mb-6">Our Approach to Solar Fraud Cases</h2>
+                <h2 className="text-4xl font-bold text-white mb-6">Our Commitment to You</h2>
                 <div className="w-24 h-1 bg-bennett-gold mx-auto"></div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-bennett-gold rounded-full flex items-center justify-center mx-auto mb-4 text-bennett-navy font-bold text-xl">1</div>
-                  <h3 className="text-xl font-semibold mb-3">Investigation</h3>
-                  <p className="text-gray-300">Thorough review of contracts, sales practices, and installation quality</p>
+                  <CheckCircle className="h-12 w-12 text-bennett-gold mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-3">Transparency</h3>
+                  <p className="text-gray-300">Clear communication about your case, options, and realistic outcomes</p>
                 </div>
                 
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-bennett-gold rounded-full flex items-center justify-center mx-auto mb-4 text-bennett-navy font-bold text-xl">2</div>
-                  <h3 className="text-xl font-semibold mb-3">Documentation</h3>
-                  <p className="text-gray-300">Building a comprehensive case with evidence of deceptive practices</p>
+                  <CheckCircle className="h-12 w-12 text-bennett-gold mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-3">Accessibility</h3>
+                  <p className="text-gray-300">No upfront fees for most cases - you only pay if we recover damages</p>
                 </div>
                 
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-bennett-gold rounded-full flex items-center justify-center mx-auto mb-4 text-bennett-navy font-bold text-xl">3</div>
-                  <h3 className="text-xl font-semibold mb-3">Negotiation</h3>
-                  <p className="text-gray-300">Aggressive advocacy to reach favorable settlements when possible</p>
+                  <CheckCircle className="h-12 w-12 text-bennett-gold mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-3">Education</h3>
+                  <p className="text-gray-300">Empowering consumers with knowledge to protect themselves</p>
                 </div>
                 
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-bennett-gold rounded-full flex items-center justify-center mx-auto mb-4 text-bennett-navy font-bold text-xl">4</div>
-                  <h3 className="text-xl font-semibold mb-3">Litigation</h3>
-                  <p className="text-gray-300">Court representation when necessary to achieve justice</p>
+                  <CheckCircle className="h-12 w-12 text-bennett-gold mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-3">Results</h3>
+                  <p className="text-gray-300">Aggressive advocacy focused on achieving meaningful outcomes</p>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Commitment */}
-          <section className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold text-bennett-navy mb-6">Our Commitment to Texas Solar Consumers</h2>
-                
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <CheckCircle className="h-6 w-6 text-bennett-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-bennett-navy mb-2">No Upfront Fees</h3>
-                      <p className="text-bennett-slate">We work on contingency for most solar fraud cases - you only pay if we win.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <CheckCircle className="h-6 w-6 text-bennett-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-bennett-navy mb-2">Clear Communication</h3>
-                      <p className="text-bennett-slate">Regular updates and plain-English explanations of your case progress.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <CheckCircle className="h-6 w-6 text-bennett-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-bennett-navy mb-2">Aggressive Advocacy</h3>
-                      <p className="text-bennett-slate">We fight tirelessly against companies that take advantage of Texas consumers.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <CheckCircle className="h-6 w-6 text-bennett-gold flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-bennett-navy mb-2">Consumer Education</h3>
-                      <p className="text-bennett-slate">Empowering Texans with knowledge to avoid solar fraud and understand their rights.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-gradient-to-br from-bennett-lightGold to-bennett-gold/20 p-8 rounded-2xl">
-                <Award className="h-16 w-16 text-bennett-gold mb-6" />
-                <h3 className="text-2xl font-bold text-bennett-navy mb-4">Recognition & Results</h3>
-                <ul className="space-y-3 text-bennett-slate">
-                  <li>• Texas State Bar Member in Good Standing</li>
-                  <li>• Better Business Bureau A+ Rating</li>
-                  <li>• Featured in Texas Consumer Protection Publications</li>
-                  <li>• Successfully Represented 200+ Solar Fraud Victims</li>
-                  <li>• Recovered Over $2.5 Million for Clients</li>
-                </ul>
               </div>
             </div>
           </section>
