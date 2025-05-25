@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <h1 className="text-2xl md:text-3xl font-serif font-bold text-bennett-navy">
-            <a href="/" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3">
               <div className="p-2 bg-bennett-gold rounded-xl">
                 <Scale className="h-6 w-6 text-white" />
               </div>
@@ -27,13 +27,20 @@ const Header = () => {
                 <span className="text-bennett-gold">Solar Panel</span>
                 <span className="block text-lg leading-tight">Consumer Resources</span>
               </div>
-            </a>
+            </Link>
           </h1>
         </div>
         <div className="hidden md:flex items-center gap-8">
           <nav>
             <ul className="flex gap-8 items-center">
-              <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-all duration-300 font-medium hover:scale-105">About</a></li>
+              <li>
+                <Link 
+                  to="/about" 
+                  className="text-bennett-slate hover:text-bennett-navy transition-all duration-300 font-medium hover:scale-105"
+                >
+                  About
+                </Link>
+              </li>
               <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-all duration-300 font-medium hover:scale-105">Services</a></li>
               <li>
                 <NavigationMenu>
