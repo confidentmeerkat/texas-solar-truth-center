@@ -1,304 +1,233 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import ContactForm from '@/components/editorial/ContactForm';
-import CallToAction from '@/components/editorial/CallToAction';
-import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
+import PageTemplate from '@/components/layout/PageTemplate';
+import StandardHero from '@/components/layout/StandardHero';
+import { EnhancedCard } from '@/components/ui/enhanced-card';
+import SectionHeader from '@/components/ui/section-header';
+import RedFlagsChecklist from '@/components/editorial/RedFlagsChecklist';
+import { AlertTriangle, Shield, Eye, Phone, FileText, CheckCircle2 } from 'lucide-react';
 
 const IdentifySolarScams = () => {
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Resources', href: '#' },
+    { label: 'Identifying Solar Scams', href: '/identifying-solar-scams' }
+  ];
+
+  const heroSection = (
+    <StandardHero
+      title="Identifying Solar Panel Scams"
+      subtitle="Consumer Protection Guide"
+      description="Learn how to recognize and protect yourself from solar panel fraud and deceptive sales practices targeting Texas homeowners."
+      primaryCTA={{
+        text: "Report Solar Fraud",
+        href: "#contact"
+      }}
+      secondaryCTA={{
+        text: "Free Case Review",
+        href: "/services"
+      }}
+      trustBadge={{
+        text: "Expert Consumer Protection Guidance"
+      }}
+      variant="gradient"
+    />
+  );
+
+  const sidebarContent = (
+    <>
+      <EnhancedCard variant="glass" className="bg-red-50/80 border-red-200 p-8">
+        <div className="flex items-center gap-3 mb-6">
+          <AlertTriangle className="h-8 w-8 text-red-600" />
+          <h3 className="text-xl font-bold text-red-900">Immediate Help</h3>
+        </div>
+        <p className="text-red-800 mb-4">
+          If you believe you're a victim of solar fraud, don't wait. Contact us immediately for a free consultation.
+        </p>
+        <div className="space-y-3">
+          <div className="flex items-center gap-2">
+            <Phone className="h-4 w-4 text-red-600" />
+            <span className="font-semibold">(469) 253-7137</span>
+          </div>
+          <div className="text-sm text-red-700">Available 24/7 for emergencies</div>
+        </div>
+      </EnhancedCard>
+
+      <EnhancedCard variant="elevated" className="p-8">
+        <h3 className="text-xl font-bold text-bennett-navy mb-6">Quick Reference</h3>
+        <ul className="space-y-3">
+          <li><a href="#warning-signs" className="text-bennett-slate hover:text-bennett-navy transition-colors">Warning Signs</a></li>
+          <li><a href="#common-tactics" className="text-bennett-slate hover:text-bennett-navy transition-colors">Common Tactics</a></li>
+          <li><a href="#protection-tips" className="text-bennett-slate hover:text-bennett-navy transition-colors">Protection Tips</a></li>
+          <li><a href="#next-steps" className="text-bennett-slate hover:text-bennett-navy transition-colors">What to Do Next</a></li>
+        </ul>
+      </EnhancedCard>
+    </>
+  );
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      
-      <main className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-6">
-            <Link to="/" className="text-bennett-navy hover:text-bennett-gold">
-              ← Back to Main Guide
-            </Link>
+    <PageTemplate
+      heroSection={heroSection}
+      sidebarContent={sidebarContent}
+      breadcrumbs={breadcrumbs}
+      showReadingProgress={true}
+    >
+      <div className="space-y-24">
+        <section id="warning-signs">
+          <SectionHeader
+            title="Warning Signs of Solar Scams"
+            description="Recognize these red flags to protect yourself from fraudulent solar companies"
+            size="md"
+          />
+          
+          <div className="grid md:grid-cols-2 gap-8 mt-12">
+            <EnhancedCard variant="elevated" className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                  <AlertTriangle className="h-6 w-6 text-red-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">High-Pressure Sales Tactics</h3>
+                  <ul className="space-y-2 text-bennett-slate">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <span>"Sign today or lose this deal"</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <span>Unsolicited door-to-door visits</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <span>Refusing to leave detailed information</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </EnhancedCard>
+
+            <EnhancedCard variant="elevated" className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
+                  <FileText className="h-6 w-6 text-orange-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Misleading Claims</h3>
+                  <ul className="space-y-2 text-bennett-slate">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-orange-500" />
+                      <span>"Free" solar panels (they're never free)</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-orange-500" />
+                      <span>Guaranteed energy savings</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-orange-500" />
+                      <span>Government rebate misrepresentation</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </EnhancedCard>
           </div>
+        </section>
+
+        <section id="common-tactics">
+          <RedFlagsChecklist />
+        </section>
+
+        <section id="protection-tips">
+          <SectionHeader
+            title="How to Protect Yourself"
+            description="Essential steps to avoid becoming a victim of solar panel fraud"
+            size="md"
+          />
           
-          <h1 className="text-3xl md:text-4xl font-bold text-bennett-navy mb-4">
-            How to Identify Solar Panel Scams in Texas
-          </h1>
-          
-          <div className="bg-bennett-lightBlue p-6 rounded-lg mb-8">
-            <p className="text-bennett-navy">
-              This guide helps you recognize the warning signs of solar panel fraud in Texas. For information on your legal protections, see our <Link to="/legal-rights-protections" className="text-bennett-navy underline hover:text-bennett-gold">Legal Rights & Protections</Link> guide.
-            </p>
+          <div className="prose prose-xl max-w-none mt-12">
+            <EnhancedCard variant="glass" className="p-10">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <Eye className="h-8 w-8 text-green-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-bennett-navy mb-3">Research First</h3>
+                  <p className="text-bennett-slate text-sm">Always research companies thoroughly before signing any contracts. Check BBB ratings and online reviews.</p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <FileText className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-bennett-navy mb-3">Read Everything</h3>
+                  <p className="text-bennett-slate text-sm">Never sign contracts without reading every detail. Take time to understand all terms and conditions.</p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <Shield className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-bennett-navy mb-3">Get Legal Help</h3>
+                  <p className="text-bennett-slate text-sm">Consult with an attorney if something seems suspicious or if you've already been victimized.</p>
+                </div>
+              </div>
+            </EnhancedCard>
           </div>
+        </section>
+
+        <section id="next-steps">
+          <SectionHeader
+            title="What to Do If You've Been Scammed"
+            description="Immediate steps to take if you believe you're a victim of solar panel fraud"
+            size="md"
+          />
           
-          <div className="prose max-w-none">
-            <p className="lead text-lg">
-              Solar energy offers tremendous benefits, but the industry's rapid growth has attracted unscrupulous operators looking to take advantage of Texas homeowners. Learning to spot the warning signs of solar scams can save you from financial loss and heartache.
-            </p>
-            
-            <section id="common-scams" className="my-8">
-              <h2 className="text-2xl font-bold text-bennett-navy">Common Solar Panel Scams in Texas</h2>
-              <p>
-                Solar scams come in many forms, but they typically share common elements designed to separate you from your money while delivering less than promised. Here are the most prevalent scams we're seeing across Texas:
-              </p>
-              
-              <div className="my-6 space-y-6">
-                <div className="bg-white p-6 rounded-lg border">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">The "Free Solar" Bait and Switch</h3>
-                  <p>
-                    Salespeople claim you'll get "free solar panels" through a government program, but in reality, you're signing up for a long-term lease or loan with unfavorable terms. There are legitimate incentives for solar, but no program provides completely free systems.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-6 rounded-lg border">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">Inflated Energy Savings Promises</h3>
-                  <p>
-                    Scammers present unrealistic projections about how much you'll save on electricity, often claiming your system will eliminate your bill entirely. They may use manipulated data or ignore factors like shading, roof orientation, or local weather patterns.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-6 rounded-lg border">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">Fake Utility Partnerships</h3>
-                  <p>
-                    Some fraudsters claim to be "working with" or "partnered with" your local utility company. They may wear clothing with similar colors or logos to create confusion. In reality, most utilities don't directly sell or install residential solar systems.
-                  </p>
-                </div>
+          <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-12 mt-12">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Immediate Actions</h3>
+                <ol className="space-y-4">
+                  <li className="flex gap-4">
+                    <span className="w-8 h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">1</span>
+                    <span>Document everything - contracts, communications, receipts</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="w-8 h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">2</span>
+                    <span>Stop all payments if possible</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="w-8 h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">3</span>
+                    <span>Contact Bennett Legal for immediate consultation</span>
+                  </li>
+                </ol>
               </div>
-            </section>
-            
-            {/* Added LawyerExpertiseCTA here strategically after listing common scams */}
-            <LawyerExpertiseCTA />
-            
-            <section id="common-scams-continued" className="my-8">
-              <div className="my-6 space-y-6">
-                <div className="bg-white p-6 rounded-lg border">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">Disappearing Tax Credit Scams</h3>
-                  <p>
-                    Creating false urgency by claiming tax incentives are about to expire when they're not. While the federal solar tax credit is scheduled to step down over time, scammers often misrepresent the timeline to pressure quick decisions.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-6 rounded-lg border">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">Phantom Incentives</h3>
-                  <p>
-                    Promising special rebates or incentives that don't actually exist. Texas has fewer state-level solar incentives than some other states, but scammers may claim otherwise to make their offer seem more attractive.
-                  </p>
-                </div>
-              </div>
-            </section>
-            
-            <section id="red-flags" className="my-8">
-              <h2 className="text-2xl font-bold text-bennett-navy">10 Red Flags That Should Set Off Alarm Bells</h2>
-              <p>
-                When considering solar, watch for these warning signs that suggest you might be dealing with a fraudulent company:
-              </p>
               
-              <ol className="mt-6 space-y-4">
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">1</span>
-                  <div>
-                    <strong>High-pressure sales tactics</strong> - Pushing for same-day decisions or claiming "today only" special pricing.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">2</span>
-                  <div>
-                    <strong>Reluctance to provide credentials</strong> - Hesitation when asked for licensing information, insurance details, or contractor registration.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">3</span>
-                  <div>
-                    <strong>Vague or confusing contracts</strong> - Documents with unclear terms, blank spaces to be filled in later, or missing total costs.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">4</span>
-                  <div>
-                    <strong>Demands for large upfront payments</strong> - Requesting full payment before installation begins or demanding cash payments.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">5</span>
-                  <div>
-                    <strong>No physical address</strong> - Companies that only provide a P.O. box or have no verifiable business location in Texas.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">6</span>
-                  <div>
-                    <strong>Unsolicited contact</strong> - Cold calls or door-to-door salespeople who specifically target seniors or non-English speakers.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">7</span>
-                  <div>
-                    <strong>No engineering assessment</strong> - Offering quotes without properly evaluating your roof's condition, orientation, or shading.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">8</span>
-                  <div>
-                    <strong>Too-good-to-be-true pricing</strong> - Quotes significantly lower than competitors without clear explanation.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">9</span>
-                  <div>
-                    <strong>Poor online presence</strong> - No website, very new website, or numerous negative reviews and complaints.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">10</span>
-                  <div>
-                    <strong>Unwillingness to provide references</strong> - Reluctance to connect you with previous customers in your area.
-                  </div>
-                </li>
-              </ol>
-            </section>
-            
-            <section id="case-studies" className="my-8">
-              <h2 className="text-2xl font-bold text-bennett-navy">Real-Life Examples: Texas Solar Scam Cases</h2>
-              <p>
-                These anonymized cases from our legal practice illustrate how solar scams have affected real Texans:
-              </p>
-              
-              <div className="my-6 space-y-6">
-                <div className="bg-bennett-lightGold p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">Case Study: The Vanishing Installer</h3>
-                  <p className="mb-4">
-                    A Houston family paid a $10,000 deposit to a solar company that promised installation within 30 days. After multiple delays and excuses, the company stopped responding to calls. Investigation revealed the company had closed its Texas office and moved operations to another state, leaving dozens of customers with paid deposits and no solar panels.
-                  </p>
-                  <p className="text-sm italic">
-                    <strong>Outcome:</strong> Through legal action, we were able to help the family recover most of their deposit by filing a claim against the company's contractor bond.
-                  </p>
-                </div>
-                
-                <div className="bg-bennett-lightGold p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">Case Study: The Hidden Loan</h3>
-                  <p className="mb-4">
-                    An elderly couple in San Antonio thought they were signing up for a government program that would pay for their solar installation. Instead, they were unknowingly enrolled in a 20-year loan with a 7.99% interest rate. The salesperson had them sign digital documents without explaining the terms, telling them they were just "approval forms."
-                  </p>
-                  <p className="text-sm italic">
-                    <strong>Outcome:</strong> We helped the couple file a DTPA claim based on deceptive trade practices, resulting in the contract being voided and a full refund of their payments.
-                  </p>
-                </div>
-                
-                <div className="bg-bennett-lightGold p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-bennett-navy mb-2">Case Study: The Oversold System</h3>
-                  <p className="mb-4">
-                    A Dallas homeowner was sold a solar system that was significantly larger than needed for his home's energy consumption. The company used manipulated usage data to justify the oversized system, resulting in the homeowner paying $15,000 more than necessary. The system produced excess energy that was sold back to the grid at a fraction of the cost to produce it.
-                  </p>
-                  <p className="text-sm italic">
-                    <strong>Outcome:</strong> Through negotiation and the threat of legal action, we secured a partial refund and system modification to better match the home's actual needs.
-                  </p>
-                </div>
-              </div>
-            </section>
-            
-            <section id="verification" className="my-8">
-              <h2 className="text-2xl font-bold text-bennett-navy">How to Verify a Solar Company's Legitimacy</h2>
-              <p>
-                Before signing any contract, take these steps to verify you're working with a legitimate solar provider:
-              </p>
-              
-              <div className="bg-white p-6 rounded-lg border my-6">
-                <h3 className="text-lg font-semibold text-bennett-navy mb-4">Verification Checklist:</h3>
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Legal Options</h3>
                 <ul className="space-y-3">
-                  <li>
-                    <strong>Check licensing:</strong> In Texas, solar installers should have an electrical contractor license. Verify through the Texas Department of Licensing and Regulation (TDLR).
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>Contract cancellation</span>
                   </li>
-                  <li>
-                    <strong>Research the company:</strong> Look for established history, physical location, and membership in industry associations like the Solar Energy Industries Association (SEIA).
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>Monetary recovery</span>
                   </li>
-                  <li>
-                    <strong>Read reviews:</strong> Check Better Business Bureau ratings, Google reviews, and solar-specific review sites like SolarReviews or EnergySage.
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>Punitive damages</span>
                   </li>
-                  <li>
-                    <strong>Ask for references:</strong> Request contact information for recent customers in your area and actually call them.
-                  </li>
-                  <li>
-                    <strong>Verify insurance:</strong> Ensure the company carries general liability insurance and workers' compensation coverage.
-                  </li>
-                  <li>
-                    <strong>Get multiple quotes:</strong> Compare at least three proposals to understand pricing and system recommendations.
-                  </li>
-                  <li>
-                    <strong>Research equipment:</strong> Verify that proposed panels and inverters are from reputable manufacturers with solid warranties.
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>Attorney fees recovery</span>
                   </li>
                 </ul>
               </div>
-              
-              <p>
-                Remember that legitimate solar companies will welcome your due diligence and provide transparent information. If a company seems annoyed by your questions or reluctant to provide verification, consider that a warning sign.
-              </p>
-            </section>
-            
-            <section id="next-steps" className="my-8">
-              <h2 className="text-2xl font-bold text-bennett-navy">What To Do If You Suspect a Scam</h2>
-              <p>
-                If you believe you're dealing with a solar scammer, take these immediate steps:
-              </p>
-              
-              <ol className="mt-6 space-y-4">
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">1</span>
-                  <div>
-                    <strong>End contact with the company</strong> - Don't sign anything or make any payments.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">2</span>
-                  <div>
-                    <strong>Document everything</strong> - Save all communications, brochures, and take notes about verbal claims.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">3</span>
-                  <div>
-                    <strong>Report the company</strong> - File complaints with the Texas Attorney General's Consumer Protection Division, the Better Business Bureau, and the Federal Trade Commission.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">4</span>
-                  <div>
-                    <strong>Alert your community</strong> - Warn neighbors and post on community forums to prevent others from falling victim.
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <span className="bg-bennett-navy text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0 mt-1">5</span>
-                  <div>
-                    <strong>Consult a consumer protection attorney</strong> - If you've already signed contracts or paid money, seek legal advice immediately.
-                  </div>
-                </li>
-              </ol>
-              
-              <p className="mt-6">
-                For more detailed information on reporting fraud and seeking legal help, see our <Link to="/reporting-seeking-help" className="text-bennett-navy underline hover:text-bennett-gold">Reporting Fraud & Seeking Legal Help</Link> guide.
-              </p>
-            </section>
-            
-            <div className="mt-12 flex flex-col md:flex-row gap-6 justify-between">
-              <div>
-                <Link to="/" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center">
-                  ← Back to Main Guide
-                </Link>
-              </div>
-              <div>
-                <Link to="/legal-rights-protections" className="text-bennett-navy hover:text-bennett-gold inline-flex items-center">
-                  Next: Your Legal Rights & Protections →
-                </Link>
-              </div>
             </div>
-            
-            <ContactForm />
-            
-            <CallToAction />
-          </div>
-        </div>
-      </main>
-      
-      <Footer />
-    </div>
+          </EnhancedCard>
+        </section>
+      </div>
+    </PageTemplate>
   );
 };
 
