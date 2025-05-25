@@ -16,10 +16,13 @@ import CallToAction from '@/components/editorial/CallToAction';
 import AuthorInfo from '@/components/editorial/AuthorInfo';
 import ShareYourStoryCTA from '@/components/editorial/ShareYourStoryCTA';
 import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
+import ScrollToTop from '@/components/ui/scroll-to-top';
+import ReadingProgress from '@/components/ui/reading-progress';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      <ReadingProgress />
       <Header />
       <Hero />
       
@@ -37,58 +40,74 @@ const Index = () => {
                   </p>
                 </div>
                 
-                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 mb-12">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 mb-12 hover:shadow-xl transition-shadow duration-300">
                   <AuthorInfo />
                 </div>
                 
                 <div className="space-y-16">
-                  <section className="animate-fade-in">
+                  <section className="animate-fade-in scroll-mt-24" id="growing-problem">
                     <GrowingProblem />
                   </section>
                   
-                  <LawyerExpertiseCTA />
+                  <div className="transform hover:scale-[1.01] transition-transform duration-300">
+                    <LawyerExpertiseCTA />
+                  </div>
                   
-                  <section className="animate-slide-up">
+                  <section className="animate-slide-up scroll-mt-24" id="victim-signs">
                     <VictimSigns />
                   </section>
                   
-                  <ShareYourStoryCTA />
+                  <div className="transform hover:scale-[1.01] transition-transform duration-300">
+                    <ShareYourStoryCTA />
+                  </div>
                   
-                  <section className="animate-fade-in">
+                  <section className="animate-fade-in scroll-mt-24" id="consumer-rights">
                     <ConsumerRights />
                   </section>
                   
-                  <section className="animate-slide-up">
+                  <section className="animate-slide-up scroll-mt-24" id="case-studies">
                     <CaseStudies />
                   </section>
                   
-                  <section className="animate-fade-in">
+                  <section className="animate-fade-in scroll-mt-24" id="prevention">
                     <Prevention />
                   </section>
                   
-                  <section className="animate-slide-up">
+                  <section className="animate-slide-up scroll-mt-24" id="how-we-help">
                     <HowWeHelp />
                   </section>
                   
-                  <section className="animate-fade-in">
+                  <section className="animate-fade-in scroll-mt-24" id="faq">
                     <FAQ />
                   </section>
                 </div>
                 
-                <div className="mt-16">
+                <div className="mt-16 transform hover:scale-[1.02] transition-transform duration-300">
                   <CallToAction />
                 </div>
               </div>
             </div>
             
-            {/* Sidebar */}
+            {/* Enhanced Sidebar */}
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-8">
-                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-shadow duration-300">
                   <TableOfContents />
                 </div>
-                <div className="bg-gradient-to-br from-bennett-navy to-slate-800 rounded-2xl shadow-xl p-6">
+                <div className="bg-gradient-to-br from-bennett-navy to-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
                   <ContactForm />
+                </div>
+                
+                {/* Trust Indicators */}
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 border border-green-200">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-green-600 mb-2">200+</div>
+                    <div className="text-sm text-green-700 font-medium">Clients Successfully Represented</div>
+                  </div>
+                  <div className="mt-4 text-center">
+                    <div className="text-2xl font-bold text-blue-600 mb-2">$60K+</div>
+                    <div className="text-sm text-blue-700 font-medium">Average Case Recovery</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,6 +116,7 @@ const Index = () => {
       </main>
       
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
