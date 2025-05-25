@@ -4,9 +4,7 @@ import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import SectionHeader from '@/components/ui/section-header';
-import ServicesFAQ from '@/components/editorial/ServicesFAQ';
-import ProcessOverview from '@/components/editorial/ProcessOverview';
-import { Scale, Zap, FileText, Users, Shield, AlertTriangle, CheckCircle2, DollarSign } from 'lucide-react';
+import { Scale, Gavel, FileText, Users, Shield, CheckCircle2, Phone, Clock, AlertTriangle } from 'lucide-react';
 
 const Services = () => {
   const breadcrumbs = [
@@ -16,72 +14,77 @@ const Services = () => {
 
   const heroStats = [
     {
-      value: '$60K+',
-      label: 'Average Case Recovery',
-      icon: <DollarSign className="h-6 w-6 text-green-400" />
+      value: '$2.5M+',
+      label: 'Recovered for Clients',
+      icon: <Scale className="h-6 w-6 text-bennett-gold" />
     },
     {
       value: '95%',
       label: 'Success Rate',
-      icon: <CheckCircle2 className="h-6 w-6 text-emerald-400" />
+      icon: <CheckCircle2 className="h-6 w-6 text-green-400" />
     }
   ];
 
   const heroSection = (
     <StandardHero
       title="Legal Services"
-      subtitle="Consumer Protection Specialists"
-      description="Comprehensive legal services to protect Texas consumers from solar panel fraud and deceptive business practices. We fight for your rights and recovery."
+      subtitle="Comprehensive Solar Fraud Protection"
+      description="Bennett Legal offers comprehensive legal services to protect Texas consumers from solar panel fraud and help victims recover their losses."
       primaryCTA={{
-        text: "Get Free Case Review",
-        href: "#contact"
+        text: "Free Case Review",
+        href: "#case-review"
       }}
       secondaryCTA={{
-        text: "Learn About Solar Fraud",
-        href: "/identifying-solar-scams"
+        text: "Learn About Your Rights",
+        href: "/legal-rights-protections"
       }}
       trustBadge={{
         text: "No Win, No Fee Guarantee"
       }}
       stats={heroStats}
+      variant="gradient"
     />
   );
 
   const sidebarContent = (
     <>
-      <EnhancedCard variant="glass" className="p-8">
-        <h3 className="text-xl font-bold text-bennett-navy mb-6">Free Consultation</h3>
-        <div className="space-y-4">
-          <p className="text-bennett-slate">Get a free case evaluation to understand your rights and options.</p>
-          <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
-              <span className="text-sm">No upfront costs</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
-              <span className="text-sm">Confidential discussion</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
-              <span className="text-sm">Expert legal advice</span>
-            </div>
+      <EnhancedCard variant="glass" className="bg-green-50/80 border-green-200 p-8">
+        <div className="flex items-center gap-3 mb-6">
+          <CheckCircle2 className="h-8 w-8 text-green-600" />
+          <h3 className="text-xl font-bold text-green-900">No Win, No Fee</h3>
+        </div>
+        <p className="text-green-800 mb-4">
+          You don't pay unless we win your case. Free consultation and case evaluation.
+        </p>
+        <div className="space-y-3">
+          <div className="flex items-center gap-2">
+            <Phone className="h-4 w-4 text-green-600" />
+            <span className="font-semibold">(469) 253-7137</span>
           </div>
+          <div className="text-sm text-green-700">Call now for immediate help</div>
         </div>
       </EnhancedCard>
 
-      <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-8">
-        <h3 className="text-xl font-bold mb-6">Contact Information</h3>
-        <div className="space-y-4">
-          <div>
-            <div className="font-semibold text-bennett-gold">Phone</div>
-            <div>(469) 253-7137</div>
-          </div>
-          <div>
-            <div className="font-semibold text-bennett-gold">Office Hours</div>
-            <div>Mon-Fri: 8AM - 6PM<br />Sat: 9AM - 2PM</div>
-          </div>
-        </div>
+      <EnhancedCard variant="elevated" className="p-8">
+        <h3 className="text-xl font-bold text-bennett-navy mb-6">Service Areas</h3>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
+            <span className="text-sm">Solar Contract Review</span>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
+            <span className="text-sm">Fraud Investigation</span>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
+            <span className="text-sm">Damage Recovery</span>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
+            <span className="text-sm">Contract Cancellation</span>
+          </li>
+        </ul>
       </EnhancedCard>
     </>
   );
@@ -97,109 +100,117 @@ const Services = () => {
         <section>
           <SectionHeader
             title="Our Legal Services"
-            description="Comprehensive protection for Texas consumers facing fraud and deceptive practices"
+            description="Comprehensive protection against solar panel fraud"
             size="md"
           />
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <EnhancedCard variant="elevated" className="p-8 group hover:scale-105 transition-all duration-300">
+            <EnhancedCard variant="elevated" className="p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Zap className="h-6 w-6 text-yellow-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Solar Panel Fraud</h3>
-                  <p className="text-bennett-slate mb-4">Specialized representation for homeowners victimized by deceptive solar sales practices, installation fraud, and contract violations.</p>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Door-to-door sales scams</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Installation defects</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Financing misrepresentation</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </EnhancedCard>
-
-            <EnhancedCard variant="elevated" className="p-8 group hover:scale-105 transition-all duration-300">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <AlertTriangle className="h-6 w-6 text-red-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Consumer Protection</h3>
-                  <p className="text-bennett-slate mb-4">Broad consumer protection services under the Texas Deceptive Trade Practices Act and federal consumer laws.</p>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>False advertising claims</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Breach of warranty</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Unfair business practices</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </EnhancedCard>
-
-            <EnhancedCard variant="elevated" className="p-8 group hover:scale-105 transition-all duration-300">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
                   <FileText className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Contract Disputes</h3>
-                  <p className="text-bennett-slate mb-4">Expert handling of contract disputes, breach of contract claims, and contractual fraud cases.</p>
-                  <ul className="space-y-2 text-sm">
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Contract Review & Analysis</h3>
+                  <p className="text-bennett-slate mb-4">
+                    We thoroughly review solar contracts to identify deceptive terms, hidden fees, and potential fraud indicators.
+                  </p>
+                  <ul className="space-y-2 text-sm text-bennett-slate">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Contract review & analysis</span>
+                      <CheckCircle2 className="h-3 w-3 text-blue-500" />
+                      <span>Comprehensive contract analysis</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Breach of contract claims</span>
+                      <CheckCircle2 className="h-3 w-3 text-blue-500" />
+                      <span>Identification of deceptive practices</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Contract cancellation</span>
+                      <CheckCircle2 className="h-3 w-3 text-blue-500" />
+                      <span>Legal strategy development</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </EnhancedCard>
 
-            <EnhancedCard variant="elevated" className="p-8 group hover:scale-105 transition-all duration-300">
+            <EnhancedCard variant="elevated" className="p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Scale className="h-6 w-6 text-purple-600" />
+                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                  <AlertTriangle className="h-6 w-6 text-red-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Litigation & Arbitration</h3>
-                  <p className="text-bennett-slate mb-4">Experienced trial attorneys ready to take your case to court or arbitration when necessary.</p>
-                  <ul className="space-y-2 text-sm">
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Fraud Investigation</h3>
+                  <p className="text-bennett-slate mb-4">
+                    Our team investigates solar companies to uncover fraudulent practices and build strong cases for our clients.
+                  </p>
+                  <ul className="space-y-2 text-sm text-bennett-slate">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
+                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <span>Company background investigation</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <span>Evidence collection and preservation</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <span>Expert witness consultation</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </EnhancedCard>
+
+            <EnhancedCard variant="elevated" className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+                  <Scale className="h-6 w-6 text-green-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Damage Recovery</h3>
+                  <p className="text-bennett-slate mb-4">
+                    We fight to recover your financial losses, including actual damages, additional statutory damages, and attorney fees.
+                  </p>
+                  <ul className="space-y-2 text-sm text-bennett-slate">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-green-500" />
+                      <span>Economic damage calculation</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-green-500" />
+                      <span>Statutory damage claims</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-green-500" />
+                      <span>Attorney fee recovery</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </EnhancedCard>
+
+            <EnhancedCard variant="elevated" className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                  <Gavel className="h-6 w-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Litigation & Settlement</h3>
+                  <p className="text-bennett-slate mb-4">
+                    Whether through negotiation or trial, we pursue the best possible outcome for your case.
+                  </p>
+                  <ul className="space-y-2 text-sm text-bennett-slate">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-purple-500" />
+                      <span>Settlement negotiation</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="h-3 w-3 text-purple-500" />
                       <span>Trial representation</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
+                      <CheckCircle2 className="h-3 w-3 text-purple-500" />
                       <span>Arbitration proceedings</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-bennett-gold" />
-                      <span>Settlement negotiations</span>
                     </li>
                   </ul>
                 </div>
@@ -208,8 +219,104 @@ const Services = () => {
           </div>
         </section>
 
-        <ProcessOverview />
-        <ServicesFAQ />
+        <section id="case-review">
+          <SectionHeader
+            title="Free Case Review Process"
+            description="How we evaluate your solar fraud case"
+            size="md"
+          />
+          
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <EnhancedCard variant="glass" className="p-8 text-center">
+              <div className="w-16 h-16 bg-bennett-gold/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Phone className="h-8 w-8 text-bennett-gold" />
+              </div>
+              <h3 className="text-lg font-bold text-bennett-navy mb-3">1. Initial Consultation</h3>
+              <p className="text-bennett-slate text-sm">
+                Contact us for a free consultation to discuss your situation and determine if you have a valid case.
+              </p>
+            </EnhancedCard>
+
+            <EnhancedCard variant="glass" className="p-8 text-center">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <FileText className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-bold text-bennett-navy mb-3">2. Document Review</h3>
+              <p className="text-bennett-slate text-sm">
+                We analyze your contracts, communications, and other relevant documents to assess your case.
+              </p>
+            </EnhancedCard>
+
+            <EnhancedCard variant="glass" className="p-8 text-center">
+              <div className="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-green-600" />
+              </div>
+              <h3 className="text-lg font-bold text-bennett-navy mb-3">3. Case Strategy</h3>
+              <p className="text-bennett-slate text-sm">
+                If you have a viable case, we develop a comprehensive legal strategy tailored to your situation.
+              </p>
+            </EnhancedCard>
+          </div>
+        </section>
+
+        <section>
+          <SectionHeader
+            title="Why Choose Bennett Legal"
+            description="Experience, dedication, and proven results"
+            size="md"
+          />
+          
+          <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-12 mt-12">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Our Commitment</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>No upfront costs or hidden fees</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>Specialized expertise in solar fraud</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>Aggressive representation</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <span>Personalized attention to every case</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Our Results</h3>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
+                      <Scale className="h-6 w-6 text-bennett-gold" />
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold">$2.5M+</div>
+                      <div className="text-gray-300 text-sm">Recovered for clients</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
+                      <Users className="h-6 w-6 text-bennett-gold" />
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold">200+</div>
+                      <div className="text-gray-300 text-sm">Successful cases</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </EnhancedCard>
+        </section>
       </div>
     </PageTemplate>
   );
