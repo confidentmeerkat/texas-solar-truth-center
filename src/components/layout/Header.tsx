@@ -41,7 +41,14 @@ const Header = () => {
                   About
                 </Link>
               </li>
-              <li><a href="#" className="text-bennett-slate hover:text-bennett-navy transition-all duration-300 font-medium hover:scale-105">Services</a></li>
+              <li>
+                <Link 
+                  to="/services" 
+                  className="text-bennett-slate hover:text-bennett-navy transition-all duration-300 font-medium hover:scale-105"
+                >
+                  Services
+                </Link>
+              </li>
               <li>
                 <NavigationMenu>
                   <NavigationMenuList>
