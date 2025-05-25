@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -6,6 +5,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Scale, CheckCircle, Phone, Mail, ArrowRight, AlertTriangle, Gavel, FileText, Users, Target, Eye } from 'lucide-react';
 import ContactForm from '@/components/editorial/ContactForm';
+import ServicesFAQ from '@/components/editorial/ServicesFAQ';
+import ProcessOverview from '@/components/editorial/ProcessOverview';
+import RedFlagsChecklist from '@/components/editorial/RedFlagsChecklist';
 
 const Services = () => {
   return (
@@ -110,6 +112,9 @@ const Services = () => {
             </div>
           </section>
 
+          {/* Red Flags Checklist */}
+          <RedFlagsChecklist />
+
           {/* How We Help */}
           <section className="mb-20">
             <div className="bg-gradient-to-r from-bennett-lightBlue to-white p-12 rounded-2xl shadow-lg">
@@ -187,6 +192,9 @@ const Services = () => {
             </div>
           </section>
 
+          {/* Process Overview */}
+          <ProcessOverview />
+
           {/* Types of Cases */}
           <section className="mb-20">
             <div className="text-center mb-12">
@@ -252,6 +260,9 @@ const Services = () => {
               </Card>
             </div>
           </section>
+
+          {/* FAQ Section */}
+          <ServicesFAQ />
 
           {/* Why Choose Bennett Legal */}
           <section className="mb-20">
