@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
@@ -170,9 +169,9 @@ const ReportingFraud = () => {
                       <span className="font-semibold text-green-800">Why choose Bennett Legal?</span>
                     </div>
                     <ul className="text-sm text-green-700 space-y-1">
-                      <li>• Specialized in solar fraud cases</li>
+                      <li>• Specialized in consumer protection law</li>
                       <li>• No upfront costs - contingency fees only</li>
-                      <li>• Proven track record of success</li>
+                      <li>• 50+ years combined experience</li>
                     </ul>
                   </div>
                 </div>

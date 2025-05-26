@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
@@ -15,13 +14,13 @@ const LegalRights = () => {
 
   const heroStats = [
     {
-      value: '95%',
-      label: 'Success Rate in Consumer Cases',
+      value: '50+',
+      label: 'Years Combined Experience',
       icon: <CheckCircle2 className="h-6 w-6 text-emerald-400" />
     },
     {
-      value: '$2.5M+',
-      label: 'Recovered for Clients',
+      value: '$75K',
+      label: 'Average Homeowner Loss',
       icon: <Scale className="h-6 w-6 text-bennett-gold" />
     }
   ];
