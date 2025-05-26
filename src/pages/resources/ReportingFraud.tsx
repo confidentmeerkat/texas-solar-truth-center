@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
@@ -59,7 +60,7 @@ const ReportingFraud = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-red-600" />
-            <span className="font-semibold">(469) 253-7137</span>
+            <span className="font-semibold">(214) 775-6930</span>
           </div>
           <div className="text-sm text-red-700">Available 24/7 for urgent cases</div>
         </div>
@@ -171,7 +172,7 @@ const ReportingFraud = () => {
                     <ul className="text-sm text-green-700 space-y-1">
                       <li>• Specialized in consumer protection law</li>
                       <li>• No upfront costs - contingency fees only</li>
-                      <li>• 50+ years combined experience</li>
+                      <li>• 35+ years combined experience</li>
                     </ul>
                   </div>
                 </div>
@@ -197,7 +198,7 @@ const ReportingFraud = () => {
                       <Phone className="h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
-                      <div className="font-semibold text-lg">(469) 253-7137</div>
+                      <div className="font-semibold text-lg">(214) 775-6930</div>
                       <div className="text-gray-300">Available 24/7 for emergencies</div>
                     </div>
                   </div>
@@ -207,7 +208,7 @@ const ReportingFraud = () => {
                       <Mail className="h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
-                      <div className="font-semibold text-lg">info@bennettlegal.com</div>
+                      <div className="font-semibold text-lg">cbennett@bennettlegal.com</div>
                       <div className="text-gray-300">Email for non-urgent matters</div>
                     </div>
                   </div>

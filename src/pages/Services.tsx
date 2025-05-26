@@ -14,7 +14,7 @@ const Services = () => {
 
   const heroStats = [
     {
-      value: '50+',
+      value: '35+',
       label: 'Years Combined Experience',
       icon: <Scale className="h-6 w-6 text-bennett-gold" />
     },
@@ -59,7 +59,7 @@ const Services = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-green-600" />
-            <span className="font-semibold">(469) 253-7137</span>
+            <span className="font-semibold">(214) 775-6930</span>
           </div>
           <div className="text-sm text-green-700">Call now for immediate help</div>
         </div>
@@ -298,7 +298,7 @@ const Services = () => {
                       <Scale className="h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
-                      <div className="text-2xl font-bold">50+</div>
+                      <div className="text-2xl font-bold">35+</div>
                       <div className="text-gray-300 text-sm">Years Combined Experience</div>
                     </div>
                   </div>

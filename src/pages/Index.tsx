@@ -26,7 +26,7 @@ const Index = () => {
       icon: <TrendingUp className="h-6 w-6 text-red-400" />
     },
     {
-      value: '50+',
+      value: '35+',
       label: 'Years Combined Experience',
       icon: <Award className="h-6 w-6 text-bennett-gold" />
     },
@@ -56,7 +56,7 @@ const Index = () => {
         href: "#consumer-rights"
       }}
       trustBadge={{
-        text: "Over 50 Years Combined Experience",
+        text: "Over 35 Years Combined Experience",
         icon: <Shield className="h-5 w-5 text-bennett-gold" />
       }}
       stats={heroStats}
@@ -77,7 +77,7 @@ const Index = () => {
       <EnhancedCard variant="glass" className="bg-gradient-to-br from-green-50/80 via-blue-50/80 to-green-50/80 p-8 border-2 border-green-200/50">
         <div className="space-y-8">
           <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">50+</div>
+            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">35+</div>
             <div className="text-sm text-green-700 font-semibold">Years Combined Legal Experience</div>
           </div>
           <div className="w-full h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
@@ -89,7 +89,7 @@ const Index = () => {
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-3">
               <Phone className="h-5 w-5 text-bennett-gold" />
-              <span className="font-bold text-bennett-navy">(469) 253-7137</span>
+              <span className="font-bold text-bennett-navy">(214) 775-6930</span>
             </div>
             <div className="text-sm text-bennett-slate">Free Consultation Available</div>
           </div>

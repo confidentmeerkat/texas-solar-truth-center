@@ -14,7 +14,7 @@ const About = () => {
 
   const heroStats = [
     {
-      value: '50+',
+      value: '35+',
       label: 'Years Combined Experience',
       icon: <Award className="h-6 w-6 text-bennett-gold" />
     },
@@ -29,7 +29,7 @@ const About = () => {
     <StandardHero
       title="About Bennett Legal"
       subtitle="Experienced Consumer Protection Attorneys"
-      description="With over 50 years of combined experience, Bennett Legal is dedicated to protecting Texas consumers from solar panel fraud and deceptive business practices through comprehensive legal advocacy."
+      description="With over 35 years of combined experience, Bennett Legal is dedicated to protecting Texas consumers from solar panel fraud and deceptive business practices through comprehensive legal advocacy."
       primaryCTA={{
         text: "Free Consultation",
         href: "#contact"
@@ -59,7 +59,7 @@ const About = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-blue-600" />
-            <span className="font-semibold">(469) 253-7137</span>
+            <span className="font-semibold">(214) 775-6930</span>
           </div>
           <div className="text-sm text-blue-700">Schedule your consultation</div>
         </div>
@@ -153,7 +153,7 @@ const About = () => {
                   <Scale className="h-12 w-12 text-bennett-gold" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Legal Expertise</h3>
-                <p className="text-gray-300">Over 50 years of combined experience in consumer protection law, fraud cases, arbitration, and trial advocacy</p>
+                <p className="text-gray-300">Over 35 years of combined experience in consumer protection law, fraud cases, arbitration, and trial advocacy</p>
               </div>
               
               <div className="text-center">
@@ -188,17 +188,17 @@ const About = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-bennett-gold" />
-                  <span className="font-semibold">(469) 253-7137</span>
+                  <span className="font-semibold">(214) 775-6930</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-bennett-gold" />
-                  <span>info@bennettlegal.com</span>
+                  <span>cbennett@bennettlegal.com</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Scale className="h-5 w-5 text-bennett-gold mt-1" />
                   <div>
-                    <div>12770 Coit Rd Suite 720</div>
-                    <div>Dallas, TX 75251</div>
+                    <div>1409 S. Lamar Street Suite 24</div>
+                    <div>Dallas, TX 75215</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

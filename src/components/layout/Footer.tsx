@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Footer = () => {
@@ -35,15 +36,15 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Contact</h3>
-            <p className="text-gray-300 mb-2">12770 Coit Rd Suite 720</p>
-            <p className="text-gray-300 mb-2">Dallas, TX 75251</p>
-            <p className="text-gray-300 mb-2">Phone: (469) 253-7137</p>
-            <p className="text-gray-300 mb-2">Email: info@bennettlegal.com</p>
+            <p className="text-gray-300 mb-2">1409 S. Lamar Street Suite 24</p>
+            <p className="text-gray-300 mb-2">Dallas, TX 75215</p>
+            <p className="text-gray-300 mb-2">Phone: (214) 775-6930</p>
+            <p className="text-gray-300 mb-2">Email: cbennett@bennettlegal.com</p>
             
             <div className="mt-4 h-48 rounded-lg overflow-hidden">
               <iframe 
                 title="Bennett Legal Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1152053097677!2d-96.77016912393702!3d32.9374935737254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1f31fc47201f%3A0x5a5c0c65771099b1!2s12770%20Coit%20Rd%20Suite%20720%2C%20Dallas%2C%20TX%2075251!5e0!3m2!1sen!2sus!4v1715709135170!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.2775948!2d-96.8044!3d32.7471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e99de08d4e8a7%3A0x5e4c0c65771099b1!2s1409%20S%20Lamar%20St%20Suite%2024%2C%20Dallas%2C%20TX%2075215!5e0!3m2!1sen!2sus!4v1715709135170!5m2!1sen!2sus"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
