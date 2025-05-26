@@ -25,11 +25,11 @@ const LawyerExpertiseCTA = () => {
           </div>
           
           <div className="space-y-6">
-            <h2 className="text-4xl lg:text-5xl font-bold leading-tight font-serif">
+            <h2 className="text-white text-4xl lg:text-5xl font-bold leading-tight font-serif">
               Work with Experienced Consumer Protection Attorneys
             </h2>
             
-            <p className="text-white text-xl text-gray-200 leading-relaxed">
+            <p className="text-xl text-gray-200 leading-relaxed">
               Bennett Legal has over 35 years of combined experience with fraud cases, arbitration, trial advocacy, and consumer protection law. Our team is dedicated to protecting Texas consumers from emerging industry scams. No upfront costs—you only pay if we achieve a successful outcome.
             </p>
           </div>
