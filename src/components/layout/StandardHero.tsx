@@ -151,7 +151,7 @@ const StandardHero: React.FC<StandardHeroProps> = ({
                       "font-semibold px-12 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1",
                       variant === 'minimal'
                         ? "border-2 border-bennett-navy text-bennett-navy hover:bg-bennett-navy hover:text-white"
-                        : "border-2 border-white/40 text-white bg-white hover:bg-white/15 hover:text-white hover:border-white/60 backdrop-blur-sm"
+                        : "border-2 border-white/40 text-bennett-navy bg-white hover:text-white hover:bg-white/15 hover:text-white hover:border-white/60 backdrop-blur-sm"
                     )}
                     onClick={secondaryCTA.onClick}
                   >
