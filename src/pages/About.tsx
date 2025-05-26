@@ -152,7 +152,7 @@ const About = () => {
                 <div className="w-24 h-24 bg-bennett-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Scale className="h-12 w-12 text-bennett-gold" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Legal Expertise</h3>
+                <h3 className="text-white text-xl font-bold mb-2">Legal Expertise</h3>
                 <p className="text-gray-300">Over 35 years of combined experience in consumer protection law, fraud cases, arbitration, and trial advocacy</p>
               </div>
               
@@ -160,7 +160,7 @@ const About = () => {
                 <div className="w-24 h-24 bg-bennett-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-12 w-12 text-bennett-gold" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Client Focus</h3>
+                <h3 className="text-white text-xl font-bold mb-2">Client Focus</h3>
                 <p className="text-gray-300">Dedicated to achieving the best possible outcomes through comprehensive legal advocacy and multiple claim strategies</p>
               </div>
               
@@ -168,7 +168,7 @@ const About = () => {
                 <div className="w-24 h-24 bg-bennett-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-12 w-12 text-bennett-gold" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Proven Results</h3>
+                <h3 className="text-white text-xl font-bold mb-2">Proven Results</h3>
                 <p className="text-gray-300">Extensive experience with litigation, arbitration, and trial advocacy in consumer protection matters</p>
               </div>
             </div>
