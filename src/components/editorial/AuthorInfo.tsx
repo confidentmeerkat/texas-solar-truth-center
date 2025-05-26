@@ -17,7 +17,7 @@ const AuthorInfo = () => {
           <p className="text-sm text-bennett-slate mb-3">Consumer Protection Attorney</p>
         </div>
         <p className="text-sm text-bennett-slate">
-          Charles Bennett is the founding attorney of Bennett Legal with over 20 years of experience in consumer protection law. He has successfully represented hundreds of clients in cases involving deceptive business practices, with a special focus on renewable energy fraud cases in Texas. Charles is a graduate of the University of Texas School of Law and is committed to protecting the rights of Texas consumers against predatory practices.
+          Charles Bennett and Richard Faulkner have over 50 years of combined experience in consumer protection law and litigation. The Bennett Legal team has extensive experience with fraud cases, arbitration, and trial advocacy. Charles is a graduate of the University of Texas School of Law and is committed to protecting the rights of Texas consumers against predatory business practices in emerging industries like solar energy.
         </p>
       </div>
     </div>

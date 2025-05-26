@@ -26,19 +26,19 @@ const Index = () => {
       icon: <TrendingUp className="h-6 w-6 text-red-400" />
     },
     {
-      value: '$2.5M+',
-      label: 'Recovered for Clients',
-      icon: <CheckCircle2 className="h-6 w-6 text-green-400" />
-    },
-    {
-      value: '200+',
-      label: 'Families Protected',
-      icon: <Users className="h-6 w-6 text-blue-400" />
-    },
-    {
       value: '50+',
-      label: 'Years Experience',
+      label: 'Years Combined Experience',
       icon: <Award className="h-6 w-6 text-bennett-gold" />
+    },
+    {
+      value: '$75K',
+      label: 'Average Consumer Loss',
+      icon: <AlertTriangle className="h-6 w-6 text-red-400" />
+    },
+    {
+      value: '24/7',
+      label: 'Emergency Legal Support',
+      icon: <Shield className="h-6 w-6 text-blue-400" />
     }
   ];
 
@@ -56,7 +56,7 @@ const Index = () => {
         href: "#consumer-rights"
       }}
       trustBadge={{
-        text: "Trusted by 200+ Texas Families",
+        text: "Over 50 Years Combined Experience",
         icon: <Shield className="h-5 w-5 text-bennett-gold" />
       }}
       stats={heroStats}
@@ -77,19 +77,19 @@ const Index = () => {
       <EnhancedCard variant="glass" className="bg-gradient-to-br from-green-50/80 via-blue-50/80 to-green-50/80 p-8 border-2 border-green-200/50">
         <div className="space-y-8">
           <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">200+</div>
-            <div className="text-sm text-green-700 font-semibold">Clients Successfully Represented</div>
+            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">50+</div>
+            <div className="text-sm text-green-700 font-semibold">Years Combined Legal Experience</div>
           </div>
           <div className="w-full h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
           <div className="text-center">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">$60K+</div>
-            <div className="text-sm text-blue-700 font-semibold">Average Case Recovery</div>
+            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">$75K</div>
+            <div className="text-sm text-blue-700 font-semibold">Average Homeowner Loss</div>
           </div>
           <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-3">
               <Phone className="h-5 w-5 text-bennett-gold" />
-              <span className="font-bold text-bennett-navy">(469) 253-7137</span>
+              <span className="font-bold text-bennett-navy">(214) 295-2008</span>
             </div>
             <div className="text-sm text-bennett-slate">Free Consultation Available</div>
           </div>
@@ -111,7 +111,7 @@ const Index = () => {
         <div className="mb-20">
           <div className="prose prose-xl max-w-none">
             <p className="text-2xl md:text-3xl text-bennett-slate mb-12 leading-relaxed font-light bg-gradient-to-r from-bennett-slate via-gray-600 to-bennett-slate bg-clip-text text-transparent">
-              As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. At Bennett Legal, we're dedicated to helping victims of solar fraud understand their rights and pursue justice.
+              As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. At Bennett Legal, we're dedicated to helping victims of solar fraud understand their rights and pursue justice through multiple legal avenues.
             </p>
           </div>
           

@@ -19,8 +19,8 @@ const About = () => {
       icon: <Award className="h-6 w-6 text-bennett-gold" />
     },
     {
-      value: '200+',
-      label: 'Successful Cases',
+      value: 'Proven',
+      label: 'Track Record',
       icon: <Users className="h-6 w-6 text-green-400" />
     }
   ];
@@ -29,7 +29,7 @@ const About = () => {
     <StandardHero
       title="About Bennett Legal"
       subtitle="Experienced Consumer Protection Attorneys"
-      description="With over 50 years of combined experience, Bennett Legal is dedicated to protecting Texas consumers from solar panel fraud and deceptive business practices."
+      description="With over 50 years of combined experience, Bennett Legal is dedicated to protecting Texas consumers from solar panel fraud and deceptive business practices through comprehensive legal advocacy."
       primaryCTA={{
         text: "Free Consultation",
         href: "#contact"
@@ -54,12 +54,12 @@ const About = () => {
           <h3 className="text-xl font-bold text-blue-900">Legal Expertise</h3>
         </div>
         <p className="text-blue-800 mb-4">
-          Experienced in consumer protection law, fraud cases, and Texas regulations.
+          Experienced in consumer protection law, fraud cases, arbitration, trials, and Texas regulations.
         </p>
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-blue-600" />
-            <span className="font-semibold">(469) 253-7137</span>
+            <span className="font-semibold">(214) 295-2008</span>
           </div>
           <div className="text-sm text-blue-700">Schedule your consultation</div>
         </div>
@@ -83,6 +83,10 @@ const About = () => {
           <li className="flex items-center gap-2">
             <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
             <span className="text-sm">Contract Disputes</span>
+          </li>
+          <li className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-bennett-gold" />
+            <span className="text-sm">Litigation & Arbitration</span>
           </li>
         </ul>
       </EnhancedCard>
@@ -113,7 +117,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-bold text-bennett-navy mb-3">Consumer Protection</h3>
                   <p className="text-bennett-slate">
-                    We fight for homeowners who have been victimized by solar panel scams, helping them recover damages and hold fraudulent companies accountable.
+                    We fight for homeowners who have been victimized by solar panel scams, helping them understand their legal options and pursue various claims for recovery under multiple consumer protection laws.
                   </p>
                 </div>
               </div>
@@ -127,7 +131,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-bold text-bennett-navy mb-3">Legal Excellence</h3>
                   <p className="text-bennett-slate">
-                    Our team combines decades of experience in consumer law with a deep understanding of the solar industry and its common deceptive practices.
+                    Our team combines decades of experience in consumer law, litigation, arbitration, and trial advocacy with a deep understanding of emerging industry practices and their potential for consumer harm.
                   </p>
                 </div>
               </div>
@@ -138,7 +142,7 @@ const About = () => {
         <section>
           <SectionHeader
             title="Our Team"
-            description="Experienced attorneys dedicated to consumer protection"
+            description="Experienced attorneys dedicated to consumer protection and litigation"
             size="md"
           />
           
@@ -149,7 +153,7 @@ const About = () => {
                   <Scale className="h-12 w-12 text-bennett-gold" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Legal Expertise</h3>
-                <p className="text-gray-300">Over 50 years of combined experience in consumer protection law</p>
+                <p className="text-gray-300">Over 50 years of combined experience in consumer protection law, fraud cases, arbitration, and trial advocacy</p>
               </div>
               
               <div className="text-center">
@@ -157,7 +161,7 @@ const About = () => {
                   <Users className="h-12 w-12 text-bennett-gold" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Client Focus</h3>
-                <p className="text-gray-300">Dedicated to achieving the best possible outcomes for our clients</p>
+                <p className="text-gray-300">Dedicated to achieving the best possible outcomes through comprehensive legal advocacy and multiple claim strategies</p>
               </div>
               
               <div className="text-center">
@@ -165,7 +169,7 @@ const About = () => {
                   <Award className="h-12 w-12 text-bennett-gold" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Proven Results</h3>
-                <p className="text-gray-300">Successfully recovered millions for solar fraud victims</p>
+                <p className="text-gray-300">Extensive experience with litigation, arbitration, and trial advocacy in consumer protection matters</p>
               </div>
             </div>
           </EnhancedCard>
@@ -184,7 +188,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-bennett-gold" />
-                  <span className="font-semibold">(469) 253-7137</span>
+                  <span className="font-semibold">(214) 295-2008</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-bennett-gold" />
@@ -199,7 +203,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="h-5 w-5 text-bennett-gold" />
-                  <span>Available 24/7 for urgent cases</span>
+                  <span>Available for urgent consumer protection matters</span>
                 </div>
               </div>
             </EnhancedCard>
@@ -217,11 +221,11 @@ const About = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500" />
-                  <span>Specialized in solar fraud cases</span>
+                  <span>Extensive litigation and arbitration experience</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500" />
-                  <span>Proven track record of success</span>
+                  <span>Multiple legal claim strategies</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500" />

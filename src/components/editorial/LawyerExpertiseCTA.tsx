@@ -26,11 +26,11 @@ const LawyerExpertiseCTA = () => {
           
           <div className="space-y-6">
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight font-serif">
-              Work with Experienced Solar Fraud Attorneys
+              Work with Experienced Consumer Protection Attorneys
             </h2>
             
             <p className="text-xl text-gray-200 leading-relaxed">
-              Bennett Legal has more than 50 years of combined experience with fraud cases, arbitration, trial, and consumer protection. We've successfully represented over 200 solar fraud victims in Texas. No upfront costs—you only pay if you win.
+              Bennett Legal has over 50 years of combined experience with fraud cases, arbitration, trial advocacy, and consumer protection law. Our team is dedicated to protecting Texas consumers from emerging industry scams. No upfront costs—you only pay if we achieve a successful outcome.
             </p>
           </div>
           
@@ -38,20 +38,20 @@ const LawyerExpertiseCTA = () => {
           <div className="grid grid-cols-2 gap-6">
             <div className="flex items-center gap-3">
               <div className="p-3 bg-bennett-gold/20 rounded-xl">
-                <Users className="h-6 w-6 text-bennett-gold" />
+                <Award className="h-6 w-6 text-bennett-gold" />
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">200+</div>
-                <div className="text-sm text-gray-300">Clients Represented</div>
+                <div className="text-3xl font-bold text-white">50+</div>
+                <div className="text-sm text-gray-300">Years Combined Experience</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <div className="p-3 bg-bennett-gold/20 rounded-xl">
-                <Award className="h-6 w-6 text-bennett-gold" />
+                <Users className="h-6 w-6 text-bennett-gold" />
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">$60K+</div>
-                <div className="text-sm text-gray-300">Average Recovery</div>
+                <div className="text-3xl font-bold text-white">$75K</div>
+                <div className="text-sm text-gray-300">Average Consumer Loss</div>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const LawyerExpertiseCTA = () => {
             <Button 
               size="lg"
               className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg"
-              onClick={() => window.location.href = '/reporting-seeking-help'}
+              onClick={() => window.location.href = '#contact'}
             >
               Schedule Free Consultation
             </Button>
@@ -80,14 +80,14 @@ const LawyerExpertiseCTA = () => {
                     Time-Sensitive Alert
                   </h3>
                   <p className="text-bennett-slate leading-relaxed">
-                    The Texas Deceptive Trade Practices Act has a strict 2-year statute of limitations. Don't delay—call today to check if your case is eligible.
+                    Texas consumer protection laws including the Deceptive Trade Practices Act have strict time limitations. Other legal claims may also apply. Don't delay—call today to check if your case is eligible.
                   </p>
                 </div>
               </div>
               
               <div className="bg-gradient-to-r from-bennett-gold/10 to-bennett-gold/5 p-6 rounded-xl border-l-4 border-bennett-gold">
                 <p className="text-sm font-medium text-bennett-navy">
-                  <strong>Free Case Evaluation:</strong> No obligation consultation to review your solar contract and determine if you have a valid fraud claim.
+                  <strong>Free Case Evaluation:</strong> No obligation consultation to review your solar contract and determine if you have valid legal claims under multiple consumer protection laws.
                 </p>
               </div>
             </div>

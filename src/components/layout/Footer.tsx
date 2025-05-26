@@ -38,7 +38,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4 text-white">Contact</h3>
             <p className="text-gray-300 mb-2">12770 Coit Rd Suite 720</p>
             <p className="text-gray-300 mb-2">Dallas, TX 75251</p>
-            <p className="text-gray-300 mb-2">Phone: (469) 253-7137</p>
+            <p className="text-gray-300 mb-2">Phone: (214) 295-2008</p>
             <p className="text-gray-300 mb-2">Email: info@bennettlegal.com</p>
             
             <div className="mt-4 h-48 rounded-lg overflow-hidden">
@@ -57,10 +57,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-bennett-gold transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-bennett-gold transition-colors">Practice Areas</a></li>
+              <li><a href="/about" className="hover:text-bennett-gold transition-colors">About Us</a></li>
+              <li><a href="/services" className="hover:text-bennett-gold transition-colors">Practice Areas</a></li>
               <li><a href="#" className="hover:text-bennett-gold transition-colors">Client Resources</a></li>
-              <li><a href="#" className="hover:text-bennett-gold transition-colors">Free Consultation</a></li>
+              <li><a href="#contact" className="hover:text-bennett-gold transition-colors">Free Consultation</a></li>
               <li><a href="#" className="hover:text-bennett-gold transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
