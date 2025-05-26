@@ -90,8 +90,8 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <Button className="bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50">
-            <Phone className="mr-2 h-4 w-4" /> (214) 775-6930
+          <Button className="bg-bennett-navy hover:bg-5897-navy/90 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50">
+            <Phone className="mr-2 h-4 w-4" /> (214) 473-6930
           </Button>
         </div>
         
@@ -186,7 +186,7 @@ const Header = () => {
               </li>
               <li className="px-4 pt-4">
                 <Button className="w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold py-3 rounded-xl">
-                  <Phone className="mr-2 h-4 w-4" /> (214) 775-6930
+                  <Phone className="mr-2 h-4 w-4" /> (214) 473-5897
                 </Button>
               </li>
             </ul>
