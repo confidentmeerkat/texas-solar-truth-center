@@ -45,7 +45,7 @@ const StandardHero: React.FC<StandardHeroProps> = ({
   const bgClass = {
     default: 'bg-gradient-to-br from-bennett-navy via-slate-900 to-bennett-navy/90',
     minimal: 'bg-gradient-to-br from-gray-50 via-white to-gray-50',
-    gradient: 'bg-gradient-to-br from-bennett-navy via-purple-900 to-bennett-navy'
+    gradient: 'bg-gradient-to-br from-bennett-navy via-blue-900 to-bennett-navy'
   };
 
   const textColor = variant === 'minimal' ? 'text-bennett-navy' : 'text-white';
