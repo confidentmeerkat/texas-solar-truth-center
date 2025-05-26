@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -38,7 +37,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4 text-white">Contact</h3>
             <p className="text-gray-300 mb-2">12770 Coit Rd Suite 720</p>
             <p className="text-gray-300 mb-2">Dallas, TX 75251</p>
-            <p className="text-gray-300 mb-2">Phone: (214) 295-2008</p>
+            <p className="text-gray-300 mb-2">Phone: (469) 253-7137</p>
             <p className="text-gray-300 mb-2">Email: info@bennettlegal.com</p>
             
             <div className="mt-4 h-48 rounded-lg overflow-hidden">

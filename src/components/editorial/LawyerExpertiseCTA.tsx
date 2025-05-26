@@ -80,14 +80,14 @@ const LawyerExpertiseCTA = () => {
                     Time-Sensitive Alert
                   </h3>
                   <p className="text-bennett-slate leading-relaxed">
-                    Texas consumer protection laws including the Deceptive Trade Practices Act have strict time limitations. Other legal claims may also apply. Don't delay—call today to check if your case is eligible.
+                    Texas consumer protection laws including the Deceptive Trade Practices Act and other applicable laws have strict time limitations. Don't delay—call today to check if your case is eligible for multiple legal claims.
                   </p>
                 </div>
               </div>
               
               <div className="bg-gradient-to-r from-bennett-gold/10 to-bennett-gold/5 p-6 rounded-xl border-l-4 border-bennett-gold">
                 <p className="text-sm font-medium text-bennett-navy">
-                  <strong>Free Case Evaluation:</strong> No obligation consultation to review your solar contract and determine if you have valid legal claims under multiple consumer protection laws.
+                  <strong>Free Case Evaluation:</strong> No obligation consultation to review your solar contract and determine if you have valid legal claims under multiple consumer protection laws including DTPA, breach of contract, and other applicable statutes.
                 </p>
               </div>
             </div>

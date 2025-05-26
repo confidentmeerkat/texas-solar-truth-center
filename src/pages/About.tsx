@@ -59,7 +59,7 @@ const About = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-blue-600" />
-            <span className="font-semibold">(214) 295-2008</span>
+            <span className="font-semibold">(469) 253-7137</span>
           </div>
           <div className="text-sm text-blue-700">Schedule your consultation</div>
         </div>
@@ -188,7 +188,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-bennett-gold" />
-                  <span className="font-semibold">(214) 295-2008</span>
+                  <span className="font-semibold">(469) 253-7137</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-bennett-gold" />

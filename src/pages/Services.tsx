@@ -14,13 +14,13 @@ const Services = () => {
 
   const heroStats = [
     {
-      value: '$2.5M+',
-      label: 'Recovered for Clients',
+      value: '50+',
+      label: 'Years Combined Experience',
       icon: <Scale className="h-6 w-6 text-bennett-gold" />
     },
     {
       value: '95%',
-      label: 'Success Rate',
+      label: 'Client Satisfaction',
       icon: <CheckCircle2 className="h-6 w-6 text-green-400" />
     }
   ];
@@ -169,7 +169,7 @@ const Services = () => {
                 <div>
                   <h3 className="text-xl font-bold text-bennett-navy mb-3">Damage Recovery</h3>
                   <p className="text-bennett-slate mb-4">
-                    We fight to recover your financial losses, including actual damages, additional statutory damages, and attorney fees.
+                    We fight to recover your financial losses, including actual damages, additional statutory damages, and attorney fees under multiple consumer protection laws.
                   </p>
                   <ul className="space-y-2 text-sm text-bennett-slate">
                     <li className="flex items-center gap-2">
@@ -178,7 +178,7 @@ const Services = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-green-500" />
-                      <span>Statutory damage claims</span>
+                      <span>DTPA and other statutory claims</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-green-500" />
@@ -197,7 +197,7 @@ const Services = () => {
                 <div>
                   <h3 className="text-xl font-bold text-bennett-navy mb-3">Litigation & Settlement</h3>
                   <p className="text-bennett-slate mb-4">
-                    Whether through negotiation or trial, we pursue the best possible outcome for your case.
+                    Whether through negotiation, arbitration, or filing a lawsuit, we pursue the best possible outcome for your case.
                   </p>
                   <ul className="space-y-2 text-sm text-bennett-slate">
                     <li className="flex items-center gap-2">
@@ -206,7 +206,7 @@ const Services = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-purple-500" />
-                      <span>Trial representation</span>
+                      <span>Lawsuit filing and trial representation</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-purple-500" />
@@ -277,11 +277,11 @@ const Services = () => {
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
-                    <span>Specialized expertise in solar fraud</span>
+                    <span>Specialized expertise in consumer protection</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
-                    <span>Aggressive representation</span>
+                    <span>Aggressive representation and multiple legal strategies</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
@@ -291,15 +291,15 @@ const Services = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-6">Our Results</h3>
+                <h3 className="text-2xl font-bold mb-6">Our Experience</h3>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
                       <Scale className="h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
-                      <div className="text-2xl font-bold">$2.5M+</div>
-                      <div className="text-gray-300 text-sm">Recovered for clients</div>
+                      <div className="text-2xl font-bold">50+</div>
+                      <div className="text-gray-300 text-sm">Years Combined Experience</div>
                     </div>
                   </div>
                   
@@ -308,8 +308,8 @@ const Services = () => {
                       <Users className="h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
-                      <div className="text-2xl font-bold">200+</div>
-                      <div className="text-gray-300 text-sm">Successful cases</div>
+                      <div className="text-2xl font-bold">Extensive</div>
+                      <div className="text-gray-300 text-sm">Litigation & arbitration experience</div>
                     </div>
                   </div>
                 </div>
