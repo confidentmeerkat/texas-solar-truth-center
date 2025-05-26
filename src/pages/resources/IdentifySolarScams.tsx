@@ -46,7 +46,7 @@ const IdentifySolarScams = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-red-600" />
-            <span className="font-semibold">(469) 253-7137</span>
+            <span className="font-semibold">(214) 473-5897</span>
           </div>
           <div className="text-sm text-red-700">Available 24/7 for emergencies</div>
         </div>

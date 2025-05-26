@@ -59,7 +59,7 @@ const LegalRights = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-blue-600" />
-            <span className="font-semibold">(469) 253-7137</span>
+            <span className="font-semibold">(214) 473-5897</span>
           </div>
           <div className="text-sm text-blue-700">Free consultation available</div>
         </div>

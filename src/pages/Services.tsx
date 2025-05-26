@@ -59,7 +59,7 @@ const Services = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-green-600" />
-            <span className="font-semibold">(214) 775-6930</span>
+            <span className="font-semibold">(214) 473-5897</span>
           </div>
           <div className="text-sm text-green-700">Call now for immediate help</div>
         </div>
