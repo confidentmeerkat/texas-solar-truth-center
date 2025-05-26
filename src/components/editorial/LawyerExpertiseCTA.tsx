@@ -29,7 +29,7 @@ const LawyerExpertiseCTA = () => {
               Work with Experienced Consumer Protection Attorneys
             </h2>
             
-            <p className="text-xl text-gray-200 leading-relaxed">
+            <p className="text-white text-xl text-gray-200 leading-relaxed">
               Bennett Legal has over 35 years of combined experience with fraud cases, arbitration, trial advocacy, and consumer protection law. Our team is dedicated to protecting Texas consumers from emerging industry scams. No upfront costs—you only pay if we achieve a successful outcome.
             </p>
           </div>
