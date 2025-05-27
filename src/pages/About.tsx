@@ -125,11 +125,13 @@ const About = () => {
 
             <EnhancedCard variant="elevated" className="p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                  <Scale className="h-6 w-6 text-blue-600" />
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                    <Scale className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Legal Excellence</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Legal Excellence</h3>
                   <p className="text-bennett-slate">
                     Our team combines decades of experience in consumer law, litigation, arbitration, and trial advocacy with a deep understanding of emerging industry practices and their potential for consumer harm.
                   </p>
