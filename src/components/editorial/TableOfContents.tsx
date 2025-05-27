@@ -7,7 +7,7 @@ const TableOfContents = () => {
   return (
     <aside className="bg-bennett-lightBlue p-6 rounded-lg mb-8">
       <h3 className="text-lg font-semibold mb-4 text-bennett-navy">In This Article</h3>
-      <ul className="space-y-3">
+      <ul className="space-y-3 [&_li>a]:items-start">
         <li>
           <a href="#growing-problem" className="text-bennett-navy hover:text-bennett-gold transition-colors flex items-center">
             <span className="mr-2">•</span>
