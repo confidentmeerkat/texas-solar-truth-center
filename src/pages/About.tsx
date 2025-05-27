@@ -110,7 +110,7 @@ const About = () => {
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-start gap-4">
                 <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
                   <Shield className="h-6 w-6 text-bennett-gold" />
                 </div>
@@ -124,7 +124,7 @@ const About = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-start gap-4">
                 <div className="flex flex-row gap-2 items-center">
                   <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
                     <Scale className="h-6 w-6 text-blue-600" />
