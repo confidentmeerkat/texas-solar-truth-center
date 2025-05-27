@@ -198,7 +198,7 @@ const Services = () => {
 
             <EnhancedCard variant="elevated" className="p-8">
               <div className="flex flex-col items-start gap-4">
-                <div>
+                <div className="flex flex-row gap-2 items-center">
                   <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
                     <Gavel className="h-6 w-6 text-purple-600" />
                   </div>
