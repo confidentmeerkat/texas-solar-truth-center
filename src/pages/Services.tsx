@@ -51,7 +51,7 @@ const Services = () => {
       <EnhancedCard variant="glass" className="bg-green-50/80 border-green-200 p-8">
         <div className="flex items-center gap-3 mb-6">
           <CheckCircle2 className="h-8 w-8 text-green-600" />
-          <h3 className="text-xl font-bold text-green-900">No Win, No Fee</h3>
+          <h3 className="text-xl font-bold text-green-900 !m-0">No Win, No Fee</h3>
         </div>
         <p className="text-green-800 mb-4">
           You don't pay unless we win your case. Free consultation and case evaluation.
@@ -111,7 +111,7 @@ const Services = () => {
                   <FileText className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Contract Review & Analysis</h3>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Contract Review & Analysis</h3>
                   <p className="text-bennett-slate mb-4">
                     We thoroughly review solar contracts to identify deceptive terms, hidden fees, and potential fraud indicators.
                   </p>
@@ -135,11 +135,14 @@ const Services = () => {
 
             <EnhancedCard variant="elevated" className="p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                  <AlertTriangle className="h-6 w-6 text-red-600" />
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                    <AlertTriangle className="h-6 w-6 text-red-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Fraud Investigation</h3>
                 </div>
+                
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Fraud Investigation</h3>
                   <p className="text-bennett-slate mb-4">
                     Our team investigates solar companies to uncover fraudulent practices and build strong cases for our clients.
                   </p>
@@ -163,11 +166,13 @@ const Services = () => {
 
             <EnhancedCard variant="elevated" className="p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
-                  <Scale className="h-6 w-6 text-green-600" />
+                <div className="flex flex-row gap-2">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+                    <Scale className="h-6 w-6 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Damage Recovery</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Damage Recovery</h3>
                   <p className="text-bennett-slate mb-4">
                     We fight to recover your financial losses, including actual damages, additional statutory damages, and attorney fees under multiple consumer protection laws.
                   </p>
@@ -191,11 +196,13 @@ const Services = () => {
 
             <EnhancedCard variant="elevated" className="p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                  <Gavel className="h-6 w-6 text-purple-600" />
+                <div>
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                    <Gavel className="h-6 w-6 text-purple-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Litigation & Settlement</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Litigation & Settlement</h3>
                   <p className="text-bennett-slate mb-4">
                     Whether through negotiation, arbitration, or filing a lawsuit, we pursue the best possible outcome for your case.
                   </p>
