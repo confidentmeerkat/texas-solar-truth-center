@@ -77,7 +77,7 @@ const LawyerExpertiseCTA = () => {
                     <div className="p-3 bg-red-100 rounded-xl flex-shrink-0">
                       <Clock className="h-8 w-8 text-red-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-bennett-navy mb-2 font-serif">
+                    <h3 className="text-2xl font-bold text-bennett-navy !mt-0 font-serif">
                       Time-Sensitive Alert
                     </h3>
                   </div>
