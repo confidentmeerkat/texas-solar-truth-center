@@ -19,6 +19,7 @@ const CallToAction = () => {
           <Button 
             size="lg" 
             className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-medium w-full md:w-auto"
+            onClick={() => window.location.href = '/services'}
           >
             Schedule Free Consultation <Clock className="ml-2 h-4 w-4" />
           </Button>
@@ -27,6 +28,7 @@ const CallToAction = () => {
             variant="outline" 
             size="lg" 
             className="border-white text-bennett-navy hover:text-white hover:bg-white/10 w-full md:w-auto"
+            onClick={() => window.location.href = 'tel:(214)473-5897'}
           >
             <Phone className="mr-2 h-4 w-4" /> Call (214) 473-5897
           </Button>

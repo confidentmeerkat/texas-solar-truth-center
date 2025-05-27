@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Video, MessageSquare, ArrowRight, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ShareYourStoryCTA = () => {
   return (
@@ -35,20 +36,22 @@ const ShareYourStoryCTA = () => {
       </p>
       
       <div className="flex flex-col sm:flex-row gap-4">
-        <Button 
-          className="bg-bennett-navy hover:bg-bennett-navy/90 text-white"
-          onClick={() => window.location.href = '/reporting-seeking-help'}
-        >
-          <Video className="mr-2 h-4 w-4" /> Submit Your Video
-        </Button>
+        <Link to="/reporting-seeking-help">
+          <Button 
+            className="bg-bennett-navy hover:bg-bennett-navy/90 text-white w-full sm:w-auto"
+          >
+            <Video className="mr-2 h-4 w-4" /> Submit Your Video
+          </Button>
+        </Link>
         
-        <Button 
-          variant="outline" 
-          className="border-bennett-navy text-bennett-navy hover:bg-bennett-navy/10"
-          onClick={() => window.location.href = '/reporting-seeking-help'}
-        >
-          <MessageSquare className="mr-2 h-4 w-4" /> Share Your Written Story
-        </Button>
+        <Link to="/reporting-seeking-help">
+          <Button 
+            variant="outline" 
+            className="border-bennett-navy text-bennett-navy hover:bg-bennett-navy/10 w-full sm:w-auto"
+          >
+            <MessageSquare className="mr-2 h-4 w-4" /> Share Your Written Story
+          </Button>
+        </Link>
       </div>
     </section>
   );

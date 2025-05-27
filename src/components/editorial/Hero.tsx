@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { AlertTriangle, ArrowRight, Shield, Star, CheckCircle2, Award, Users, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -70,25 +71,29 @@ const Hero = () => {
               
               {/* Enhanced CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-6 pt-4">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group relative overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <span className="relative z-10 flex items-center">
-                    Get Free Case Review 
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Button>
+                <Link to="/services">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group relative overflow-hidden w-full sm:w-auto"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <span className="relative z-10 flex items-center">
+                      Get Free Case Review 
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Button>
+                </Link>
                 
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-2 border-white/40 text-white hover:bg-white/15 hover:text-white hover:border-white/60 font-semibold px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1"
-                >
-                  Learn Your Rights
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <Link to="/legal-rights-protections">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="border-2 border-white/40 text-white hover:bg-white/15 hover:text-white hover:border-white/60 font-semibold px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:-translate-y-1 w-full sm:w-auto"
+                  >
+                    Learn Your Rights
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
               </div>
             </div>
             
