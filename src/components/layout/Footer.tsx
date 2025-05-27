@@ -65,7 +65,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-200">
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center !text-gray-200">
           <p>&copy; {new Date().getFullYear()} Bennett Legal. All rights reserved.</p>
         </div>
       </div>
