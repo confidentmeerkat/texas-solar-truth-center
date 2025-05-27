@@ -106,12 +106,14 @@ const Services = () => {
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                  <FileText className="h-6 w-6 text-blue-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                    <FileText className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Contract Review & Analysis</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Contract Review & Analysis</h3>
                   <p className="text-bennett-slate mb-4">
                     We thoroughly review solar contracts to identify deceptive terms, hidden fees, and potential fraud indicators.
                   </p>
@@ -134,7 +136,7 @@ const Services = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-start gap-4">
                 <div className="flex flex-row gap-2 items-center">
                   <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
                     <AlertTriangle className="h-6 w-6 text-red-600" />
@@ -165,7 +167,7 @@ const Services = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-start gap-4">
                 <div className="flex flex-row gap-2">
                   <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
                     <Scale className="h-6 w-6 text-green-600" />
@@ -195,7 +197,7 @@ const Services = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-start gap-4">
                 <div>
                   <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
                     <Gavel className="h-6 w-6 text-purple-600" />
