@@ -111,11 +111,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <EnhancedCard variant="elevated" className="p-8">
               <div className="flex flex-col items-start gap-4">
-                <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
-                  <Shield className="h-6 w-6 text-bennett-gold" />
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-bennett-gold" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Consumer Protection</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Consumer Protection</h3>
                   <p className="text-bennett-slate">
                     We fight for homeowners who have been victimized by solar panel scams, helping them understand their legal options and pursue various claims for recovery under multiple consumer protection laws.
                   </p>
@@ -129,7 +131,7 @@ const About = () => {
                   <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
                     <Scale className="h-6 w-6 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Legal Excellence</h3>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Legal Excellence</h3>
                 </div>
                 <div>
                   <p className="text-bennett-slate">
