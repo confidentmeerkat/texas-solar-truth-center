@@ -51,7 +51,7 @@ const About = () => {
       <EnhancedCard variant="glass" className="bg-blue-50/80 border-blue-200 p-8">
         <div className="flex items-center gap-3 mb-6">
           <Scale className="h-8 w-8 text-blue-600" />
-          <h3 className="text-xl font-bold text-blue-900">Legal Expertise</h3>
+          <h3 className="text-xl font-bold text-blue-900 !m-0">Legal Expertise</h3>
         </div>
         <p className="text-blue-800 mb-4">
           Experienced in consumer protection law, fraud cases, arbitration, trials, and Texas regulations.
