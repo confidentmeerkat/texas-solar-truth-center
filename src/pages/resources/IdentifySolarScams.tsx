@@ -108,7 +108,7 @@ const IdentifySolarScams = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-start gap-4">
                 <div className="flex flex-row gap-2 items-center">
                   <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
                     <FileText className="h-6 w-6 text-orange-600" />
@@ -191,7 +191,7 @@ const IdentifySolarScams = () => {
                 <h3 className="text-white text-2xl font-bold mb-6">Immediate Actions</h3>
                 <ol className="space-y-4">
                   <li className="flex gap-4">
-                    <span className="min-w-[32px]!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">1</span>
+                    <span className="min-w-[32px] !w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">1</span>
                     <span>Document everything - contracts, communications, receipts</span>
                   </li>
                   <li className="flex gap-4">
