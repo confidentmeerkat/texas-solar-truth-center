@@ -52,7 +52,7 @@ const ReportingFraud = () => {
       <EnhancedCard variant="glass" className="bg-red-50/80 border-red-200 p-8">
         <div className="flex items-center gap-3 mb-6">
           <AlertTriangle className="h-8 w-8 text-red-600" />
-          <h3 className="text-xl font-bold text-red-900">Emergency Help</h3>
+          <h3 className="text-xl font-bold text-red-900 !m-0">Emergency Help</h3>
         </div>
         <p className="text-red-800 mb-4">
           If you're under pressure to sign or have already been victimized, contact us immediately.
@@ -191,7 +191,7 @@ const ReportingFraud = () => {
           <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-12 mt-12">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Contact Methods</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Contact Methods</h3>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
@@ -216,7 +216,7 @@ const ReportingFraud = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-6">What to Expect</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">What to Expect</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
