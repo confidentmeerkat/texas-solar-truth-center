@@ -73,11 +73,11 @@ const LawyerExpertiseCTA = () => {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="flex flex-col">
-                  <div className="flex flex-row items-center">
+                  <div className="flex flex-row items-center gap-2 mb-2">
                     <div className="p-3 bg-red-100 rounded-xl flex-shrink-0">
                       <Clock className="h-8 w-8 text-red-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-bennett-navy !mt-0 font-serif">
+                    <h3 className="text-2xl font-bold text-bennett-navy !m-0 font-serif">
                       Time-Sensitive Alert
                     </h3>
                   </div>
