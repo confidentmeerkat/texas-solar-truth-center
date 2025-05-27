@@ -38,7 +38,7 @@ const IdentifySolarScams = () => {
       <EnhancedCard variant="glass" className="bg-red-50/80 border-red-200 p-8">
         <div className="flex items-center gap-3 mb-6">
           <AlertTriangle className="h-8 w-8 text-red-600" />
-          <h3 className="text-xl font-bold text-red-900">Immediate Help</h3>
+          <h3 className="text-xl font-bold text-red-900 !m-0">Immediate Help</h3>
         </div>
         <p className="text-red-800 mb-4">
           If you believe you're a victim of solar fraud, don't wait. Contact us immediately for a free consultation.
@@ -46,7 +46,7 @@ const IdentifySolarScams = () => {
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Phone className="h-4 w-4 text-red-600" />
-            <span className="font-semibold">(214) 473-5897</span>
+            <span className="font-semibold">(214) 473-7137</span>
           </div>
           <div className="text-sm text-red-700">Available 24/7 for emergencies</div>
         </div>
@@ -81,12 +81,14 @@ const IdentifySolarScams = () => {
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                  <AlertTriangle className="h-6 w-6 text-red-600" />
+              <div className="flex items-start flex-col gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                    <AlertTriangle className="h-6 w-6 text-red-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">High-Pressure Sales Tactics</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">High-Pressure Sales Tactics</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-red-500" />
@@ -107,11 +109,13 @@ const IdentifySolarScams = () => {
 
             <EnhancedCard variant="elevated" className="p-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
-                  <FileText className="h-6 w-6 text-orange-600" />
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
+                    <FileText className="h-6 w-6 text-orange-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Misleading Claims</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Misleading Claims</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-orange-500" />
@@ -184,25 +188,25 @@ const IdentifySolarScams = () => {
           <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-12 mt-12">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Immediate Actions</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Immediate Actions</h3>
                 <ol className="space-y-4">
                   <li className="flex gap-4">
-                    <span className="w-8 h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">1</span>
+                    <span className="!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">1</span>
                     <span>Document everything - contracts, communications, receipts</span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="w-8 h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">2</span>
+                    <span className="!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">2</span>
                     <span>Stop all payments if possible</span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="w-8 h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">3</span>
+                    <span className="!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">3</span>
                     <span>Contact Bennett Legal for immediate consultation</span>
                   </li>
                 </ol>
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-6">Legal Options</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Legal Options</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />

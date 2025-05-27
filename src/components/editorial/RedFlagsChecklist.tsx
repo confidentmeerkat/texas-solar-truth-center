@@ -31,7 +31,7 @@ const RedFlagsChecklist = () => {
         <CardContent className="p-8">
           <div className="flex items-center gap-3 mb-6">
             <AlertTriangle className="h-8 w-8 text-red-500" />
-            <h3 className="text-2xl font-bold text-bennett-navy">Warning Signs to Watch For</h3>
+            <h3 className="text-2xl font-bold text-bennett-navy !m-0">Warning Signs to Watch For</h3>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
