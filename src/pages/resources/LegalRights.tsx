@@ -219,7 +219,7 @@ const LegalRights = () => {
               </div>
               
               <div>
-                <h3 className="text white text-2xl font-bold mb-6">Other Remedies</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Other Remedies</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
