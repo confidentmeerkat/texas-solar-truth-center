@@ -51,7 +51,7 @@ const LegalRights = () => {
       <EnhancedCard variant="glass" className="bg-blue-50/80 border-blue-200 p-8">
         <div className="flex items-center gap-3 mb-6">
           <Shield className="h-8 w-8 text-blue-600" />
-          <h3 className="text-xl font-bold text-blue-900">Legal Protection</h3>
+          <h3 className="text-xl font-bold text-blue-900 !m-0">Legal Protection</h3>
         </div>
         <p className="text-blue-800 mb-4">
           Texas has strong consumer protection laws. Understanding your rights is the first step to getting justice.
@@ -94,12 +94,14 @@ const LegalRights = () => {
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                  <AlertTriangle className="h-6 w-6 text-red-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                    <AlertTriangle className="h-6 w-6 text-red-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Prohibited Practices</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Prohibited Practices</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-red-500" />
@@ -119,12 +121,14 @@ const LegalRights = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
-                  <Shield className="h-6 w-6 text-green-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Consumer Rights</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Consumer Rights</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-green-500" />
@@ -193,7 +197,7 @@ const LegalRights = () => {
           <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-12 mt-12">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Monetary Recovery</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Monetary Recovery</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
@@ -215,7 +219,7 @@ const LegalRights = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-6">Other Remedies</h3>
+                <h3 className="text white text-2xl font-bold mb-6">Other Remedies</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
