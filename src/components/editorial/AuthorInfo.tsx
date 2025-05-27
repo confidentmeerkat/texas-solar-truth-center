@@ -13,7 +13,7 @@ const AuthorInfo = () => {
       </div>
       <div>
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold mb-1">Charles Bennett, Esq.</h3>
+          <h3 className="text-lg font-semibold mb-1 mt-1">Charles Bennett, Esq.</h3>
           <p className="text-sm text-bennett-slate mb-3">Consumer Protection Attorney</p>
         </div>
         <p className="text-sm text-bennett-slate">
