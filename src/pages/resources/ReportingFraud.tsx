@@ -107,12 +107,14 @@ const ReportingFraud = () => {
           
           <div className="mt-12 space-y-8">
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                  <FileText className="h-6 w-6 text-blue-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                    <FileText className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Step 1: Document Everything</h3>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Step 1: Document Everything</h3>
                   <ul className="space-y-2 text-bennett-slate mb-4">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-3 w-3 text-blue-500" />
@@ -132,12 +134,14 @@ const ReportingFraud = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
-                  <AlertTriangle className="h-6 w-6 text-orange-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
+                    <AlertTriangle className="h-6 w-6 text-orange-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Step 2: Report to Authorities</h3>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Step 2: Report to Authorities</h3>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <h4 className="font-semibold text-bennett-navy mb-2">Texas Attorney General</h4>
@@ -155,12 +159,14 @@ const ReportingFraud = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
-                  <Users className="h-6 w-6 text-green-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+                    <Users className="h-6 w-6 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Step 3: Seek Legal Help</h3>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Step 3: Seek Legal Help</h3>
                   <p className="text-bennett-slate mb-4">
                     Contact Bennett Legal for a free consultation to understand your options and potential for recovery.
                   </p>
