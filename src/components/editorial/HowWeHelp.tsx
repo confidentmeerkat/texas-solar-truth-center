@@ -76,7 +76,7 @@ const HowWeHelp = () => {
         
         <div className="bg-bennett-navy text-white p-6 rounded-lg my-8">
           <h3 className="text-white mt-0 mb-4">Our Commitment to You</h3>
-          <ul className="space-y-3 text-gray-100">
+          <ul className="space-y-3 !text-gray-100">
             <li className="flex items-start">
               <svg className="h-6 w-6 text-bennett-gold mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

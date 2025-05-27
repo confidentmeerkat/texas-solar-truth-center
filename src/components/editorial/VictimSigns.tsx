@@ -92,7 +92,7 @@ const VictimSigns = () => {
           <p className="italic mb-4">
             Ask yourself these questions to determine if you might be a victim of solar panel fraud:
           </p>
-          <ul className="space-y-2">
+          <ul className="space-y-2 list-none">
             <li>□ Were the financial benefits of your solar system clearly explained and documented?</li>
             <li>□ Did your utility bills decrease as promised after installation?</li>
             <li>□ Is your solar system producing the amount of electricity you were promised?</li>
