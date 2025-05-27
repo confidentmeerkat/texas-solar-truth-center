@@ -26,7 +26,7 @@ const CallToAction = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-white text-white hover:bg-white/10 w-full md:w-auto"
+            className="border-white text-bennett-navy hover:text-white hover:bg-white/10 w-full md:w-auto"
           >
             <Phone className="mr-2 h-4 w-4" /> Call (214) 473-5897
           </Button>
