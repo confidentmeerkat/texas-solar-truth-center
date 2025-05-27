@@ -191,15 +191,15 @@ const IdentifySolarScams = () => {
                 <h3 className="text-white text-2xl font-bold mb-6">Immediate Actions</h3>
                 <ol className="space-y-4">
                   <li className="flex gap-4">
-                    <span className="!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">1</span>
+                    <span className="min-w-[32px]!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">1</span>
                     <span>Document everything - contracts, communications, receipts</span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">2</span>
+                    <span className="min-w-[32px] !w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">2</span>
                     <span>Stop all payments if possible</span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="!w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">3</span>
+                    <span className="min-w-[32px] !w-8 !h-8 bg-bennett-gold rounded-full flex items-center justify-center text-bennett-navy font-bold text-sm">3</span>
                     <span>Contact Bennett Legal for immediate consultation</span>
                   </li>
                 </ol>
