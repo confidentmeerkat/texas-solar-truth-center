@@ -5,7 +5,7 @@ import { Video, MessageSquare, ArrowRight, Youtube } from 'lucide-react';
 
 const ShareYourStoryCTA = () => {
   return (
-    <section className="bg-bennett-lightGold p-6 rounded-lg my-12">
+    <section className="bg-bennett-lightGold p-6 rounded-lg">
       <div className="mb-6 border-b border-bennett-gold pb-4">
         <div className="flex items-center gap-2 mb-3">
           <Youtube className="text-bennett-navy h-5 w-5" />

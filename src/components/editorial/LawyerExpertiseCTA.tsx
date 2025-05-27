@@ -5,7 +5,7 @@ import { Phone, Clock, Shield, Award, Users } from 'lucide-react';
 
 const LawyerExpertiseCTA = () => {
   return (
-    <section className="relative bg-gradient-to-br from-bennett-navy via-slate-800 to-bennett-navy rounded-3xl my-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-bennett-navy via-slate-800 to-bennett-navy rounded-3xl overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
