@@ -72,13 +72,15 @@ const LawyerExpertiseCTA = () => {
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 p-8 w-full">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-red-100 rounded-xl flex-shrink-0">
-                  <Clock className="h-8 w-8 text-red-600" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-bennett-navy mb-2 font-serif">
-                    Time-Sensitive Alert
-                  </h3>
+                <div className="flex flex-col">
+                  <div className="flex flex-row items-center">
+                    <div className="p-3 bg-red-100 rounded-xl flex-shrink-0">
+                      <Clock className="h-8 w-8 text-red-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-bennett-navy mb-2 font-serif">
+                      Time-Sensitive Alert
+                    </h3>
+                  </div>
                   <p className="text-bennett-slate leading-relaxed">
                     Texas consumer protection laws including the Deceptive Trade Practices Act and other applicable laws have strict time limitations. Don't delay—call today to check if your case is eligible for multiple legal claims.
                   </p>
