@@ -51,7 +51,7 @@ const PreventionGuide = () => {
       <EnhancedCard variant="glass" className="bg-green-50/80 border-green-200 p-8">
         <div className="flex items-center gap-3 mb-6">
           <Shield className="h-8 w-8 text-green-600" />
-          <h3 className="text-xl font-bold text-green-900">Stay Protected</h3>
+          <h3 className="text-xl font-bold text-green-900 !m-0">Stay Protected</h3>
         </div>
         <p className="text-green-800 mb-4">
           Follow our prevention guidelines to avoid becoming a victim of solar fraud.
@@ -106,12 +106,14 @@ const PreventionGuide = () => {
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                  <AlertTriangle className="h-6 w-6 text-red-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                    <AlertTriangle className="h-6 w-6 text-red-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">High-Pressure Sales Tactics</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">High-Pressure Sales Tactics</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <AlertTriangle className="h-3 w-3 text-red-500" />
@@ -135,12 +137,14 @@ const PreventionGuide = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
-                  <Eye className="h-6 w-6 text-orange-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
+                    <Eye className="h-6 w-6 text-orange-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Too-Good-to-Be-True Offers</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Too-Good-to-Be-True Offers</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <AlertTriangle className="h-3 w-3 text-orange-500" />
@@ -164,12 +168,14 @@ const PreventionGuide = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center">
-                  <FileText className="h-6 w-6 text-yellow-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center">
+                    <FileText className="h-6 w-6 text-yellow-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Documentation Issues</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Documentation Issues</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <AlertTriangle className="h-3 w-3 text-yellow-500" />
@@ -193,12 +199,14 @@ const PreventionGuide = () => {
             </EnhancedCard>
 
             <EnhancedCard variant="elevated" className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                  <Users className="h-6 w-6 text-purple-600" />
+              <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-row gap-2 items-center">
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+                    <Users className="h-6 w-6 text-purple-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Company Credibility Issues</h3>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Company Credibility Issues</h3>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
                       <AlertTriangle className="h-3 w-3 text-purple-500" />
@@ -233,7 +241,7 @@ const PreventionGuide = () => {
           <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-12 mt-12">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Before Signing</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Before Signing</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
@@ -259,7 +267,7 @@ const PreventionGuide = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-6">Contract Review</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Contract Review</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
