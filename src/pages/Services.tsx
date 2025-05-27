@@ -278,7 +278,7 @@ const Services = () => {
           <EnhancedCard variant="gradient" className="bg-gradient-to-br from-bennett-navy to-slate-800 text-white p-12 mt-12">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Our Commitment</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Our Commitment</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
@@ -300,7 +300,7 @@ const Services = () => {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold mb-6">Our Experience</h3>
+                <h3 className="text-white text-2xl font-bold mb-6">Our Experience</h3>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
