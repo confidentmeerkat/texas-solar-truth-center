@@ -164,7 +164,7 @@ const ReportingFraud = () => {
                   <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
                     <Users className="h-6 w-6 text-green-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-bennett-navy mb-3">Step 3: Seek Legal Help</h3>
+                  <h3 className="text-xl font-bold text-bennett-navy !m-0">Step 3: Seek Legal Help</h3>
                 </div>
                 <div className="flex-1">
                   <p className="text-bennett-slate mb-4">
