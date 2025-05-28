@@ -157,7 +157,7 @@ const About = () => {
                   <Scale className="h-12 w-12 text-bennett-gold" />
                 </div>
                 <h3 className="text-white text-xl font-bold mb-2">Legal Expertise</h3>
-                <p className="text-gray-300">Over 35 years of combined experience in consumer protection law, fraud cases, arbitration, and trial advocacy</p>
+                <p className="text-gray-300">Over 50 years of combined experience in consumer protection law, fraud cases, arbitration, and trial advocacy</p>
               </div>
               
               <div className="text-center">

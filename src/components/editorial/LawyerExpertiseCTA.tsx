@@ -31,7 +31,7 @@ const LawyerExpertiseCTA = () => {
             </h2>
             
             <p className="text-xl text-gray-200 leading-relaxed">
-              Bennett Legal has over 35 years of combined experience with fraud cases, arbitration, trial advocacy, and consumer protection law. Our team is dedicated to protecting Texas consumers from emerging industry scams. No upfront costs—you only pay if we achieve a successful outcome.
+              Bennett Legal has over 50 years of combined experience with fraud cases, arbitration, trial advocacy, and consumer protection law. Our team is dedicated to protecting Texas consumers from emerging industry scams. No upfront costs—you only pay if we achieve a successful outcome.
             </p>
           </div>
           
@@ -42,7 +42,7 @@ const LawyerExpertiseCTA = () => {
                 <Award className="h-6 w-6 text-bennett-gold" />
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">35+</div>
+                <div className="text-3xl font-bold text-white">50+</div>
                 <div className="text-sm text-gray-300">Years Combined Experience</div>
               </div>
             </div>

@@ -178,7 +178,7 @@ const ReportingFraud = () => {
                     <ul className="text-sm text-green-700 space-y-1">
                       <li>• Specialized in consumer protection law</li>
                       <li>• No upfront costs - contingency fees only</li>
-                      <li>• 35+ years combined experience</li>
+                      <li>• 50+ years combined experience</li>
                     </ul>
                   </div>
                 </div>
