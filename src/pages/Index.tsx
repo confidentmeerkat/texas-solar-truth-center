@@ -26,7 +26,7 @@ const Index = () => {
       icon: <TrendingUp className="h-6 w-6 text-red-400" />
     },
     {
-      value: '35+',
+      value: '50+',
       label: 'Years Combined Experience',
       icon: <Award className="h-6 w-6 text-bennett-gold" />
     },
@@ -77,7 +77,7 @@ const Index = () => {
       <EnhancedCard variant="glass" className="bg-gradient-to-br from-green-50/80 via-blue-50/80 to-green-50/80 p-8 border-2 border-green-200/50">
         <div className="space-y-8">
           <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">35+</div>
+            <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">50+</div>
             <div className="text-sm text-green-700 font-semibold">Years Combined Legal Experience</div>
           </div>
           <div className="w-full h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
