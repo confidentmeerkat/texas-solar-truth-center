@@ -191,22 +191,22 @@ const About = () => {
               <h3 className="text-xl font-bold text-bennett-navy mb-6">Office Information</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-bennett-gold" />
+                  <Phone className="min-w-5 h-5 w-5 text-bennett-gold" />
                   <span className="font-semibold">(214) 473-5897</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-bennett-gold" />
+                  <Mail className="min-w-5 h-5 w-5 text-bennett-gold" />
                   <span>cbennett@bennettlegal.com</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Scale className="h-5 w-5 text-bennett-gold mt-1" />
+                  <Scale className="min-w-5 h-5 w-5 text-bennett-gold mt-1" />
                   <div>
                     <div>1409 S. Lamar Street Suite 24</div>
                     <div>Dallas, TX 75215</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock className="h-5 w-5 text-bennett-gold" />
+                  <Clock className="min-w-5 h-5 w-5 text-bennett-gold" />
                   <span>Available for urgent consumer protection matters</span>
                 </div>
               </div>
@@ -216,23 +216,23 @@ const About = () => {
               <h3 className="text-xl font-bold text-bennett-navy mb-6">Why Choose Us</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <CheckCircle2 className="min-w-5 h-5 w-5 text-green-500" />
                   <span>No upfront costs - contingency fees only</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <CheckCircle2 className="min-w-5 h-5 w-5 text-green-500" />
                   <span>Free initial consultation</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <CheckCircle2 className="min-w-5 h-5 w-5 text-green-500" />
                   <span>Extensive litigation and arbitration experience</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <CheckCircle2 className="min-w-5 h-5 w-5 text-green-500" />
                   <span>Multiple legal claim strategies</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <CheckCircle2 className="min-w-5 h-5 w-5 text-green-500" />
                   <span>Personalized attention to every case</span>
                 </li>
               </ul>

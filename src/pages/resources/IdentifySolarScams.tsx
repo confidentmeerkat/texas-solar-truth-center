@@ -91,15 +91,15 @@ const IdentifySolarScams = () => {
                 <div>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-red-500" />
                       <span>"Sign today or lose this deal"</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-red-500" />
                       <span>Unsolicited door-to-door visits</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-red-500" />
                       <span>Refusing to leave detailed information</span>
                     </li>
                   </ul>
@@ -118,15 +118,15 @@ const IdentifySolarScams = () => {
                 <div>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-orange-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-orange-500" />
                       <span>"Free" solar panels (they're never free)</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-orange-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-orange-500" />
                       <span>Guaranteed energy savings</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-orange-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-orange-500" />
                       <span>Government rebate misrepresentation</span>
                     </li>
                   </ul>

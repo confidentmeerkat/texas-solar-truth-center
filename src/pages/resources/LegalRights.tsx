@@ -104,15 +104,15 @@ const LegalRights = () => {
                 <div>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-red-500" />
                       <span>False or misleading statements</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-red-500" />
                       <span>Unconscionable actions</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-red-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-red-500" />
                       <span>Failure to disclose material facts</span>
                     </li>
                   </ul>
@@ -131,15 +131,15 @@ const LegalRights = () => {
                 <div>
                   <ul className="space-y-2 text-bennett-slate">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-green-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-green-500" />
                       <span>Right to honest dealings</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-green-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-green-500" />
                       <span>Protection from deception</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 className="h-3 w-3 text-green-500" />
+                      <CheckCircle2 className="min-w-3 h-3 w-3 text-green-500" />
                       <span>Right to legal remedies</span>
                     </li>
                   </ul>
@@ -200,19 +200,19 @@ const LegalRights = () => {
                 <h3 className="text-white text-2xl font-bold mb-6">Monetary Recovery</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Actual economic damages</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Additional damages up to $1,000</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Treble damages for knowing violations</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Attorney fees and court costs</span>
                   </li>
                 </ul>
@@ -222,19 +222,19 @@ const LegalRights = () => {
                 <h3 className="text-white text-2xl font-bold mb-6">Other Remedies</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Contract cancellation</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Restitution of payments</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Injunctive relief</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Mental anguish damages</span>
                   </li>
                 </ul>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -7,6 +6,7 @@ import ReadingProgress from '@/components/ui/reading-progress';
 import SectionHeader from '@/components/ui/section-header';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import { cn } from '@/lib/utils';
+import { Button } from '../ui/button';
 
 interface PageTemplateProps {
   children: React.ReactNode;
@@ -32,24 +32,24 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
   breadcrumbs
 }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
+    <div className='min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50'>
       {showReadingProgress && <ReadingProgress />}
       <Header />
-      
+
       {heroSection}
-      
-      <main className={cn("container mx-auto px-4 py-24", className)}>
-        <div className="max-w-7xl mx-auto">
+
+      <main className={cn('container mx-auto px-4 py-24', className)}>
+        <div className='max-w-7xl mx-auto'>
           {/* Breadcrumbs */}
           {breadcrumbs && (
-            <nav className="mb-8" aria-label="Breadcrumb">
-              <ol className="flex items-center space-x-2 text-sm text-bennett-slate">
+            <nav className='mb-8' aria-label='Breadcrumb'>
+              <ol className='flex items-center space-x-2 text-sm text-bennett-slate'>
                 {breadcrumbs.map((crumb, index) => (
-                  <li key={index} className="flex items-center">
-                    {index > 0 && <span className="mx-2 text-gray-400">/</span>}
-                    <a 
-                      href={crumb.href} 
-                      className="hover:text-bennett-navy transition-colors"
+                  <li key={index} className='flex items-center'>
+                    {index > 0 && <span className='mx-2 text-gray-400'>/</span>}
+                    <a
+                      href={crumb.href}
+                      className='hover:text-bennett-navy transition-colors'
                     >
                       {crumb.label}
                     </a>
@@ -61,35 +61,62 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 
           {/* Page Header */}
           {pageTitle && (
-            <div className="mb-16">
+            <div className='mb-16'>
               <SectionHeader
                 title={pageTitle}
                 subtitle={pageSubtitle}
                 description={pageDescription}
-                size="lg"
-                accent="gold"
+                size='lg'
+                accent='gold'
               />
             </div>
           )}
 
           {/* Content Layout */}
-          <div className={cn(
-            "grid gap-16",
-            sidebarContent ? "grid-cols-1 lg:grid-cols-3" : "grid-cols-1"
-          )}>
+          <div
+            className={cn(
+              'grid gap-16',
+              sidebarContent ? 'grid-cols-1 lg:grid-cols-3' : 'grid-cols-1'
+            )}
+          >
             {/* Main Content */}
-            <div className={cn(
-              sidebarContent ? "lg:col-span-2" : "col-span-1"
-            )}>
-              <div className="max-w-5xl">
-                {children}
-              </div>
+            <div
+              className={cn(sidebarContent ? 'lg:col-span-2' : 'col-span-1')}
+            >
+              <div className='max-w-5xl'>{children}</div>
             </div>
-            
+
             {/* Sidebar */}
             {sidebarContent && (
-              <div className="lg:col-span-1">
-                <div className="sticky top-24 space-y-8">
+              <div className='lg:col-span-1'>
+                <div className='sticky top-24 space-y-8'>
+                  <EnhancedCard
+                    variant='glass'
+                    className='bg-blue-100/80 border-blue-200 p-8'
+                  >
+                    <div className='space-y-6'>
+                      <div className='space-y-2'>
+                        <h3 className='text-xl font-bold my-2'>
+                          <span className='text-3xl text-red-600 italic'>
+                            Scammed?
+                          </span>
+                        </h3>
+                        <p className='font-medium'>
+                          Recover an Average of{' '}
+                          <span className='text-green-600 font-bold'>
+                            $65,000
+                          </span>
+                        </p>
+                        <p className='text-bennett-navy font-bold'>
+                          Pay $0 Until We Win
+                        </p>
+                      </div>
+                      <Button className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'>
+                        Book Your Free Call
+                      </Button>
+                    </div>
+                  </EnhancedCard>
+
                   {sidebarContent}
                 </div>
               </div>
@@ -97,7 +124,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
           </div>
         </div>
       </main>
-      
+
       <Footer />
       <ScrollToTop />
     </div>

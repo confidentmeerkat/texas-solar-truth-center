@@ -114,21 +114,21 @@ const PreventionGuide = () => {
                   <h3 className="text-xl font-bold text-bennett-navy !m-0">High-Pressure Sales Tactics</h3>
                 </div>
                 <div>
-                  <ul className="space-y-2 text-bennett-slate">
+                  <ul className="space-y-2 text-bennett-slate [&_li]:items-start">
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-red-500" />
-                      <span>"Sign today or lose this deal forever"</span>
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-red-500" />
+                      <span>Sign today or lose this deal forever</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-red-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-red-500" />
                       <span>Refusing to leave your property</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-red-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-red-500" />
                       <span>Demanding immediate payment</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-red-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-red-500" />
                       <span>Door-to-door sales with urgent offers</span>
                     </li>
                   </ul>
@@ -145,21 +145,21 @@ const PreventionGuide = () => {
                   <h3 className="text-xl font-bold text-bennett-navy !m-0">Too-Good-to-Be-True Offers</h3>
                 </div>
                 <div>
-                  <ul className="space-y-2 text-bennett-slate">
+                  <ul className="space-y-2 text-bennett-slate [&_li]:items-start">
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-orange-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-orange-500" />
                       <span>"Free" solar panel installations</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-orange-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-orange-500" />
                       <span>Guaranteed 90% savings claims</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-orange-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-orange-500" />
                       <span>No-money-down promotions</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-orange-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-orange-500" />
                       <span>Prices significantly below market rate</span>
                     </li>
                   </ul>
@@ -176,21 +176,21 @@ const PreventionGuide = () => {
                   <h3 className="text-xl font-bold text-bennett-navy !m-0">Documentation Issues</h3>
                 </div>
                 <div>
-                  <ul className="space-y-2 text-bennett-slate">
+                  <ul className="space-y-2 text-bennett-slate [&_li]:items-start">
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-yellow-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-yellow-500" />
                       <span>Incomplete or missing contracts</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-yellow-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-yellow-500" />
                       <span>Refusal to provide written estimates</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-yellow-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-yellow-500" />
                       <span>Vague or confusing contract terms</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-yellow-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-yellow-500" />
                       <span>No proper licensing information</span>
                     </li>
                   </ul>
@@ -207,21 +207,21 @@ const PreventionGuide = () => {
                   <h3 className="text-xl font-bold text-bennett-navy !m-0">Company Credibility Issues</h3>
                 </div>
                 <div>
-                  <ul className="space-y-2 text-bennett-slate">
+                  <ul className="space-y-2 text-bennett-slate [&_li]:items-start">
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-purple-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-purple-500" />
                       <span>No physical business address</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-purple-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-purple-500" />
                       <span>Unlicensed or uninsured contractors</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-purple-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-purple-500" />
                       <span>No verifiable customer references</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <AlertTriangle className="h-3 w-3 text-purple-500" />
+                      <AlertTriangle className="min-w-3 mt-1.5 h-3 w-3 text-purple-500" />
                       <span>Poor Better Business Bureau rating</span>
                     </li>
                   </ul>

@@ -200,8 +200,8 @@ const ReportingFraud = () => {
                 <h3 className="text-white text-2xl font-bold mb-6">Contact Methods</h3>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
-                      <Phone className="h-6 w-6 text-bennett-gold" />
+                    <div className="min-w-12 w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
+                      <Phone className="min-w-6 h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
                       <div className="font-semibold text-lg">(214) 473-5897</div>
@@ -210,8 +210,8 @@ const ReportingFraud = () => {
                   </div>
                   
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
-                      <Mail className="h-6 w-6 text-bennett-gold" />
+                    <div className="min-w-12 w-12 h-12 bg-bennett-gold/20 rounded-xl flex items-center justify-center">
+                      <Mail className="min-w-6 h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
                       <div className="font-semibold text-lg">cbennett@bennettlegal.com</div>
@@ -225,19 +225,19 @@ const ReportingFraud = () => {
                 <h3 className="text-white text-2xl font-bold mb-6">What to Expect</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Free initial consultation</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Case evaluation within 24 hours</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>Clear explanation of your options</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-bennett-gold" />
+                    <CheckCircle2 className="min-w-5 h-5 w-5 text-bennett-gold" />
                     <span>No-pressure consultation</span>
                   </li>
                 </ul>
