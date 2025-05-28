@@ -14,7 +14,7 @@ const Services = () => {
 
   const heroStats = [
     {
-      value: '35+',
+      value: '50+',
       label: 'Years Combined Experience',
       icon: <Scale className="h-6 w-6 text-bennett-gold" />
     },
@@ -307,7 +307,7 @@ const Services = () => {
                       <Scale className="h-6 w-6 text-bennett-gold" />
                     </div>
                     <div>
-                      <div className="text-2xl font-bold">35+</div>
+                      <div className="text-2xl font-bold">50+</div>
                       <div className="text-gray-300 text-sm">Years Combined Experience</div>
                     </div>
                   </div>
