@@ -14,7 +14,7 @@ const About = () => {
 
   const heroStats = [
     {
-      value: '35+',
+      value: '50+',
       label: 'Years Combined Experience',
       icon: <Award className="h-6 w-6 text-bennett-gold" />
     },
@@ -29,7 +29,7 @@ const About = () => {
     <StandardHero
       title="About Bennett Legal"
       subtitle="Experienced Consumer Protection Attorneys"
-      description="With over 35 years of combined experience, Bennett Legal is dedicated to protecting Texas consumers from solar panel fraud and deceptive business practices through comprehensive legal advocacy."
+      description="With over 50 years of combined experience, Bennett Legal is dedicated to protecting Texas consumers from solar panel fraud and deceptive business practices through comprehensive legal advocacy."
       primaryCTA={{
         text: "Free Consultation",
         href: "#contact"
