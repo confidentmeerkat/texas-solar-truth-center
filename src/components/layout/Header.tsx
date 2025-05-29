@@ -1,8 +1,8 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Phone, ChevronDown, Scale, Menu, X } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -90,8 +90,17 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <Button className="bg-bennett-navy hover:bg-navy/90 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50">
-            <Phone className="mr-2 h-4 w-4" /> (214) 473-5897
+          <Button 
+            asChild
+            className="bg-bennett-navy hover:bg-navy/90 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50 flex items-center gap-2"
+          >
+            <a href="tel:2144735897">
+              <Avatar className="w-6 h-6 bg-bennett-navy">
+                <AvatarImage src="/lovable-uploads/b9eed837-d3e3-4439-9e6d-a416f2c12d78.png" alt="Charles Bennett" />
+                <AvatarFallback className="text-xs text-white font-serif">CB</AvatarFallback>
+              </Avatar>
+              <Phone className="h-4 w-4" /> (214) 473-5897
+            </a>
           </Button>
         </div>
         
@@ -185,8 +194,12 @@ const Header = () => {
                 </a>
               </li>
               <li className="px-4 pt-4">
-                <Button className="w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold py-3 rounded-xl">
-                  <Phone className="mr-2 h-4 w-4" /> (214) 473-5897
+                <Button className="w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2">
+                  <Avatar className="w-6 h-6 bg-bennett-navy">
+                    <AvatarImage src="/lovable-uploads/b9eed837-d3e3-4439-9e6d-a416f2c12d78.png" alt="Charles Bennett" />
+                    <AvatarFallback className="text-xs text-white font-serif">CB</AvatarFallback>
+                  </Avatar>
+                  <Phone className="h-4 w-4" /> (214) 473-5897
                 </Button>
               </li>
             </ul>

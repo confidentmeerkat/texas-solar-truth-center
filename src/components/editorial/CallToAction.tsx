@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock, ArrowRight } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const CallToAction = () => {
   return (
@@ -27,10 +27,14 @@ const CallToAction = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-white text-bennett-navy hover:text-white hover:bg-white/10 w-full md:w-auto"
+            className="border-white text-bennett-navy hover:text-white hover:bg-white/10 w-full md:w-auto flex items-center gap-2"
             onClick={() => window.location.href = 'tel:(214)473-5897'}
           >
-            <Phone className="mr-2 h-4 w-4" /> Call (214) 473-5897
+            <Avatar className="w-6 h-6 bg-bennett-navy">
+              <AvatarImage src="/lovable-uploads/b9eed837-d3e3-4439-9e6d-a416f2c12d78.png" alt="Charles Bennett" />
+              <AvatarFallback className="text-xs text-white font-serif">CB</AvatarFallback>
+            </Avatar>
+            <Phone className="h-4 w-4" /> Call (214) 473-5897
           </Button>
         </div>
         
