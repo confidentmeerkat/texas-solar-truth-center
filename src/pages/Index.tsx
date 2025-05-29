@@ -56,7 +56,7 @@ const Index = () => {
         href: "#consumer-rights"
       }}
       trustBadge={{
-        text: "Over 35 Years Combined Experience",
+        text: "Over 50 Years Combined Experience",
         icon: <Shield className="h-5 w-5 text-bennett-gold" />
       }}
       stats={heroStats}

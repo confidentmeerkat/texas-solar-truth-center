@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ScrollToTop from '@/components/ui/scroll-to-top';
@@ -6,6 +6,8 @@ import ReadingProgress from '@/components/ui/reading-progress';
 import SectionHeader from '@/components/ui/section-header';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import { cn } from '@/lib/utils';
+import { getCalApi } from '@calcom/embed-react';
+
 import { Button } from '../ui/button';
 
 interface PageTemplateProps {
@@ -31,6 +33,13 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
   pageDescription,
   breadcrumbs
 }) => {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: '15min' });
+      cal('ui', { hideEventTypeDetails: false, layout: 'month_view' });
+    })();
+  }, []);
+
   return (
     <div className='min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50'>
       {showReadingProgress && <ReadingProgress />}
@@ -111,7 +120,12 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                           Pay $0 Until We Win
                         </p>
                       </div>
-                      <Button className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'>
+                      <Button
+                        data-cal-namespace='15min'
+                        data-cal-link='confident-meerkat-emc5uw/15min'
+                        data-cal-config='{"layout":"month_view"}'
+                        className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'
+                      >
                         Book Your Free Call
                       </Button>
                     </div>
