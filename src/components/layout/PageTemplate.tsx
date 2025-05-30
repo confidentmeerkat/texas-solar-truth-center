@@ -111,7 +111,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                           </span>
                         </h3>
                         <p className='font-medium'>
-                          Recover an Average of{' '}
+                          Average Loan Size of{' '}
                           <span className='text-green-600 font-bold'>
                             $65,000
                           </span>

@@ -17,11 +17,6 @@ const About = () => {
       value: '50+',
       label: 'Years Combined Experience',
       icon: <Award className="h-6 w-6 text-bennett-gold" />
-    },
-    {
-      value: 'Proven',
-      label: 'Track Record',
-      icon: <Users className="h-6 w-6 text-green-400" />
     }
   ];
 
