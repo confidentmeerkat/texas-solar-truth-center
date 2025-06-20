@@ -35,7 +35,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 }) => {
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi({ namespace: '15min' });
+      const cal = await getCalApi({ namespace: 'client-interviews' });
       cal('ui', { hideEventTypeDetails: false, layout: 'month_view' });
     })();
   }, []);
