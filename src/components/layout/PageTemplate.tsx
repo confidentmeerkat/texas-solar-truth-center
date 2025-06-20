@@ -122,7 +122,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                       </div>
                       <Button
                         data-cal-namespace='15min'
-                        data-cal-link='confident-meerkat-emc5uw/15min'
+                        data-cal-link='ana/client-interviews'
                         data-cal-config='{"layout":"month_view"}'
                         className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'
                       >
