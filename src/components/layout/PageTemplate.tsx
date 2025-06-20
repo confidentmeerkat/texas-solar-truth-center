@@ -35,8 +35,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 }) => {
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi('https://calcom.arbitrationconsulting.com/embed/embed.js');
-      cal('init', 'client-interviews', {origin: 'https://calcom.arbitrationconsulting.com'})
+      const cal = await getCalApi({ namespace: '15min' });
       cal('ui', { hideEventTypeDetails: false, layout: 'month_view' });
     })();
   }, []);
@@ -122,8 +121,8 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                         </p>
                       </div>
                       <Button
-                        data-cal-namespace='client-interviews'
-                        data-cal-link='ana/client-interviews'
+                        data-cal-namespace='15min'
+                        data-cal-link='confident-meerkat-emc5uw/15min'
                         data-cal-config='{"layout":"month_view"}'
                         className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'
                       >
