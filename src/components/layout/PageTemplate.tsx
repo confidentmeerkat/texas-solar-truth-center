@@ -35,7 +35,8 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 }) => {
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi({ namespace: 'client-interviews' });
+      const cal = await getCalApi();
+      cal('init', 'client-interviews', {origin: 'https://calcom.arbitrationconsulting.com'})
       cal('ui', { hideEventTypeDetails: false, layout: 'month_view' });
     })();
   }, []);
