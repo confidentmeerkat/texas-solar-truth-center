@@ -6,7 +6,7 @@ import ReadingProgress from '@/components/ui/reading-progress';
 import SectionHeader from '@/components/ui/section-header';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import { cn } from '@/lib/utils';
-import { getCalApi } from '@calcom/embed-react';
+import Cal, { getCalApi } from '@calcom/embed-react';
 
 import { Button } from '../ui/button';
 
@@ -120,6 +120,13 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                           Pay $0 Until We Win
                         </p>
                       </div>
+                      <Cal namespace="internal-work-calls"
+                        calLink="ana/internal-work-calls"
+                        style={{width:"100%",height:"100%",overflow:"scroll"}}
+                        config={{"layout":"month_view"}}
+                        calOrigin="https://calcom.arbitrationconsulting.com"
+                        embedJsUrl="https://calcom.arbitrationconsulting.com/embed/embed.js"
+                      />
                       <Button
                         data-cal-namespace='15min'
                         data-cal-link='confident-meerkat-emc5uw/15min'
