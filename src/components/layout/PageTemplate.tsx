@@ -122,13 +122,15 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                         </p>
                       </div>
                       <Button
-                        data-cal-namespace='client-interviews'
-                        data-cal-link='ana/client-interviews'
+                        data-cal-namespace="client-interviews"
+                        data-cal-link="ana/client-interviews"
+                        data-cal-origin="https://calendar.bennettlegal.com"
                         data-cal-config='{"layout":"month_view"}'
                         className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'
                       >
                         Book Your Free Call
                       </Button>
+  
                     </div>
                   </EnhancedCard>
 
