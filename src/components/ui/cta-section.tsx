@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Phone, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { getCalApi } from "@calcom/embed-react";
+import AirtableFormDialog from "@/components/ui/airtable-form-dialog";
 
 interface CTASectionProps {
   title?: string;
@@ -51,6 +52,18 @@ const CTASection = ({
               Call Now
             </a>
           </Button>
+          <AirtableFormDialog 
+            title="Get Legal Help Now" 
+            description="Tell us about your solar fraud case and we'll get back to you immediately"
+          >
+            <Button
+              variant="outline"
+              size="sm"
+            >
+              <MessageCircle className="mr-2 h-4 w-4" />
+              Get Legal Help
+            </Button>
+          </AirtableFormDialog>
         </div>
       </div>
     );
@@ -65,8 +78,8 @@ const CTASection = ({
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" onClick={openCal}>
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Get Free Consultation
+              <Calendar className="w-5 h-5 mr-2" />
+              Schedule Consultation
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="tel:(214)473-5897" className="flex items-center gap-2">
@@ -74,6 +87,15 @@ const CTASection = ({
                 Call (214) 473-5897
               </a>
             </Button>
+            <AirtableFormDialog 
+              title="Get Legal Help Now" 
+              description="Tell us about your solar fraud case and we'll get back to you immediately"
+            >
+              <Button size="lg" variant="outline">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Get Legal Help
+              </Button>
+            </AirtableFormDialog>
           </div>
         </div>
       </div>
@@ -119,20 +141,22 @@ const CTASection = ({
             <p className="text-sm text-muted-foreground">Direct phone consultation</p>
           </div>
 
-          {/* Email Button */}
+          {/* Get Legal Help Button */}
           <div className="text-center">
-            <Button
-              size="lg"
-              variant="outline"
-              className="w-full mb-2"
-              asChild
+            <AirtableFormDialog 
+              title="Get Legal Help Now" 
+              description="Tell us about your solar fraud case and we'll get back to you immediately"
             >
-              <a href="mailto:cbennett@bennettlegal.com">
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full mb-2"
+              >
                 <MessageCircle className="mr-2 h-4 w-4" />
-                Send Message
-              </a>
-            </Button>
-            <p className="text-sm text-muted-foreground">Email consultation</p>
+                Get Legal Help
+              </Button>
+            </AirtableFormDialog>
+            <p className="text-sm text-muted-foreground">Submit your case details</p>
           </div>
         </div>
 
