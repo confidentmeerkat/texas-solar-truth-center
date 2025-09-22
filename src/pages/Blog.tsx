@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import PageTemplate from '@/components/layout/PageTemplate';
 import BlogList from '@/components/blog/BlogList';
 import { loadAllBlogPosts } from '@/utils/blogUtils';
-import SectionHeader from '@/components/ui/section-header';
 
 interface BlogPostMeta {
   slug: string;
@@ -91,31 +89,22 @@ const Blog: React.FC = () => {
         </script>
       </Helmet>
       
-      <PageTemplate
-        pageTitle="Legal Blog"
-        pageSubtitle="Expert Insights"
-        pageDescription="Stay informed with expert legal insights on solar fraud, consumer protection, and your rights. Our comprehensive blog covers the latest in solar scams and legal solutions."
-        breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Blog', href: '/blog' }
-        ]}
-        className="py-12"
-      >
-        <div className="space-y-12">
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center">
-            <SectionHeader
-              title="Stay Informed, Stay Protected"
-              description="Our blog provides the latest insights on solar fraud, consumer rights, and legal protection strategies. Knowledge is your best defense against scams."
-              size="md"
-              accent="gold"
-            />
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-foreground mb-4">
+              Solar Fraud Legal Blog
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Expert insights on solar panel fraud, consumer protection, and your legal rights. Stay informed and protected.
+            </p>
           </div>
 
           {/* Blog List */}
           <BlogList posts={posts} />
         </div>
-      </PageTemplate>
+      </div>
     </>
   );
 };

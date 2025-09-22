@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
-import { Search, Filter, X } from 'lucide-react';
-import BlogCard from './BlogCard';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
 
 interface BlogPostMeta {
   slug: string;
@@ -24,155 +17,120 @@ interface BlogPostMeta {
 
 interface BlogListProps {
   posts: BlogPostMeta[];
-  showFeatured?: boolean;
 }
 
-const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
-  // Get unique categories
-  const categories = Array.from(new Set(posts.map(post => post.category))).sort();
-
-  // Filter posts based on search and filters
-  const filteredPosts = posts.filter(post => {
-    const matchesSearch = searchTerm === '' || 
-      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
-
-    const matchesCategory = !selectedCategory || post.category === selectedCategory;
-
-    return matchesSearch && matchesCategory;
-  });
-
-  const featuredPosts = showFeatured ? filteredPosts.filter(post => post.featured) : [];
-  const regularPosts = filteredPosts.filter(post => !showFeatured || !post.featured);
-
-  const clearFilters = () => {
-    setSearchTerm('');
-    setSelectedCategory(null);
-  };
-
-  const hasActiveFilters = searchTerm || selectedCategory;
+const BlogList: React.FC<BlogListProps> = ({ posts }) => {
+  const featuredPost = posts.find(post => post.featured);
+  const regularPosts = posts.filter(post => !post.featured);
 
   return (
-    <div className="space-y-8">
-      {/* Search and Filter Controls */}
-      <div className="bg-white/50 backdrop-blur-sm rounded-lg p-6 border border-gray-200">
-        <div className="flex flex-col md:flex-row gap-4">
-          {/* Search */}
-          <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-            <Input
-              placeholder="Search articles..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10"
-            />
-          </div>
-
-          {/* Category Filter */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-full md:w-auto">
-                <Filter className="w-4 h-4 mr-2" />
-                {selectedCategory || 'All Categories'}
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem onClick={() => setSelectedCategory(null)}>
-                All Categories
-              </DropdownMenuItem>
-              {categories.map(category => (
-                <DropdownMenuItem 
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                >
-                  {category}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          {/* Clear Filters */}
-          {hasActiveFilters && (
-            <Button 
-              variant="ghost" 
-              onClick={clearFilters}
-              className="w-full md:w-auto"
-            >
-              <X className="w-4 h-4 mr-2" />
-              Clear
-            </Button>
-          )}
+    <>
+      {/* Featured Post */}
+      {featuredPost && (
+        <div className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-foreground">Featured Article</h2>
+          <Card className="card-hover group max-w-3xl">
+            <CardHeader className="pb-4">
+              <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                <Badge variant="secondary">{featuredPost.category}</Badge>
+                <div className="flex items-center gap-1">
+                  <Calendar className="h-4 w-4" />
+                  <span>{new Date(featuredPost.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <Clock className="h-4 w-4" />
+                  <span>{featuredPost.readTime}</span>
+                </div>
+              </div>
+              <CardTitle className="text-2xl group-hover:text-primary transition-colors">
+                <Link to={`/blog/${featuredPost.slug}`}>
+                  {featuredPost.title}
+                </Link>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-base leading-relaxed mb-4">
+                {featuredPost.excerpt}
+              </CardDescription>
+              <Link
+                to={`/blog/${featuredPost.slug}`}
+                className="inline-flex items-center text-primary hover:text-primary/80 font-semibold group"
+              >
+                Read Full Article
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </CardContent>
+          </Card>
         </div>
+      )}
 
-        {/* Active Filters Display */}
-        {hasActiveFilters && (
-          <div className="flex flex-wrap gap-2 mt-4">
-            {searchTerm && (
-              <Badge variant="secondary">
-                Search: "{searchTerm}"
-                <X 
-                  className="w-3 h-3 ml-1 cursor-pointer" 
-                  onClick={() => setSearchTerm('')}
-                />
-              </Badge>
-            )}
-            {selectedCategory && (
-              <Badge variant="secondary">
-                Category: {selectedCategory}
-                <X 
-                  className="w-3 h-3 ml-1 cursor-pointer" 
-                  onClick={() => setSelectedCategory(null)}
-                />
-              </Badge>
-            )}
-          </div>
-        )}
+      {/* Regular Posts Grid */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-6 text-foreground">Latest Articles</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {regularPosts.map((post) => (
+            <Card key={post.slug} className="card-hover group">
+              <CardHeader className="pb-4">
+                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+                  <Badge variant="outline">{post.category}</Badge>
+                  <div className="flex items-center gap-1">
+                    <Clock className="h-4 w-4" />
+                    <span>{post.readTime}</span>
+                  </div>
+                </div>
+                <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                  <Link to={`/blog/${post.slug}`}>
+                    {post.title}
+                  </Link>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <CardDescription className="mb-4 leading-relaxed">
+                  {post.excerpt}
+                </CardDescription>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">
+                    {new Date(post.date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric'
+                    })}
+                  </span>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="text-primary hover:text-primary/80 font-semibold text-sm group"
+                  >
+                    Read More
+                    <ArrowRight className="ml-1 h-3 w-3 inline group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
 
-      {/* Featured Posts */}
-      {featuredPosts.length > 0 && (
-        <div>
-          <h2 className="text-2xl font-bold text-foreground mb-6">Featured Articles</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredPosts.map(post => (
-              <BlogCard key={post.slug} post={post} featured />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Regular Posts */}
-      {regularPosts.length > 0 && (
-        <div>
-          {featuredPosts.length > 0 && (
-            <h2 className="text-2xl font-bold text-foreground mb-6">Latest Articles</h2>
-          )}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {regularPosts.map(post => (
-              <BlogCard key={post.slug} post={post} />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* No Results */}
-      {filteredPosts.length === 0 && (
-        <div className="text-center py-12">
-          <h3 className="text-xl font-semibold text-foreground mb-2">No articles found</h3>
-          <p className="text-muted-foreground mb-4">
-            Try adjusting your search terms or filters to find what you're looking for.
-          </p>
-          {hasActiveFilters && (
-            <Button onClick={clearFilters} variant="outline">
-              Clear all filters
-            </Button>
-          )}
-        </div>
-      )}
-    </div>
+      {/* Newsletter CTA */}
+      <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg p-8 text-center">
+        <h3 className="text-2xl font-semibold mb-4 text-foreground">
+          Stay Updated on Solar Fraud Protection
+        </h3>
+        <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+          Subscribe to our newsletter for the latest updates on solar fraud cases, consumer protection laws, and expert legal insights delivered to your inbox.
+        </p>
+        <Link
+          to="/contact"
+          className="inline-flex items-center bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-md font-semibold transition-colors"
+        >
+          Contact Us for Updates
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
+      </div>
+    </>
   );
 };
 

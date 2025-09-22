@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Calendar, Clock, ArrowLeft, User, Phone, MessageCircle } from 'lucide-react';
 import { loadBlogPost } from '@/utils/blogUtils';
+import CTASection from '@/components/ui/cta-section';
 
 interface BlogPostMeta {
   title: string;
@@ -250,69 +251,6 @@ const ArticleContentWithCTAs = ({ content }: { content: string }) => {
         );
       })}
     </>
-  );
-};
-
-// Enhanced CTA Section Component
-const CTASection = ({ variant = "full", title, description }: { 
-  variant?: "full" | "compact"; 
-  title?: string; 
-  description?: string; 
-}) => {
-  const defaultTitle = "Been Scammed?";
-  const defaultDescription = "Don't let solar fraudsters get away with your hard-earned money. Get a free consultation today.";
-
-  if (variant === "compact") {
-    return (
-      <div className="my-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
-        <div className="text-center">
-          <h3 className="text-lg font-bold text-foreground mb-2">
-            {title || defaultTitle}
-          </h3>
-          <p className="text-sm text-muted-foreground mb-4">
-            {description || defaultDescription}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button className="bg-primary hover:bg-primary/90" asChild>
-              <Link to="/services">Get Free Consultation</Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href="tel:+1-555-0123" className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                Call Now
-              </a>
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="my-12 p-8 bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg">
-      <div className="max-w-2xl mx-auto text-center">
-        <h3 className="text-2xl font-bold text-foreground mb-4">
-          {title || "Ready to Take Action Against Solar Fraud?"}
-        </h3>
-        <p className="text-muted-foreground mb-6">
-          {description || "Don't let fraudulent solar companies get away with your money. Our experienced legal team is here to help you recover your losses and hold them accountable."}
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
-            <Link to="/services" className="flex items-center gap-2">
-              <MessageCircle className="w-5 h-5" />
-              Get Free Consultation
-            </Link>
-          </Button>
-          <Button size="lg" variant="outline" asChild>
-            <a href="tel:+1-555-0123" className="flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              Call (555) 012-3456
-            </a>
-          </Button>
-        </div>
-      </div>
-    </div>
   );
 };
 
