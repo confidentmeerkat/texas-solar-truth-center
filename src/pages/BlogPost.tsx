@@ -9,6 +9,7 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Calendar, Clock, ArrowLeft, User, Phone, MessageCircle } from 'lucide-react';
 import { loadBlogPost } from '@/utils/blogUtils';
 import CTASection from '@/components/ui/cta-section';
+import AudioStory from '@/components/ui/audio-story';
 
 interface BlogPostMeta {
   title: string;
@@ -222,11 +223,43 @@ const BlogPost = () => {
 const ArticleContentWithCTAs = ({ content }: { content: string }) => {
   const sections = content.split(/\n## /); // Split by main headings
 
+  // Function to process content and replace audio-story tags
+  const processContent = (text: string) => {
+    const audioStoryRegex = /<audio-story\s+audioUrl="([^"]+)"\s+title="([^"]+)"\s+description="([^"]+)"\s*\/>/g;
+    
+    const parts = text.split(audioStoryRegex);
+    const elements = [];
+    
+    for (let i = 0; i < parts.length; i += 4) {
+      // Add text content
+      if (parts[i]) {
+        elements.push(
+          <ReactMarkdown key={`text-${i}`} remarkPlugins={[remarkGfm]}>
+            {parts[i]}
+          </ReactMarkdown>
+        );
+      }
+      
+      // Add audio story component if we have the required parts
+      if (parts[i + 1] && parts[i + 2] && parts[i + 3]) {
+        elements.push(
+          <div key={`audio-${i}`} className="not-prose my-8">
+            <AudioStory 
+              audioUrl={parts[i + 1]}
+              title={parts[i + 2]}
+              description={parts[i + 3]}
+            />
+          </div>
+        );
+      }
+    }
+    
+    return elements;
+  };
+
   return (
     <>
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-        {sections[0]}
-      </ReactMarkdown>
+      {processContent(sections[0])}
 
       {sections.slice(1).map((section, index) => {
         const shouldShowCTA = index === Math.floor((sections.length - 1) * 0.3) ||
@@ -234,9 +267,7 @@ const ArticleContentWithCTAs = ({ content }: { content: string }) => {
 
         return (
           <div key={index}>
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {'## ' + section}
-            </ReactMarkdown>
+            {processContent('## ' + section)}
 
             {shouldShowCTA && (
               <div className="not-prose">

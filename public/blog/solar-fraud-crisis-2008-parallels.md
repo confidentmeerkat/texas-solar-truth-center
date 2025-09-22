@@ -6,6 +6,8 @@ Consider the devastating impact on individuals like Mrs. Eleanor Vance, an 82-ye
 
 Mrs. Vance's harrowing experience is not an isolated incident. It is a stark illustration of a widespread predatory practice that has disproportionately targeted vulnerable populations, including the elderly, low-income families, and non-English speaking communities. These victims, often eager to embrace renewable energy or simply reduce their monthly expenses, are being trapped in financial agreements riddled with hidden fees, escalating interest rates, and clauses designed to strip them of their fundamental rights.
 
+<audio-story audioUrl="https://audio.jukehost.co.uk/TaAWlUQvnf8H4T8GFmjTelAUTaVrqoEn" title="Victim's Account: Solar Fraud Experience" description="A real victim shares their experience with predatory solar sales tactics" />
+
 ## The Unmasking of a Systemic Deception
 
 The full, alarming scope of this crisis began to emerge not through proactive government oversight, but through the persistent efforts of individuals like Charles Bennett, a Dallas-based lawyer specializing in consumer protection. Mr. Bennett's firm, Bennett Legal, was inundated with pleas for help from homeowners who, like Mrs. Vance, found themselves ensnared in financial nightmares. What he discovered was a pattern of abuse far more extensive and insidious than initially imagined.
