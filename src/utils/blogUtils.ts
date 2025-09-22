@@ -12,6 +12,16 @@ interface BlogPostMeta {
 // Static blog metadata - no need to load full files for listing
 const BLOG_POSTS_METADATA: BlogPostMeta[] = [
   {
+    slug: 'free-ebook-texas-solar-fraud-guide',
+    title: 'FREE EBOOK: Texas Solar Panel Fraud - A Homeowner\'s Complete Guide to Your Rights',
+    excerpt: 'Download our comprehensive free guide covering your legal rights, warning signs to watch for, and step-by-step actions to protect yourself from solar panel fraud in Texas.',
+    date: '2025-02-25',
+    readTime: '8 min read',
+    category: 'Free Resources',
+    author: 'Charles Bennett, Bennett Legal',
+    featured: true
+  },
+  {
     slug: 'solar-fraud-crisis-2008-parallels',
     title: 'A Shadow Over the Sun: How Predatory Solar Schemes Echo the 2008 Crisis',
     excerpt: 'An in-depth investigation into the solar fraud epidemic affecting 160,000 Americans, revealing disturbing parallels to the 2008 financial crisis and how AI technology is being used to fight back.',
