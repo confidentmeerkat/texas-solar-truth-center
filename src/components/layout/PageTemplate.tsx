@@ -35,7 +35,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 }) => {
   useEffect(() => {
     (async function () {
-        const cal = await getCalApi({"namespace":"client-interviews","embedLibUrl":"https://calendar.bennettlegal.com/embed/embed.js"});
+        const cal = await getCalApi({"namespace":"client-interviews","embedJsUrl":"https://calendar.bennettlegal.com/embed/embed.js"});
         cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
       })();
   }, []);

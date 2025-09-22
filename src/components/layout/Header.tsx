@@ -54,6 +54,14 @@ const Header = () => {
                 </Link>
               </li>
               <li>
+                <Link 
+                  to="/blog" 
+                  className="text-bennett-slate hover:text-bennett-navy transition-all duration-300 font-medium hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50 rounded px-2 py-1"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <NavigationMenu>
                   <NavigationMenuList>
                     <NavigationMenuItem>
@@ -139,6 +147,15 @@ const Header = () => {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Services
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/blog" 
+                  className="block text-bennett-slate hover:text-bennett-navy transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-100/50"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Blog
                 </Link>
               </li>
               <li>
