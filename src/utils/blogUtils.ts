@@ -12,6 +12,16 @@ interface BlogPostMeta {
 // Static blog metadata - no need to load full files for listing
 const BLOG_POSTS_METADATA: BlogPostMeta[] = [
   {
+    slug: 'solar-fraud-crisis-2008-parallels',
+    title: 'A Shadow Over the Sun: How Predatory Solar Schemes Echo the 2008 Crisis',
+    excerpt: 'An in-depth investigation into the solar fraud epidemic affecting 160,000 Americans, revealing disturbing parallels to the 2008 financial crisis and how AI technology is being used to fight back.',
+    date: '2025-02-20',
+    readTime: '15 min read',
+    category: 'Investigation',
+    author: 'Charles Bennett, Bennett Legal',
+    featured: true
+  },
+  {
     slug: 'texas-senate-bill-1036-solar-regulations',
     title: 'Texas Senate Bill 1036: New Solar Industry Regulations and Consumer Protections',
     excerpt: 'Comprehensive analysis of Texas\'s groundbreaking legislation to combat solar panel fraud and protect consumers from deceptive practices.',
