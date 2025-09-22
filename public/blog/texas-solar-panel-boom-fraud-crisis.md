@@ -2,6 +2,8 @@
 
 Texas leads the nation in new solar capacity installations, but behind the gleaming panels lies a dark reality: thousands of homeowners have been victimized by fraudulent solar companies that prey on unsuspecting consumers. Understanding this crisis is crucial for protecting yourself and your family from becoming the next victim.
 
+> **Investigation Deep Dive:** Read our comprehensive analysis of [how predatory solar schemes echo the 2008 crisis](/blog/solar-fraud-crisis-2008-parallels) and the technology fighting back.
+
 ## The Perfect Storm: How Solar Fraud Exploded in Texas
 
 ### Post-Pandemic Vulnerability
@@ -49,6 +51,8 @@ Solar loans are typically secured by liens on the homeowner's property. When sys
 - Thousands in additional costs for completion or removal
 
 ## Texas Legislative Response
+
+> **Legislative Analysis:** Learn about [Texas Senate Bill 1036 and new solar regulations](/blog/texas-senate-bill-1036-solar-regulations) designed to protect consumers.
 
 ### Senate Bill 1036
 
@@ -117,4 +121,10 @@ When multiple homeowners are victimized by the same company, class action lawsui
 
 The Texas solar industry crisis affects thousands of families, but legal remedies exist. By understanding your rights, recognizing red flags, and taking prompt action when victimized, you can protect yourself and help hold fraudulent companies accountable.
 
-If you've been victimized by solar fraud in Texas, don't suffer in silence. Contact Bennett Legal today for a free consultation to discuss your legal options and fight for the justice you deserve.
+If you've been victimized by solar fraud in Texas, don't suffer in silence. [Contact Bennett Legal](/services) today for a free consultation to discuss your legal options and fight for the justice you deserve.
+
+**Essential Resources for Protection:**
+- [FREE Solar Fraud Protection Guide](/blog/free-ebook-texas-solar-fraud-guide) - Complete homeowner's guide
+- [How to Spot Solar Panel Scams](/blog/how-to-spot-solar-panel-scams-texas) - Prevention strategies
+- [Your Legal Rights in Texas](/blog/texas-homeowners-legal-rights-solar-fraud) - Comprehensive legal analysis
+- [How to Report Solar Fraud](/blog/how-to-report-solar-panel-fraud) - Step-by-step reporting guide

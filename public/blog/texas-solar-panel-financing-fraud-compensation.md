@@ -2,6 +2,8 @@
 
 Homeowners across Texas have been targeted by deceptive solar panel financing tactics that leave them with crushing debt and broken promises. If you've been victimized by predatory solar financing practices, you may be entitled to significant compensation under Texas consumer protection laws.
 
+> **FREE Guide:** Download our [complete solar fraud protection guide](/blog/free-ebook-texas-solar-fraud-guide) to understand all your legal rights and options.
+
 ## Red Flags of Solar Panel Financing Fraud in Texas
 
 ### High-Value System Financing ($35,000+)
@@ -53,8 +55,16 @@ Our experienced Texas solar fraud attorneys will:
 - Fight for maximum compensation and contract cancellation
 - Handle all communications with solar companies and lenders
 
+**Learn More About Your Rights:**
+- [Texas Homeowners' Legal Rights Against Solar Fraud](/blog/texas-homeowners-legal-rights-solar-fraud) - Comprehensive legal analysis
+- [Your Legal Rights When Dealing with Solar Companies](/blog/legal-rights-solar-companies) - Know your protections
+
 ## Take Action Today
 
-Don't let fraudulent solar companies get away with deceptive financing practices. If any of the red flags above apply to your situation, contact Bennett Legal for a free case evaluation. Our attorneys have successfully helped hundreds of Texas homeowners recover from solar fraud and hold dishonest companies accountable.
+Don't let fraudulent solar companies get away with deceptive financing practices. If any of the red flags above apply to your situation, [contact Bennett Legal](/services) for a free case evaluation. Our attorneys have successfully helped hundreds of Texas homeowners recover from solar fraud and hold dishonest companies accountable.
 
 Time is critical in solar fraud cases due to statute of limitations requirements. Contact us today to protect your rights and explore your options for compensation.
+
+**Related Resources:**
+- [How to Report Solar Panel Fraud](/blog/how-to-report-solar-panel-fraud) - Step-by-step reporting guide
+- [Understanding Solar Panel Fraud Red Flags](/blog/understanding-solar-panel-fraud-red-flags) - Warning signs to watch for

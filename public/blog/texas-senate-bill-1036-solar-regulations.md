@@ -2,6 +2,8 @@
 
 Texas lawmakers have taken decisive action to combat the epidemic of solar panel fraud that has victimized thousands of homeowners across the state. Senate Bill 1036, authored by Senator Judith Zaffirini, represents the most comprehensive consumer protection legislation targeting the solar industry in Texas history.
 
+> **Background Investigation:** Learn how the [Texas solar panel boom became a nightmare](/blog/texas-solar-panel-boom-fraud-crisis) for thousands of homeowners, prompting this legislative response.
+
 ## The Crisis That Demanded Action
 
 ### Staggering Increase in Solar Fraud
@@ -226,4 +228,10 @@ Senate Bill 1036 represents a crucial step toward cleaning up Texas's solar indu
 
 For consumers who have already been victimized by solar fraud, the enhanced legal framework provides additional tools for recovery and justice. The legislation also establishes a foundation for preventing future victims through better regulation and industry oversight.
 
-If you've been affected by solar panel fraud in Texas, don't wait for new legislation to seek help. Contact Bennett Legal today for a free consultation to discuss your current legal options and how pending reforms might affect your case. Together, we can hold fraudulent companies accountable and fight for the consumer protections all Texans deserve.
+If you've been affected by solar panel fraud in Texas, don't wait for new legislation to seek help. [Contact Bennett Legal](/services) today for a free consultation to discuss your current legal options and how pending reforms might affect your case.
+
+**Essential Resources for Solar Consumers:**
+- [FREE Texas Solar Fraud Protection Guide](/blog/free-ebook-texas-solar-fraud-guide) - Complete legal protection manual
+- [How to Spot Solar Panel Scams](/blog/how-to-spot-solar-panel-scams-texas) - Red flags identification guide
+- [Your Legal Rights in Texas](/blog/texas-homeowners-legal-rights-solar-fraud) - Comprehensive rights analysis
+- [Our Legal Services](/services) - How we help victims recover

@@ -2,6 +2,8 @@
 
 If you've been the victim of solar panel fraud, taking prompt action is crucial. This guide will walk you through the steps to report the fraud and protect your rights.
 
+> **Essential Reading:** Download our [FREE Complete Guide to Solar Fraud Protection](/blog/free-ebook-texas-solar-fraud-guide) for comprehensive information on your legal rights.
+
 ## Immediate Steps
 
 ### 1. Document Everything
@@ -43,6 +45,8 @@ When filing reports, include:
 
 ## Legal Action Options
 
+> **Learn Your Rights:** Understanding [Texas homeowners' legal rights against solar fraud](/blog/texas-homeowners-legal-rights-solar-fraud) is crucial before pursuing legal action.
+
 ### Civil Litigation
 You may be able to sue for:
 - Actual damages (money lost)
@@ -61,6 +65,10 @@ An experienced solar fraud attorney can:
 - File necessary reports and lawsuits
 - Negotiate settlements
 - Represent you in court
+
+**Related Resources:**
+- [Our Legal Services](/services) - How we help solar fraud victims
+- [About Bennett Legal](/about) - Meet our experienced legal team
 
 ## Timeline Considerations
 
@@ -83,4 +91,9 @@ By reporting fraud, you help:
 - Build cases against fraudulent companies
 - Support law enforcement investigations
 
-Don't suffer in silence. If you've been the victim of solar panel fraud, contact our legal team today for a free consultation to discuss your options.
+Don't suffer in silence. If you've been the victim of solar panel fraud, [contact our legal team](/services) today for a free consultation to discuss your options.
+
+**Additional Protection Resources:**
+- [How to Spot Solar Panel Scams in Texas](/blog/how-to-spot-solar-panel-scams-texas) - Prevention guide
+- [Understanding Solar Panel Fraud Red Flags](/blog/understanding-solar-panel-fraud-red-flags) - Warning signs
+- [Texas Solar Panel Financing Fraud Compensation](/blog/texas-solar-panel-financing-fraud-compensation) - Recovery options

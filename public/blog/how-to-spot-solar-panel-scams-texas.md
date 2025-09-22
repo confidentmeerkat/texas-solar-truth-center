@@ -2,6 +2,8 @@
 
 Texas homeowners face an epidemic of solar panel fraud that has cost thousands of families their life savings. With complaints to the Texas Attorney General's Office increasing by 818% from 2018 to 2023, knowing how to identify solar scams before you become a victim is more critical than ever.
 
+> **Essential Protection:** Download our [FREE comprehensive guide to Texas solar fraud](/blog/free-ebook-texas-solar-fraud-guide) for complete legal protection strategies.
+
 ## The Texas Solar Scam Landscape
 
 ### Why Texas is a Prime Target
@@ -238,4 +240,11 @@ Knowledge is your most powerful weapon against solar fraud. By recognizing these
 
 Remember: legitimate solar companies want informed customers who understand their investment. Any company that rushes you, pressures you, or refuses to provide clear documentation is likely running a scam.
 
-If you've spotted red flags or believe you've been victimized by solar fraud, don't wait. Contact Bennett Legal today for a free consultation to discuss your rights and options under Texas law. Early action can often prevent further damage and preserve your legal remedies.
+If you've spotted red flags or believe you've been victimized by solar fraud, don't wait. [Contact Bennett Legal](/services) today for a free consultation to discuss your rights and options under Texas law.
+
+**Additional Protection Resources:**
+- [Understanding Solar Panel Fraud Red Flags](/blog/understanding-solar-panel-fraud-red-flags) - General warning signs
+- [Texas Homeowners' Legal Rights](/blog/texas-homeowners-legal-rights-solar-fraud) - Comprehensive legal analysis
+- [How to Report Solar Panel Fraud](/blog/how-to-report-solar-panel-fraud) - Step-by-step reporting guide
+- [Texas Senate Bill 1036 Analysis](/blog/texas-senate-bill-1036-solar-regulations) - New consumer protections
+- [Solar Panel Financing Fraud Compensation](/blog/texas-solar-panel-financing-fraud-compensation) - Recovery options

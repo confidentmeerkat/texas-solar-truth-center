@@ -2,6 +2,8 @@
 
 The promise of clean energy and reduced electric bills has attracted thousands of Texas homeowners to solar power. Unfortunately, this enthusiasm has also attracted fraudulent companies that exploit consumer trust through deceptive practices. Understanding your legal rights under Texas law is essential for protecting yourself and seeking justice when solar companies fail to deliver on their promises.
 
+> **FREE Resource:** Download our [complete guide to Texas solar fraud protection](/blog/free-ebook-texas-solar-fraud-guide) covering all your legal rights and recovery options.
+
 ## The Texas Deceptive Trade Practices Act: Your Legal Shield
 
 ### Comprehensive Consumer Protection
@@ -155,4 +157,10 @@ Most consumer protection attorneys offer free initial consultations to evaluate 
 
 Texas homeowners have powerful legal tools to fight back against misleading solar companies. The DTPA and other consumer protection laws provide meaningful remedies for victims of solar fraud. Don't let deceptive companies get away with exploiting your trust and damaging your financial future.
 
-If you've been victimized by a misleading solar company, contact Bennett Legal today for a free case evaluation. Our experienced consumer protection attorneys will analyze your situation, explain your rights, and fight for the justice you deserve. Knowledge of your rights is your first defense—and often your path to recovery.
+If you've been victimized by a misleading solar company, [contact Bennett Legal](/services) today for a free case evaluation. Our experienced consumer protection attorneys will analyze your situation, explain your rights, and fight for the justice you deserve. Knowledge of your rights is your first defense—and often your path to recovery.
+
+**Additional Legal Resources:**
+- [Your Legal Rights When Dealing with Solar Companies](/blog/legal-rights-solar-companies) - Consumer protection basics
+- [How to Report Solar Panel Fraud](/blog/how-to-report-solar-panel-fraud) - Step-by-step reporting guide
+- [Texas Solar Panel Financing Fraud Compensation](/blog/texas-solar-panel-financing-fraud-compensation) - Recovery options
+- [Understanding the Texas Solar Crisis](/blog/texas-solar-panel-boom-fraud-crisis) - Industry analysis
