@@ -12,6 +12,16 @@ interface BlogPostMeta {
 // Static blog metadata - no need to load full files for listing
 const BLOG_POSTS_METADATA: BlogPostMeta[] = [
   {
+    slug: 'solar-panel-fraud-surge-protection-guide',
+    title: 'Solar Panel Fraud Surge: How to Protect Your Home and Wallet from Rising Scams',
+    excerpt: 'Federal complaints about solar fraud jumped 746% since 2018. Learn how to spot the red flags, protect yourself from deceptive practices, and understand your legal options if you\'ve been victimized.',
+    date: '2025-02-28',
+    readTime: '12 min read',
+    category: 'Investigation',
+    author: 'Charles Bennett, Bennett Legal',
+    featured: true
+  },
+  {
     slug: 'free-ebook-texas-solar-fraud-guide',
     title: 'FREE EBOOK: Texas Solar Panel Fraud - A Homeowner\'s Complete Guide to Your Rights',
     excerpt: 'Download our comprehensive free guide covering your legal rights, warning signs to watch for, and step-by-step actions to protect yourself from solar panel fraud in Texas.',
