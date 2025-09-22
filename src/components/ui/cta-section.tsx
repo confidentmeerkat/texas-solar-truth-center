@@ -19,13 +19,13 @@ const CTASection = ({
 }: CTASectionProps) => {
   
   const openCal = () => {
-    getCalApi().then((cal) => {
+    getCalApi({"namespace":"client-interviews","embedJsUrl":"https://calendar.bennettlegal.com/embed/embed.js"}).then((cal) => {
       cal("ui", {
         "styles": { "branding": { "brandColor": "#D4A574" } },
         "hideEventTypeDetails": false,
         "layout": "month_view"
       });
-      cal("modal", { "calLink": "cbennett/solar-fraud-consultation" });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
     });
   };
 
