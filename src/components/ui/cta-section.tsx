@@ -25,7 +25,7 @@ const CTASection = ({
         "hideEventTypeDetails": false,
         "layout": "month_view"
       });
-      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+      cal("modal", { "calLink": "cbennett/solar-fraud-consultation" });
     });
   };
 
