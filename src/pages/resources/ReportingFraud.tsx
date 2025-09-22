@@ -5,8 +5,19 @@ import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import SectionHeader from '@/components/ui/section-header';
 import { Phone, FileText, AlertTriangle, Users, Clock, CheckCircle2, MessageSquare, Mail } from 'lucide-react';
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 const ReportingFraud = () => {
+  const openCal = () => {
+    getCalApi().then((cal) => {
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#D4A574" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+    });
+  };
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Resources', href: '#' },
@@ -261,7 +272,10 @@ const ReportingFraud = () => {
                 </div>
                 <h3 className="text-lg font-bold text-bennett-navy mb-3">Written Testimonial</h3>
                 <p className="text-bennett-slate text-sm mb-4">Share your written story to help warn other Texas homeowners about solar scams.</p>
-                <button className="bg-bennett-navy text-white px-6 py-2 rounded-lg hover:bg-bennett-navy/90 transition-colors">
+                <button 
+                  onClick={openCal}
+                  className="bg-bennett-navy text-white px-6 py-2 rounded-lg hover:bg-bennett-navy/90 transition-colors"
+                >
                   Submit Story
                 </button>
               </div>
@@ -274,7 +288,10 @@ const ReportingFraud = () => {
                 </div>
                 <h3 className="text-lg font-bold text-bennett-navy mb-3">Video Testimony</h3>
                 <p className="text-bennett-slate text-sm mb-4">Record a video testimony to create a powerful warning for other consumers.</p>
-                <button className="bg-bennett-gold text-bennett-navy px-6 py-2 rounded-lg hover:bg-bennett-gold/90 transition-colors">
+                <button 
+                  onClick={openCal}
+                  className="bg-bennett-gold text-bennett-navy px-6 py-2 rounded-lg hover:bg-bennett-gold/90 transition-colors"
+                >
                   Record Video
                 </button>
               </div>
@@ -282,6 +299,12 @@ const ReportingFraud = () => {
           </div>
         </section>
       </div>
+      
+      <Cal
+        calLink="cbennett/solar-fraud-consultation"
+        style={{width:"100%",height:"100%",overflow:"scroll"}}
+        config={{"layout":"month_view"}}
+      />
     </PageTemplate>
   );
 };
