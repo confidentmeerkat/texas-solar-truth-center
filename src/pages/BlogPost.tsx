@@ -154,17 +154,17 @@ const BlogPost = () => {
               </p>
 
               {/* Author Byline */}
-              <div className="flex items-center gap-4 py-6 border-y border-border">
-                <Avatar className="h-16 w-16">
-                  <AvatarFallback>
-                    <User className="h-8 w-8" />
+              <div className="flex items-start gap-4 py-6 border-y border-border bg-muted/30 rounded-lg px-6">
+                <Avatar className="h-12 w-12 flex-shrink-0">
+                  <AvatarFallback className="bg-primary/10 text-primary border border-primary/20">
+                    <User className="h-6 w-6" />
                   </AvatarFallback>
                 </Avatar>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <p className="font-semibold text-foreground">{postMeta.author}</p>
-                    <span className="text-sm text-muted-foreground">•</span>
-                    <Link to="/about" className="text-sm text-primary hover:text-primary/80">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 mb-2">
+                    <h3 className="font-semibold text-foreground text-base">{postMeta.author}</h3>
+                    <span className="hidden sm:inline text-sm text-muted-foreground">•</span>
+                    <Link to="/about" className="text-sm text-primary hover:text-primary/80 font-medium transition-colors">
                       View Profile
                     </Link>
                   </div>
