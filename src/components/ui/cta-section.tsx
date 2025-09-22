@@ -18,15 +18,12 @@ const CTASection = ({
   className = ""
 }: CTASectionProps) => {
   
-  const openCal = () => {
-    getCalApi({"namespace":"client-interviews","embedJsUrl":"https://calendar.bennettlegal.com/embed/embed.js"}).then((cal) => {
-      cal("ui", {
-        "styles": { "branding": { "brandColor": "#D4A574" } },
-        "hideEventTypeDetails": false,
-        "layout": "month_view"
-      });
-      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
-    });
+  // Using data attributes like the working implementation
+  const calDataAttributes = {
+    "data-cal-namespace": "client-interviews",
+    "data-cal-link": "cbennett/solar-fraud-consultation",
+    "data-cal-origin": "https://calendar.bennettlegal.com",
+    "data-cal-config": '{"layout":"month_view"}'
   };
 
   if (variant === "compact") {
@@ -38,7 +35,11 @@ const CTASection = ({
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Button size="sm" onClick={openCal}>
+          <Button 
+            size="sm" 
+            {...calDataAttributes}
+            className="bg-bennett-navy hover:bg-bennett-navy/90 text-white"
+          >
             <Calendar className="mr-2 h-4 w-4" />
             Schedule Consultation
           </Button>
@@ -77,7 +78,11 @@ const CTASection = ({
           <p className="text-muted-foreground mb-6">{description}</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" onClick={openCal}>
+            <Button 
+              size="lg" 
+              {...calDataAttributes}
+              className="bg-bennett-navy hover:bg-bennett-navy/90 text-white"
+            >
               <Calendar className="w-5 h-5 mr-2" />
               Schedule Consultation
             </Button>
@@ -116,8 +121,8 @@ const CTASection = ({
           <div className="text-center">
             <Button
               size="lg"
-              className="w-full mb-2"
-              onClick={openCal}
+              className="w-full mb-2 bg-bennett-navy hover:bg-bennett-navy/90 text-white"
+              {...calDataAttributes}
             >
               <Calendar className="mr-2 h-4 w-4" />
               Schedule Consultation
