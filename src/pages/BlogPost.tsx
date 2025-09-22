@@ -22,8 +22,8 @@ interface BlogPostMeta {
 
 // Author information for schema and display
 const AUTHOR_INFO = {
-  name: "Bennett Legal Team",
-  bio: "Experienced attorneys specializing in solar fraud, consumer protection, and helping victims recover from scams. Over 15 years helping Texans fight fraudulent solar companies.",
+  name: "Charles Bennett, Bennett Legal",
+  bio: "Experienced consumer protection attorney specializing in solar fraud cases and helping victims recover from scams. Over 15 years helping Texans fight fraudulent solar companies and recover their losses.",
   url: window.location.origin + "/about"
 };
 
