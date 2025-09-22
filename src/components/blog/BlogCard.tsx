@@ -1,25 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, User, Tag } from 'lucide-react';
-import { BlogPost } from '@/types/blog';
-import { blogCategories } from '@/lib/blog';
-import { formatDate } from '@/lib/blog';
-import { EnhancedCard } from '@/components/ui/enhanced-card';
+import { Calendar, Clock, User } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
 
+interface BlogPostMeta {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  category: string;
+  author: string;
+  featured?: boolean;
+}
+
 interface BlogCardProps {
-  post: BlogPost;
+  post: BlogPostMeta;
   featured?: boolean;
   className?: string;
 }
 
 const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false, className }) => {
-  const category = blogCategories.find(cat => cat.slug === post.category);
-
   return (
-    <EnhancedCard 
-      variant="glass" 
+    <Card 
       className={cn(
         "group cursor-pointer transition-all duration-300 hover:shadow-lg border-0 bg-white/80 backdrop-blur-sm",
         featured ? "md:col-span-2 lg:col-span-3" : "",
@@ -27,76 +33,52 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false, className }
       )}
     >
       <Link to={`/blog/${post.slug}`} className="block h-full">
-        <div className="p-6 h-full flex flex-col">
-          {/* Category and Reading Time */}
-          <div className="flex items-center justify-between mb-4">
-            {category && (
-              <Badge 
-                variant="secondary" 
-                className={cn("text-xs", category.color)}
-              >
-                {category.name}
-              </Badge>
-            )}
-            <div className="flex items-center text-sm text-bennett-slate">
+        <CardHeader className="pb-3">
+          <div className="flex items-center justify-between mb-2">
+            <Badge variant="secondary" className="text-xs">
+              {post.category}
+            </Badge>
+            <div className="flex items-center text-sm text-muted-foreground">
               <Clock className="w-4 h-4 mr-1" />
-              {post.readingTime} min read
+              {post.readTime}
             </div>
           </div>
-
-          {/* Title */}
+          
           <h3 className={cn(
-            "font-bold text-bennett-navy group-hover:text-bennett-gold transition-colors leading-tight mb-3",
+            "font-bold text-foreground group-hover:text-primary transition-colors leading-tight",
             featured ? "text-2xl md:text-3xl" : "text-xl"
           )}>
             {post.title}
           </h3>
-
-          {/* Excerpt */}
+        </CardHeader>
+        
+        <CardContent>
           <p className={cn(
-            "text-bennett-slate leading-relaxed mb-4 flex-grow",
+            "text-muted-foreground leading-relaxed mb-4",
             featured ? "text-lg" : "text-base"
           )}>
             {post.excerpt}
           </p>
 
-          {/* Meta Information */}
-          <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-            <div className="flex items-center space-x-4 text-sm text-bennett-slate">
-              <div className="flex items-center">
-                <User className="w-4 h-4 mr-1" />
-                {post.author.name}
+          <div className="flex items-center justify-between pt-4 border-t border-border">
+            <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Avatar className="w-6 h-6">
+                  <AvatarFallback className="text-xs">
+                    {post.author.split(' ').map(n => n[0]).join('')}
+                  </AvatarFallback>
+                </Avatar>
+                <span>by {post.author}</span>
               </div>
-              <div className="flex items-center">
-                <Calendar className="w-4 h-4 mr-1" />
-                {formatDate(post.publishedAt)}
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
               </div>
             </div>
           </div>
-
-          {/* Tags */}
-          {post.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-3">
-              {post.tags.slice(0, 3).map(tag => (
-                <Badge 
-                  key={tag} 
-                  variant="outline" 
-                  className="text-xs bg-gray-50 hover:bg-gray-100"
-                >
-                  <Tag className="w-3 h-3 mr-1" />
-                  {tag.replace('-', ' ')}
-                </Badge>
-              ))}
-              {post.tags.length > 3 && (
-                <Badge variant="outline" className="text-xs bg-gray-50">
-                  +{post.tags.length - 3} more
-                </Badge>
-              )}
-            </div>
-          )}
-        </div>
+        </CardContent>
       </Link>
-    </EnhancedCard>
+    </Card>
   );
 };
 

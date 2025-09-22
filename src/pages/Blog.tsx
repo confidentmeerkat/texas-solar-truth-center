@@ -1,12 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import PageTemplate from '@/components/layout/PageTemplate';
 import BlogList from '@/components/blog/BlogList';
-import { getAllPosts } from '@/lib/blog';
+import { loadAllBlogPosts } from '@/utils/blogUtils';
 import SectionHeader from '@/components/ui/section-header';
 
+interface BlogPostMeta {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  category: string;
+  author: string;
+  featured?: boolean;
+}
+
 const Blog: React.FC = () => {
-  const posts = getAllPosts();
+  const [posts, setPosts] = useState<BlogPostMeta[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadPosts = async () => {
+      try {
+        const blogPosts = await loadAllBlogPosts();
+        setPosts(blogPosts);
+      } catch (error) {
+        console.error('Failed to load blog posts:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadPosts();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-foreground mb-4">
+            Loading Blog Posts...
+          </h1>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>

@@ -1,19 +1,17 @@
 import React from 'react';
 import { Share2, Twitter, Facebook, Linkedin, Link as LinkIcon } from 'lucide-react';
-import { BlogPost } from '@/types/blog';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
 
 interface ShareButtonsProps {
-  post: BlogPost;
+  url: string;
+  title: string;
+  description?: string;
   vertical?: boolean;
 }
 
-const ShareButtons: React.FC<ShareButtonsProps> = ({ post, vertical = false }) => {
-  const url = `${window.location.origin}/blog/${post.slug}`;
-  const title = post.title;
-  const description = post.excerpt;
+const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title, description, vertical = false }) => {
 
   const shareUrls = {
     twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`,
@@ -43,7 +41,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ post, vertical = false }) =
       try {
         await navigator.share({
           title,
-          text: description,
+          text: description || title,
           url,
         });
       } catch (err) {

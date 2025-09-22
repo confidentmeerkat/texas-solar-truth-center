@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Search, Filter, X } from 'lucide-react';
-import { BlogPost, BlogCategory, BlogTag } from '@/types/blog';
-import { blogCategories, blogTags } from '@/lib/blog';
 import BlogCard from './BlogCard';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -13,27 +11,38 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
+interface BlogPostMeta {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  category: string;
+  author: string;
+  featured?: boolean;
+}
+
 interface BlogListProps {
-  posts: BlogPost[];
+  posts: BlogPostMeta[];
   showFeatured?: boolean;
 }
 
 const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  // Get unique categories
+  const categories = Array.from(new Set(posts.map(post => post.category))).sort();
 
   // Filter posts based on search and filters
   const filteredPosts = posts.filter(post => {
     const matchesSearch = searchTerm === '' || 
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.content.toLowerCase().includes(searchTerm.toLowerCase());
+      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesCategory = !selectedCategory || post.category === selectedCategory;
-    const matchesTag = !selectedTag || post.tags.includes(selectedTag);
 
-    return matchesSearch && matchesCategory && matchesTag;
+    return matchesSearch && matchesCategory;
   });
 
   const featuredPosts = showFeatured ? filteredPosts.filter(post => post.featured) : [];
@@ -42,10 +51,9 @@ const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
   const clearFilters = () => {
     setSearchTerm('');
     setSelectedCategory(null);
-    setSelectedTag(null);
   };
 
-  const hasActiveFilters = searchTerm || selectedCategory || selectedTag;
+  const hasActiveFilters = searchTerm || selectedCategory;
 
   return (
     <div className="space-y-8">
@@ -68,48 +76,19 @@ const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
             <DropdownMenuTrigger asChild>
               <Button variant="outline" className="w-full md:w-auto">
                 <Filter className="w-4 h-4 mr-2" />
-                {selectedCategory 
-                  ? blogCategories.find(cat => cat.slug === selectedCategory)?.name 
-                  : 'All Categories'
-                }
+                {selectedCategory || 'All Categories'}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => setSelectedCategory(null)}>
                 All Categories
               </DropdownMenuItem>
-              {blogCategories.map(category => (
+              {categories.map(category => (
                 <DropdownMenuItem 
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.slug)}
+                  key={category}
+                  onClick={() => setSelectedCategory(category)}
                 >
-                  {category.name}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          {/* Tag Filter */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-full md:w-auto">
-                <Filter className="w-4 h-4 mr-2" />
-                {selectedTag 
-                  ? blogTags.find(tag => tag.slug === selectedTag)?.name 
-                  : 'All Tags'
-                }
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem onClick={() => setSelectedTag(null)}>
-                All Tags
-              </DropdownMenuItem>
-              {blogTags.map(tag => (
-                <DropdownMenuItem 
-                  key={tag.id}
-                  onClick={() => setSelectedTag(tag.slug)}
-                >
-                  {tag.name} ({tag.count})
+                  {category}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
@@ -142,19 +121,10 @@ const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
             )}
             {selectedCategory && (
               <Badge variant="secondary">
-                Category: {blogCategories.find(cat => cat.slug === selectedCategory)?.name}
+                Category: {selectedCategory}
                 <X 
                   className="w-3 h-3 ml-1 cursor-pointer" 
                   onClick={() => setSelectedCategory(null)}
-                />
-              </Badge>
-            )}
-            {selectedTag && (
-              <Badge variant="secondary">
-                Tag: {blogTags.find(tag => tag.slug === selectedTag)?.name}
-                <X 
-                  className="w-3 h-3 ml-1 cursor-pointer" 
-                  onClick={() => setSelectedTag(null)}
                 />
               </Badge>
             )}
@@ -165,10 +135,10 @@ const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
       {/* Featured Posts */}
       {featuredPosts.length > 0 && (
         <div>
-          <h2 className="text-2xl font-bold text-bennett-navy mb-6">Featured Articles</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-6">Featured Articles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredPosts.map(post => (
-              <BlogCard key={post.id} post={post} featured />
+              <BlogCard key={post.slug} post={post} featured />
             ))}
           </div>
         </div>
@@ -178,11 +148,11 @@ const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
       {regularPosts.length > 0 && (
         <div>
           {featuredPosts.length > 0 && (
-            <h2 className="text-2xl font-bold text-bennett-navy mb-6">Latest Articles</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-6">Latest Articles</h2>
           )}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {regularPosts.map(post => (
-              <BlogCard key={post.id} post={post} />
+              <BlogCard key={post.slug} post={post} />
             ))}
           </div>
         </div>
@@ -191,8 +161,8 @@ const BlogList: React.FC<BlogListProps> = ({ posts, showFeatured = true }) => {
       {/* No Results */}
       {filteredPosts.length === 0 && (
         <div className="text-center py-12">
-          <h3 className="text-xl font-semibold text-bennett-navy mb-2">No articles found</h3>
-          <p className="text-bennett-slate mb-4">
+          <h3 className="text-xl font-semibold text-foreground mb-2">No articles found</h3>
+          <p className="text-muted-foreground mb-4">
             Try adjusting your search terms or filters to find what you're looking for.
           </p>
           {hasActiveFilters && (
