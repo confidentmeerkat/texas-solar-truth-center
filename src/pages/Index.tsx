@@ -39,7 +39,7 @@ const Index = () => {
     },
     {
       value: '24/7',
-      label: 'Emergency Legal Support',
+      label: 'Help Available',
       icon: <Shield className="h-6 w-6 text-blue-400" />
     }
   ];
@@ -47,21 +47,21 @@ const Index = () => {
   const heroSection = (
     <StandardHero
       title="Fight Solar Panel Fraud in Texas"
-      subtitle="Texas Consumer Protection"
+      subtitle="Consumer Protection Initiative"
       description="As solar energy grows in popularity across Texas, so do deceptive practices and outright scams. Learn how to protect yourself and what legal options are available if you've been victimized."
       primaryCTA={{
-        text: "Get Free Case Review",
+        text: "Get Help Today",
         component: (
           <AirtableFormDialog 
-            title="Get Your Free Case Review" 
-            description="Complete our form to receive a confidential consultation about your solar fraud case"
+            title="Tell Us Your Story" 
+            description="Share your experience so we can help you understand your options and connect you with the right resources"
           >
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
             >
               <span className="flex items-center">
-                Get Free Case Review
+                Get Help Today
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </Button>
@@ -73,7 +73,7 @@ const Index = () => {
         href: "#consumer-rights"
       }}
       trustBadge={{
-        text: "Over 50 Years Combined Experience",
+        text: "Dedicated to Consumer Protection",
         icon: <Shield className="h-5 w-5 text-bennett-gold" />
       }}
       stats={heroStats}
@@ -128,15 +128,15 @@ const Index = () => {
         <div className="mb-20">
           <div className="prose prose-xl max-w-none">
             <p className="text-2xl md:text-3xl text-bennett-slate mb-12 leading-relaxed font-light bg-gradient-to-r from-bennett-slate via-gray-600 to-bennett-slate bg-clip-text text-transparent">
-              As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. At Bennett Legal, we're dedicated to helping victims of solar fraud understand their rights and pursue justice through multiple legal avenues.
+              As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. This initiative is dedicated to helping victims of solar fraud understand their rights and connect them with resources for justice and recovery.
             </p>
             
             <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-8 mb-12">
-              <h2 className="text-xl font-bold text-bennett-navy mb-4">Essential Resources for Homeowners</h2>
+              <h2 className="text-xl font-bold text-bennett-navy mb-4">Free Resources for Homeowners</h2>
               <div className="grid md:grid-cols-3 gap-4">
                 <a href="/blog/free-ebook-texas-solar-fraud-guide" className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                  <div className="font-semibold text-blue-600 mb-2">FREE Legal Guide</div>
-                  <div className="text-sm text-gray-600">Download our complete protection manual</div>
+                  <div className="font-semibold text-blue-600 mb-2">FREE Protection Guide</div>
+                  <div className="text-sm text-gray-600">Download your complete protection manual</div>
                 </a>
                 <a href="/blog/how-to-spot-solar-panel-scams-texas" className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <div className="font-semibold text-blue-600 mb-2">Spot Red Flags</div>
