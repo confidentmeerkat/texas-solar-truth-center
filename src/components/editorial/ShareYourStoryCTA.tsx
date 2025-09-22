@@ -17,7 +17,7 @@ const ShareYourStoryCTA = () => {
         <div className="aspect-video w-full sm:w-4/5 mx-auto bg-gray-100 rounded overflow-hidden">
           <iframe 
             className="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            src="https://www.youtube.com/embed/bDGGhpbwBOg" 
             title="Interview with Dallas Lawyer about Solar Fraud" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
