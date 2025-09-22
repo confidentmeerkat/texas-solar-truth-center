@@ -16,7 +16,9 @@ import AuthorInfo from '@/components/editorial/AuthorInfo';
 import ShareYourStoryCTA from '@/components/editorial/ShareYourStoryCTA';
 import LawyerExpertiseCTA from '@/components/editorial/LawyerExpertiseCTA';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
-import { AlertTriangle, TrendingUp, CheckCircle2, Award, Users, Star, Phone, Shield } from 'lucide-react';
+import { AlertTriangle, TrendingUp, CheckCircle2, Award, Users, Star, Phone, Shield, ArrowRight } from 'lucide-react';
+import AirtableFormDialog from '@/components/ui/airtable-form-dialog';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
   const heroStats = [
@@ -49,7 +51,22 @@ const Index = () => {
       description="As solar energy grows in popularity across Texas, so do deceptive practices and outright scams. Learn how to protect yourself and what legal options are available if you've been victimized."
       primaryCTA={{
         text: "Get Free Case Review",
-        href: "#contact"
+        component: (
+          <AirtableFormDialog 
+            title="Get Your Free Case Review" 
+            description="Complete our form to receive a confidential consultation about your solar fraud case"
+          >
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
+            >
+              <span className="flex items-center">
+                Get Free Case Review
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Button>
+          </AirtableFormDialog>
+        )
       }}
       secondaryCTA={{
         text: "Learn Your Rights",

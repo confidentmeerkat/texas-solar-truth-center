@@ -10,13 +10,15 @@ interface StandardHeroProps {
   description: string;
   primaryCTA: {
     text: string;
-    href: string;
+    href?: string;
     onClick?: () => void;
+    component?: React.ReactNode;
   };
   secondaryCTA?: {
     text: string;
-    href: string;
+    href?: string;
     onClick?: () => void;
+    component?: React.ReactNode;
   };
   trustBadge?: {
     text: string;
@@ -132,32 +134,36 @@ const StandardHero: React.FC<StandardHeroProps> = ({
                 "flex gap-6 pt-4",
                 stats ? "flex-col sm:flex-row" : "flex-col sm:flex-row justify-center"
               )}>
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
-                  onClick={primaryCTA.onClick}
-                >
-                  <span className="flex items-center">
-                    {primaryCTA.text}
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Button>
+                {primaryCTA.component || (
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
+                    onClick={primaryCTA.onClick}
+                  >
+                    <span className="flex items-center">
+                      {primaryCTA.text}
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Button>
+                )}
                 
                 {secondaryCTA && (
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className={cn(
-                      "font-semibold px-12 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1",
-                      variant === 'minimal'
-                        ? "border-2 border-bennett-navy text-bennett-navy hover:bg-bennett-navy hover:text-white"
-                        : "border-2 border-white/40 text-bennett-navy bg-white hover:text-white hover:bg-white/15 hover:text-white hover:border-white/60 backdrop-blur-sm"
-                    )}
-                    onClick={secondaryCTA.onClick}
-                  >
-                    {secondaryCTA.text}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  secondaryCTA.component || (
+                    <Button 
+                      variant="outline" 
+                      size="lg" 
+                      className={cn(
+                        "font-semibold px-12 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1",
+                        variant === 'minimal'
+                          ? "border-2 border-bennett-navy text-bennett-navy hover:bg-bennett-navy hover:text-white"
+                          : "border-2 border-white/40 text-bennett-navy bg-white hover:text-white hover:bg-white/15 hover:text-white hover:border-white/60 backdrop-blur-sm"
+                      )}
+                      onClick={secondaryCTA.onClick}
+                    >
+                      {secondaryCTA.text}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  )
                 )}
               </div>
             </div>

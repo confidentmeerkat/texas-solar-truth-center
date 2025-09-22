@@ -4,8 +4,10 @@ import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import SectionHeader from '@/components/ui/section-header';
-import { Phone, FileText, AlertTriangle, Users, Clock, CheckCircle2, MessageSquare, Mail } from 'lucide-react';
+import { Phone, FileText, AlertTriangle, Users, Clock, CheckCircle2, MessageSquare, Mail, ArrowRight } from 'lucide-react';
 import Cal, { getCalApi } from "@calcom/embed-react";
+import AirtableFormDialog from '@/components/ui/airtable-form-dialog';
+import { Button } from '@/components/ui/button';
 
 const ReportingFraud = () => {
   const openCal = () => {
@@ -44,7 +46,22 @@ const ReportingFraud = () => {
       description="Step-by-step guidance on reporting solar panel fraud and getting the legal help you need to protect your rights and recover your losses."
       primaryCTA={{
         text: "Report Fraud Now",
-        href: "#report-steps"
+        component: (
+          <AirtableFormDialog 
+            title="Report Solar Fraud" 
+            description="Complete this form to report solar fraud and get immediate legal assistance"
+          >
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
+            >
+              <span className="flex items-center">
+                Report Fraud Now
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Button>
+          </AirtableFormDialog>
+        )
       }}
       secondaryCTA={{
         text: "Emergency Legal Help",
@@ -272,12 +289,14 @@ const ReportingFraud = () => {
                 </div>
                 <h3 className="text-lg font-bold text-bennett-navy mb-3">Written Testimonial</h3>
                 <p className="text-bennett-slate text-sm mb-4">Share your written story to help warn other Texas homeowners about solar scams.</p>
-                <button 
-                  onClick={openCal}
-                  className="bg-bennett-navy text-white px-6 py-2 rounded-lg hover:bg-bennett-navy/90 transition-colors"
+                <AirtableFormDialog 
+                  title="Submit Your Written Story" 
+                  description="Share your solar fraud experience to help warn other Texas homeowners"
                 >
-                  Submit Story
-                </button>
+                  <button className="bg-bennett-navy text-white px-6 py-2 rounded-lg hover:bg-bennett-navy/90 transition-colors">
+                    Submit Story
+                  </button>
+                </AirtableFormDialog>
               </div>
             </EnhancedCard>
 
@@ -288,12 +307,14 @@ const ReportingFraud = () => {
                 </div>
                 <h3 className="text-lg font-bold text-bennett-navy mb-3">Video Testimony</h3>
                 <p className="text-bennett-slate text-sm mb-4">Record a video testimony to create a powerful warning for other consumers.</p>
-                <button 
-                  onClick={openCal}
-                  className="bg-bennett-gold text-bennett-navy px-6 py-2 rounded-lg hover:bg-bennett-gold/90 transition-colors"
+                <AirtableFormDialog 
+                  title="Submit Your Video Testimony" 
+                  description="Record and share your solar fraud experience through video"
                 >
-                  Record Video
-                </button>
+                  <button className="bg-bennett-gold text-bennett-navy px-6 py-2 rounded-lg hover:bg-bennett-gold/90 transition-colors">
+                    Record Video
+                  </button>
+                </AirtableFormDialog>
               </div>
             </EnhancedCard>
           </div>

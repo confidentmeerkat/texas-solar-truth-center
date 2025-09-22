@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Video, MessageSquare, ArrowRight, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import AirtableFormDialog from '@/components/ui/airtable-form-dialog';
 
 const ShareYourStoryCTA = () => {
   return (
@@ -36,22 +37,28 @@ const ShareYourStoryCTA = () => {
       </p>
       
       <div className="flex flex-col sm:flex-row gap-4">
-        <Link to="/reporting-seeking-help">
+        <AirtableFormDialog 
+          title="Submit Your Video Story" 
+          description="Share your solar fraud experience to help warn other Texas homeowners"
+        >
           <Button 
             className="bg-bennett-navy hover:bg-bennett-navy/90 text-white w-full sm:w-auto"
           >
             <Video className="mr-2 h-4 w-4" /> Submit Your Video
           </Button>
-        </Link>
+        </AirtableFormDialog>
         
-        <Link to="/reporting-seeking-help">
+        <AirtableFormDialog 
+          title="Share Your Written Story" 
+          description="Tell us about your solar fraud experience in writing"
+        >
           <Button 
             variant="outline" 
             className="border-bennett-navy text-bennett-navy hover:bg-bennett-navy/10 w-full sm:w-auto"
           >
             <MessageSquare className="mr-2 h-4 w-4" /> Share Your Written Story
           </Button>
-        </Link>
+        </AirtableFormDialog>
       </div>
     </section>
   );
