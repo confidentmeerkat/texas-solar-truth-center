@@ -2,6 +2,8 @@
 
 As a Texas consumer, you have specific rights and protections when dealing with solar companies. Understanding these rights can help you make informed decisions and protect yourself from fraud.
 
+> **Get Protected:** Download our [FREE Complete Guide to Solar Fraud Protection](/blog/free-ebook-texas-solar-fraud-guide) to learn all your rights.
+
 ## Texas Consumer Protection Laws
 
 ### The Deceptive Trade Practices Act (DTPA)
@@ -45,6 +47,11 @@ If a solar company violates your rights, you may be entitled to:
 
 ## Getting Legal Help
 
-If you believe your rights have been violated, don't wait. Contact an experienced solar fraud attorney who can help you understand your options and fight for your rights.
+If you believe your rights have been violated, don't wait. [Contact an experienced solar fraud attorney](/services) who can help you understand your options and fight for your rights.
 
-Remember, knowledge of your rights is your best defense against solar fraud.
+**Additional Legal Resources:**
+- [How to Report Solar Panel Fraud](/blog/how-to-report-solar-panel-fraud) - Step-by-step reporting guide
+- [Texas Homeowners' Legal Rights Against Solar Fraud](/blog/texas-homeowners-legal-rights-solar-fraud) - Comprehensive legal analysis
+- [Solar Panel Financing Fraud Compensation](/blog/texas-solar-panel-financing-fraud-compensation) - Recovery options
+
+Remember, knowledge of your rights is your best defense against solar fraud. [Learn more about our legal services](/services) and how we can protect you.

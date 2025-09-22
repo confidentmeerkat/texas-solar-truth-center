@@ -9,24 +9,36 @@ As solar panel fraud continues to devastate Texas homeowners, we're releasing a 
 Our newly released ebook, "Texas Solar Panel Fraud: A Homeowner's Guide to Understanding Your Rights and Fighting Back," provides crucial information including:
 
 ### Know Your Legal Rights
+
+> **Related Reading:** [Understanding Your Legal Rights When Dealing with Solar Companies](/blog/legal-rights-solar-companies) provides detailed information about Texas consumer protection laws.
+
 - Detailed breakdown of Texas consumer protection laws
 - Your rights under the Texas Deceptive Trade Practices Act
 - How to identify violations of state solar regulations
 - Understanding your cancellation rights and cooling-off periods
 
 ### Recognize the Warning Signs
+
+> **Essential Guide:** Learn to [spot solar panel scams in Texas](/blog/how-to-spot-solar-panel-scams-texas) with our comprehensive red flags checklist.
+
 - 15 red flags that signal potential solar fraud
 - Common tactics used by predatory solar companies
 - How to spot misleading financing terms
 - Documentation that legitimate companies should provide
 
 ### Take Action to Protect Yourself
+
+> **Step-by-Step Guide:** [How to Report Solar Panel Fraud](/blog/how-to-report-solar-panel-fraud) - Complete instructions for filing complaints with authorities.
+
 - Step-by-step process for reporting solar fraud
 - How to file complaints with state authorities
 - When to seek legal representation
 - Evidence collection strategies for potential lawsuits
 
 ### Recovery and Compensation
+
+> **Legal Guidance:** [Texas Homeowners' Legal Rights Against Misleading Solar Companies](/blog/texas-homeowners-legal-rights-solar-fraud) explains your options for financial recovery.
+
 - Available legal remedies under Texas law
 - Types of damages you may be entitled to recover
 - How to pursue claims against fraudulent companies
@@ -58,7 +70,12 @@ This comprehensive resource is provided free of charge as part of our commitment
 
 ## Need Legal Help?
 
-If you're already dealing with solar panel fraud, don't wait. The sooner you take action, the better your chances of recovery. Contact Bennett Legal today for a free consultation about your specific situation.
+If you're already dealing with solar panel fraud, don't wait. The sooner you take action, the better your chances of recovery. [Contact Bennett Legal](/services) today for a free consultation about your specific situation.
+
+**Additional Resources:**
+- [Understanding Solar Panel Fraud Red Flags](/blog/understanding-solar-panel-fraud-red-flags)
+- [Texas Solar Panel Financing Fraud: Are You Owed Compensation?](/blog/texas-solar-panel-financing-fraud-compensation)
+- [Learn About Our Legal Services](/services) and how we can help you recover
 
 **Contact Information:**
 - **Phone:** (214) 473-5897

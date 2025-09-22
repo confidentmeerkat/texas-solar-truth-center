@@ -181,7 +181,12 @@ This is a breaking story, and the full extent of the fraud is still being uncove
 
 ## Your Path to Justice: Don't Suffer in Silence
 
-If you are one of the 160,000 Americans who have been defrauded by deceptive solar panel financing schemes, know this: you are not alone, and there is hope. The time to act is now. Don't let fear or confusion keep you from seeking the justice and restitution you deserve. Charles Bennett and the team at Bennett Legal are ready to help you navigate this complex landscape with the power of cutting-edge AI.
+If you are one of the 160,000 Americans who have been defrauded by deceptive solar panel financing schemes, know this: you are not alone, and there is hope. The time to act is now. Don't let fear or confusion keep you from seeking the justice and restitution you deserve. [Charles Bennett and the team at Bennett Legal](/about) are ready to help you navigate this complex landscape with the power of cutting-edge AI.
+
+**Essential Resources for Victims:**
+- [FREE EBOOK: Complete Guide to Your Rights](/blog/free-ebook-texas-solar-fraud-guide) - Download our comprehensive protection guide
+- [How to Spot Solar Panel Scams](/blog/how-to-spot-solar-panel-scams-texas) - Learn the warning signs before it's too late
+- [Your Legal Rights in Texas](/blog/texas-homeowners-legal-rights-solar-fraud) - Understanding your options for recovery
 
 ### Immediate Steps to Take
 
@@ -210,6 +215,11 @@ When victims come together, they create:
 - **Enhanced regulatory response** from authorities
 - **More resources** for comprehensive legal action
 
-Take the first step towards reclaiming your financial future. Contact Bennett Legal today to learn more and get the assistance you need. Your fight for justice begins here, and with the power of artificial intelligence and experienced legal advocacy, we can hold these predatory companies accountable and restore your financial security.
+Take the first step towards reclaiming your financial future. [Contact Bennett Legal today](/services) to learn more and get the assistance you need. Your fight for justice begins here, and with the power of artificial intelligence and experienced legal advocacy, we can hold these predatory companies accountable and restore your financial security.
+
+**Learn More:**
+- [Our Legal Services](/services) - Comprehensive protection against solar fraud
+- [About Bennett Legal](/about) - Meet our experienced legal team
+- [Texas Solar Panel Boom Investigation](/blog/texas-solar-panel-boom-fraud-crisis) - How the crisis unfolded
 
 The solar fraud crisis may echo the dark days of 2008, but this time, we have the tools and determination to fight back. Together, we can ensure that the promise of clean energy doesn't come at the cost of financial devastation for American families.

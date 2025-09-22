@@ -286,6 +286,29 @@ const Services = () => {
         </section>
 
         <section>
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-8 mb-12">
+            <h3 className="text-xl font-bold text-bennett-navy mb-4">Educational Resources</h3>
+            <p className="text-bennett-slate mb-6">Stay informed with our comprehensive guides and analysis:</p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-bennett-navy mb-3">Protection & Prevention</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><a href="/blog/free-ebook-texas-solar-fraud-guide" className="text-blue-600 hover:underline">FREE Ebook: Complete Protection Guide</a></li>
+                  <li><a href="/blog/how-to-spot-solar-panel-scams-texas" className="text-blue-600 hover:underline">How to Spot Solar Panel Scams</a></li>
+                  <li><a href="/blog/understanding-solar-panel-fraud-red-flags" className="text-blue-600 hover:underline">Understanding Fraud Red Flags</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-bennett-navy mb-3">Legal Rights & Recovery</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><a href="/blog/texas-homeowners-legal-rights-solar-fraud" className="text-blue-600 hover:underline">Texas Homeowners' Legal Rights</a></li>
+                  <li><a href="/blog/legal-rights-solar-companies" className="text-blue-600 hover:underline">Your Rights When Dealing with Solar Companies</a></li>
+                  <li><a href="/blog/texas-solar-panel-financing-fraud-compensation" className="text-blue-600 hover:underline">Financing Fraud Compensation</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
           <SectionHeader
             title="Why Choose Bennett Legal"
             description="Experience, dedication, and proven results"

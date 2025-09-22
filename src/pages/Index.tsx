@@ -130,6 +130,24 @@ const Index = () => {
             <p className="text-2xl md:text-3xl text-bennett-slate mb-12 leading-relaxed font-light bg-gradient-to-r from-bennett-slate via-gray-600 to-bennett-slate bg-clip-text text-transparent">
               As solar energy gains popularity across Texas, unscrupulous companies are taking advantage of homeowners through deceptive sales tactics, substandard installations, and outright fraud. At Bennett Legal, we're dedicated to helping victims of solar fraud understand their rights and pursue justice through multiple legal avenues.
             </p>
+            
+            <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-8 mb-12">
+              <h2 className="text-xl font-bold text-bennett-navy mb-4">Essential Resources for Homeowners</h2>
+              <div className="grid md:grid-cols-3 gap-4">
+                <a href="/blog/free-ebook-texas-solar-fraud-guide" className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="font-semibold text-blue-600 mb-2">FREE Legal Guide</div>
+                  <div className="text-sm text-gray-600">Download our complete protection manual</div>
+                </a>
+                <a href="/blog/how-to-spot-solar-panel-scams-texas" className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="font-semibold text-blue-600 mb-2">Spot Red Flags</div>
+                  <div className="text-sm text-gray-600">Learn to identify solar scams</div>
+                </a>
+                <a href="/blog/texas-homeowners-legal-rights-solar-fraud" className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="font-semibold text-blue-600 mb-2">Know Your Rights</div>
+                  <div className="text-sm text-gray-600">Understanding legal protections</div>
+                </a>
+              </div>
+            </div>
           </div>
           
           <EnhancedCard variant="glass" className="p-10 mb-16 group">

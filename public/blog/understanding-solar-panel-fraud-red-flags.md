@@ -2,6 +2,8 @@
 
 Solar energy has become increasingly popular in Texas, but unfortunately, this has also led to a rise in solar panel fraud. As more homeowners look to reduce their energy costs and carbon footprint, scammers have found new ways to exploit unsuspecting consumers.
 
+> **Essential Resource:** Download our [FREE Guide to Texas Solar Panel Fraud](/blog/free-ebook-texas-solar-fraud-guide) for comprehensive protection strategies.
+
 ## Common Red Flags
 
 ### High-Pressure Sales Tactics
@@ -31,6 +33,11 @@ Solar energy has become increasingly popular in Texas, but unfortunately, this h
 
 ## What to Do If You've Been Scammed
 
-If you believe you've been the victim of solar panel fraud, contact our legal team immediately. We specialize in helping victims recover their losses and hold fraudulent companies accountable.
+If you believe you've been the victim of solar panel fraud, [contact our legal team](/services) immediately. We specialize in helping victims recover their losses and hold fraudulent companies accountable.
+
+**Immediate Actions:**
+1. [Report the fraud](/blog/how-to-report-solar-panel-fraud) to appropriate authorities
+2. Understand [your legal rights](/blog/legal-rights-solar-companies) under Texas law
+3. Learn about [potential compensation](/blog/texas-solar-panel-financing-fraud-compensation) you may be owed
 
 Remember, legitimate solar companies will always provide proper documentation, allow you time to review contracts, and be transparent about all costs and benefits.

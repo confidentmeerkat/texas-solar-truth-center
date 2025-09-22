@@ -197,6 +197,31 @@ const About = () => {
           </EnhancedCard>
         </section>
 
+        <section>
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-8 mb-12">
+            <h3 className="text-xl font-bold text-bennett-navy mb-4">Expert Legal Insights</h3>
+            <p className="text-bennett-slate mb-6">Read our in-depth analysis and stay informed about solar fraud developments:</p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-bennett-navy mb-3">Featured Investigation</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><a href="/blog/solar-fraud-crisis-2008-parallels" className="text-blue-600 hover:underline">Solar Fraud Crisis: 2008 Parallels</a></li>
+                  <li><a href="/blog/texas-solar-panel-boom-fraud-crisis" className="text-blue-600 hover:underline">Why Texas Solar Boom Became a Nightmare</a></li>
+                  <li><a href="/blog/texas-senate-bill-1036-solar-regulations" className="text-blue-600 hover:underline">Texas Senate Bill 1036 Analysis</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-bennett-navy mb-3">Legal Action Guides</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><a href="/blog/how-to-report-solar-panel-fraud" className="text-blue-600 hover:underline">Step-by-Step Fraud Reporting</a></li>
+                  <li><a href="/services" className="text-blue-600 hover:underline">Our Legal Services</a></li>
+                  <li><a href="/blog/free-ebook-texas-solar-fraud-guide" className="text-blue-600 hover:underline">FREE Protection Guide</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         <section id="contact">
           <SectionHeader
             title="Contact Bennett Legal"
