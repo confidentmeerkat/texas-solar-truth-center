@@ -4,7 +4,9 @@ import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import SectionHeader from '@/components/ui/section-header';
-import { Scale, Gavel, FileText, Users, Shield, CheckCircle2, Phone, Clock, AlertTriangle } from 'lucide-react';
+import { Scale, Gavel, FileText, Users, Shield, CheckCircle2, Phone, Clock, AlertTriangle, ArrowRight } from 'lucide-react';
+import AirtableFormDialog from '@/components/ui/airtable-form-dialog';
+import { Button } from '@/components/ui/button';
 
 const Services = () => {
   const breadcrumbs = [
@@ -32,7 +34,22 @@ const Services = () => {
       description="Bennett Legal offers comprehensive legal services to protect Texas consumers from solar panel fraud and help victims recover their losses."
       primaryCTA={{
         text: "Free Case Review",
-        href: "#case-review"
+        component: (
+          <AirtableFormDialog 
+            title="Get Your Free Case Review" 
+            description="Complete our form to receive a confidential consultation about your solar fraud case"
+          >
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
+            >
+              <span className="flex items-center">
+                Free Case Review
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Button>
+          </AirtableFormDialog>
+        )
       }}
       secondaryCTA={{
         text: "Learn About Your Rights",

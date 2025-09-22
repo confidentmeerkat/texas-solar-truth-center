@@ -4,7 +4,9 @@ import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import SectionHeader from '@/components/ui/section-header';
 import RedFlagsChecklist from '@/components/editorial/RedFlagsChecklist';
-import { AlertTriangle, Shield, Eye, Phone, FileText, CheckCircle2 } from 'lucide-react';
+import { AlertTriangle, Shield, Eye, Phone, FileText, CheckCircle2, ArrowRight } from 'lucide-react';
+import AirtableFormDialog from '@/components/ui/airtable-form-dialog';
+import { Button } from '@/components/ui/button';
 
 const IdentifySolarScams = () => {
   const breadcrumbs = [
@@ -20,11 +22,40 @@ const IdentifySolarScams = () => {
       description="Learn how to recognize and protect yourself from solar panel fraud and deceptive sales practices targeting Texas homeowners."
       primaryCTA={{
         text: "Report Solar Fraud",
-        href: "#contact"
+        component: (
+          <AirtableFormDialog 
+            title="Report Solar Fraud" 
+            description="Complete this form to report solar fraud and get immediate legal assistance"
+          >
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
+            >
+              <span className="flex items-center">
+                Report Solar Fraud
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Button>
+          </AirtableFormDialog>
+        )
       }}
       secondaryCTA={{
         text: "Free Case Review",
-        href: "/services"
+        component: (
+          <AirtableFormDialog 
+            title="Get Your Free Case Review" 
+            description="Complete our form to receive a confidential consultation about your solar fraud case"
+          >
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-white/40 text-bennett-navy bg-white hover:text-white hover:bg-white/15 hover:border-white/60 backdrop-blur-sm font-semibold px-12 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+            >
+              Free Case Review
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </AirtableFormDialog>
+        )
       }}
       trustBadge={{
         text: "Expert Consumer Protection Guidance"

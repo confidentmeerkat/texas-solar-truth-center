@@ -65,7 +65,21 @@ const ReportingFraud = () => {
       }}
       secondaryCTA={{
         text: "Emergency Legal Help",
-        href: "#emergency-contact"
+        component: (
+          <AirtableFormDialog 
+            title="Emergency Legal Help" 
+            description="Get immediate assistance for urgent solar fraud matters - we respond within 24 hours"
+          >
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-white/40 text-bennett-navy bg-white hover:text-white hover:bg-white/15 hover:border-white/60 backdrop-blur-sm font-semibold px-12 py-6 text-lg rounded-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+            >
+              Emergency Legal Help
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </AirtableFormDialog>
+        )
       }}
       trustBadge={{
         text: "Immediate Response Available"
