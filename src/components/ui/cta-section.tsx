@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Phone, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { getCalApi } from "@calcom/embed-react";
 
 interface CTASectionProps {
   title?: string;
@@ -15,6 +16,17 @@ const CTASection = ({
   variant = "default",
   className = ""
 }: CTASectionProps) => {
+  
+  const openCal = () => {
+    getCalApi().then((cal) => {
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#D4A574" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+    });
+  };
 
   if (variant === "compact") {
     return (
@@ -25,18 +37,16 @@ const CTASection = ({
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Button size="sm" asChild>
-            <Link to="/services">
-              <Calendar className="mr-2 h-4 w-4" />
-              Schedule Consultation
-            </Link>
+          <Button size="sm" onClick={openCal}>
+            <Calendar className="mr-2 h-4 w-4" />
+            Schedule Consultation
           </Button>
           <Button
             variant="outline"
             size="sm"
             asChild
           >
-            <a href="tel:+15550123">
+            <a href="tel:(214)473-5897">
               <Phone className="mr-2 h-4 w-4" />
               Call Now
             </a>
@@ -54,16 +64,14 @@ const CTASection = ({
           <p className="text-muted-foreground mb-6">{description}</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
-              <Link to="/services" className="flex items-center gap-2">
-                <MessageCircle className="w-5 h-5" />
-                Get Free Consultation
-              </Link>
+            <Button size="lg" onClick={openCal}>
+              <MessageCircle className="w-5 h-5 mr-2" />
+              Get Free Consultation
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="tel:+15550123" className="flex items-center gap-2">
+              <a href="tel:(214)473-5897" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call (555) 012-3456
+                Call (214) 473-5897
               </a>
             </Button>
           </div>
@@ -87,12 +95,10 @@ const CTASection = ({
             <Button
               size="lg"
               className="w-full mb-2"
-              asChild
+              onClick={openCal}
             >
-              <Link to="/services">
-                <Calendar className="mr-2 h-4 w-4" />
-                Schedule Consultation
-              </Link>
+              <Calendar className="mr-2 h-4 w-4" />
+              Schedule Consultation
             </Button>
             <p className="text-sm text-muted-foreground">Book a free consultation</p>
           </div>
@@ -105,7 +111,7 @@ const CTASection = ({
               className="w-full mb-2"
               asChild
             >
-              <a href="tel:+15550123">
+              <a href="tel:(214)473-5897">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
               </a>
@@ -121,7 +127,7 @@ const CTASection = ({
               className="w-full mb-2"
               asChild
             >
-              <a href="mailto:info@bennettlegal.com">
+              <a href="mailto:cbennett@bennettlegal.com">
                 <MessageCircle className="mr-2 h-4 w-4" />
                 Send Message
               </a>
@@ -133,8 +139,8 @@ const CTASection = ({
         {/* Additional Contact Info */}
         <div className="mt-6 pt-6 border-t border-border/50 text-center text-sm text-muted-foreground">
           <p>
-            <strong>Phone:</strong> (555) 012-3456 |
-            <strong className="ml-2">Email:</strong> info@bennettlegal.com
+            <strong>Phone:</strong> (214) 473-5897 |
+            <strong className="ml-2">Email:</strong> cbennett@bennettlegal.com
           </p>
           <p className="mt-1">Available Monday-Friday, 9 AM - 6 PM (CST)</p>
         </div>

@@ -3,8 +3,19 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock, Shield, Award, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getCalApi } from "@calcom/embed-react";
 
 const LawyerExpertiseCTA = () => {
+  const openCal = () => {
+    getCalApi().then((cal) => {
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#D4A574" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+    });
+  };
   return (
     <section className="relative bg-gradient-to-br from-bennett-navy via-slate-800 to-bennett-navy rounded-3xl overflow-hidden">
       {/* Background Pattern */}
@@ -58,14 +69,13 @@ const LawyerExpertiseCTA = () => {
           </div>
           
           <div className="pt-4">
-            <Link to="/services">
-              <Button 
-                size="lg"
-                className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg"
-              >
-                Schedule Free Consultation
-              </Button>
-            </Link>
+            <Button 
+              size="lg"
+              className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg"
+              onClick={openCal}
+            >
+              Schedule Free Consultation
+            </Button>
           </div>
         </div>
         

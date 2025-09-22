@@ -2,8 +2,20 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Clock, ArrowRight } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { getCalApi } from "@calcom/embed-react";
+import AirtableFormDialog from '@/components/ui/airtable-form-dialog';
 
 const CallToAction = () => {
+  const openCal = () => {
+    getCalApi().then((cal) => {
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#D4A574" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+    });
+  };
   return (
     <section className="bg-bennett-navy text-white py-12 md:py-16 px-4 md:px-8 rounded-lg mt-16">
       <div className="max-w-3xl mx-auto text-center">
@@ -19,7 +31,7 @@ const CallToAction = () => {
           <Button 
             size="lg" 
             className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-medium w-full md:w-auto"
-            onClick={() => window.location.href = '/services'}
+            onClick={openCal}
           >
             Schedule Free Consultation <Clock className="ml-2 h-4 w-4" />
           </Button>

@@ -4,9 +4,21 @@ import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
 import SectionHeader from '@/components/ui/section-header';
-import { Scale, Users, Award, CheckCircle2, Phone, Mail, Clock, Shield } from 'lucide-react';
+import { Scale, Users, Award, CheckCircle2, Phone, Mail, Clock, Shield, ArrowRight } from 'lucide-react';
+import { getCalApi } from "@calcom/embed-react";
+import { Button } from '@/components/ui/button';
 
 const About = () => {
+  const openCal = () => {
+    getCalApi().then((cal) => {
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#D4A574" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+    });
+  };
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' }
@@ -27,7 +39,18 @@ const About = () => {
       description="With over 50 years of combined experience, Bennett Legal is dedicated to protecting Texas consumers from solar panel fraud and deceptive business practices through comprehensive legal advocacy."
       primaryCTA={{
         text: "Free Consultation",
-        href: "#contact"
+        component: (
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-bennett-gold to-yellow-500 hover:from-bennett-gold/90 hover:to-yellow-500/90 text-bennett-navy font-bold px-12 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-bennett-gold/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 group"
+            onClick={openCal}
+          >
+            <span className="flex items-center">
+              Free Consultation
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Button>
+        )
       }}
       secondaryCTA={{
         text: "Our Services",

@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import AuthorInfo from './AuthorInfo';
 import ShareButtons from './ShareButtons';
+import { getCalApi } from "@calcom/embed-react";
 
 interface BlogPostData {
   content: string;
@@ -30,6 +31,16 @@ interface BlogPostProps {
 }
 
 const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
+  const openCal = () => {
+    getCalApi().then((cal) => {
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#D4A574" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+    });
+  };
   return (
     <div className="max-w-4xl mx-auto">
       {/* Back Button */}
@@ -96,10 +107,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
                     Don't let solar fraudsters get away with your hard-earned money. 
                     Get a free consultation today.
                   </p>
-                  <Button className="w-full" asChild>
-                    <Link to="/services">
-                      Get Free Consultation
-                    </Link>
+                  <Button className="w-full" onClick={openCal}>
+                    Get Free Consultation
                   </Button>
                 </div>
               </CardContent>
