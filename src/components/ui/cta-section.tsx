@@ -21,7 +21,7 @@ const CTASection = ({
   // Using data attributes like the working implementation
   const calDataAttributes = {
     "data-cal-namespace": "client-interviews",
-    "data-cal-link": "cbennett/solar-fraud-consultation",
+    "data-cal-link": "ana/client-interviews",
     "data-cal-origin": "https://calendar.bennettlegal.com",
     "data-cal-config": '{"layout":"month_view"}'
   };
