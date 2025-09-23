@@ -111,6 +111,7 @@ const Header = () => {
             </ul>
           </nav>
           <div className="flex items-center gap-4">
+            {/*
             <Button 
               className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-navy focus:ring-opacity-50 flex items-center gap-2"
               onClick={openCal}
@@ -118,6 +119,7 @@ const Header = () => {
               <Calendar className="h-4 w-4" />
               Schedule Free Consultation
             </Button>
+            */}
             <Button
               data-cal-namespace="client-interviews"
               data-cal-link="ana/client-interviews"
