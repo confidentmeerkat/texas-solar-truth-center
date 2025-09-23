@@ -118,6 +118,15 @@ const Header = () => {
               <Calendar className="h-4 w-4" />
               Schedule Free Consultation
             </Button>
+            <Button
+              data-cal-namespace="client-interviews"
+              data-cal-link="ana/client-interviews"
+              data-cal-origin="https://calendar.bennettlegal.com"
+              data-cal-config='{"layout":"month_view"}'
+              className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'
+            >
+              Book Your Free Call
+            </Button>
             <Button 
               asChild
               className="bg-bennett-navy hover:bg-navy/90 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50 flex items-center gap-2"
