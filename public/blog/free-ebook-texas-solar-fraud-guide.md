@@ -64,7 +64,7 @@ Texas law provides strong protections for consumers, but only if you know how to
 
 ## Download Your Free Copy Now
 
-**[Download the Complete Guide (PDF)](https://storage.googleapis.com/websitecontent-bl/Texas%20Solar%20Panel%20Fraud_%20A%20Homeowner%E2%80%99s%20Guide%20to%20Understanding%20Your%20Rights%20and%20Fighting%20Back.pdf)**
+**[Download the Complete Guide (PDF)](https://storage.googleapis.com/websitecontent-bl/Texas%20Solar%20Panel%20Fraud_%20A%20Homeowner%E2%80%99s%20Guide%20to%20Understanding%20Your%20Rights%20and%20Fighting%20Back-latest.pdf)**
 
 This comprehensive resource is provided free of charge as part of our commitment to protecting Texas consumers from solar panel fraud.
 
