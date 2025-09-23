@@ -12,6 +12,16 @@ interface BlogPostMeta {
 // Static blog metadata - no need to load full files for listing
 const BLOG_POSTS_METADATA: BlogPostMeta[] = [
   {
+    slug: 'solar-panel-fraud-7-red-flags-2025-guide',
+    title: 'Solar Panel Fraud: 7 Red Flags to Spot Before You Sign (2025 Guide)',
+    excerpt: 'Solar panel fraud is rising. Learn 7 red flags, how to verify companies and financing, and your first steps if you\'re targeted. Free case reviews from Bennett Legal.',
+    date: '2025-03-01',
+    readTime: '10 min read',
+    category: 'Fraud Prevention',
+    author: 'Charles Bennett, Bennett Legal',
+    featured: true
+  },
+  {
     slug: 'solar-panel-fraud-surge-protection-guide',
     title: 'Solar Panel Fraud Surge: How to Protect Your Home and Wallet from Rising Scams',
     excerpt: 'Federal complaints about solar fraud jumped 746% since 2018. Learn how to spot the red flags, protect yourself from deceptive practices, and understand your legal options if you\'ve been victimized.',
