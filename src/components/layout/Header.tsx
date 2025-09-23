@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Phone, ChevronDown, Scale, Menu, X } from 'lucide-react';
+import { Phone, ChevronDown, Scale, Menu, X, Calendar } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { getCalApi } from "@calcom/embed-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,6 +16,17 @@ import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const openCal = () => {
+    getCalApi().then((cal) => {
+      cal("ui", {
+        "styles": { "branding": { "brandColor": "#D4A574" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
+      });
+      cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+    });
+  };
 
   return (
     <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/20 py-4 sticky top-0 z-50">
@@ -98,18 +110,27 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <Button 
-            asChild
-            className="bg-bennett-navy hover:bg-navy/90 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50 flex items-center gap-2"
-          >
-            <a href="tel:2144735897">
-              <Avatar className="w-6 h-6 bg-bennett-navy">
-                <AvatarImage src="/lovable-uploads/b9eed837-d3e3-4439-9e6d-a416f2c12d78.png" alt="Charles Bennett" />
-                <AvatarFallback className="text-xs text-white font-serif">CB</AvatarFallback>
-              </Avatar>
-              <Phone className="h-4 w-4" /> (214) 473-5897
-            </a>
-          </Button>
+          <div className="flex items-center gap-4">
+            <Button 
+              className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-navy focus:ring-opacity-50 flex items-center gap-2"
+              onClick={openCal}
+            >
+              <Calendar className="h-4 w-4" />
+              Schedule Free Consultation
+            </Button>
+            <Button 
+              asChild
+              className="bg-bennett-navy hover:bg-navy/90 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-gold focus:ring-opacity-50 flex items-center gap-2"
+            >
+              <a href="tel:2144735897">
+                <Avatar className="w-6 h-6 bg-bennett-navy">
+                  <AvatarImage src="/lovable-uploads/b9eed837-d3e3-4439-9e6d-a416f2c12d78.png" alt="Charles Bennett" />
+                  <AvatarFallback className="text-xs text-white font-serif">CB</AvatarFallback>
+                </Avatar>
+                <Phone className="h-4 w-4" /> (214) 473-5897
+              </a>
+            </Button>
+          </div>
         </div>
         
         {/* Mobile Menu Button */}
@@ -210,7 +231,14 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-              <li className="px-4 pt-4">
+              <li className="px-4 pt-4 space-y-3">
+                <Button 
+                  className="w-full bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-semibold py-3 rounded-xl flex items-center justify-center gap-2"
+                  onClick={openCal}
+                >
+                  <Calendar className="h-4 w-4" />
+                  Schedule Free Consultation
+                </Button>
                 <Button className="w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold py-3 rounded-xl flex items-center justify-center gap-2">
                   <Avatar className="w-6 h-6 bg-bennett-navy">
                     <AvatarImage src="/lovable-uploads/b9eed837-d3e3-4439-9e6d-a416f2c12d78.png" alt="Charles Bennett" />
