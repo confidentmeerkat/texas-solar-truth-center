@@ -87,6 +87,45 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeHighlight, rehypeRaw]}
+              components={{
+                a: ({ node, ...props }) => {
+                  const href = props.href || '';
+                  // Handle PDF downloads to prevent Chrome blocking
+                  if (href.includes('.pdf')) {
+                    return (
+                      <a 
+                        {...props} 
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download
+                        className="font-semibold text-primary hover:text-primary/80 underline"
+                      >
+                        {props.children}
+                      </a>
+                    );
+                  }
+                  // Handle internal links
+                  if (href.startsWith('/')) {
+                    return (
+                      <Link to={href} className="font-semibold text-primary hover:text-primary/80 underline">
+                        {props.children}
+                      </Link>
+                    );
+                  }
+                  // Handle external links
+                  return (
+                    <a 
+                      {...props} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="font-semibold text-primary hover:text-primary/80 underline"
+                    >
+                      {props.children}
+                    </a>
+                  );
+                }
+              }}
             >
               {post.content}
             </ReactMarkdown>
