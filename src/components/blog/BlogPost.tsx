@@ -88,9 +88,39 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeHighlight, rehypeRaw]}
               components={{
+                h2: ({ node, ...props }) => {
+                  const content = props.children?.toString() || '';
+                  // Make "Download Your Free Copy Now" section super prominent
+                  if (content.includes('Download Your Free Copy Now')) {
+                    return (
+                      <div className="my-12 p-8 bg-gradient-to-r from-primary/10 to-primary/5 border-2 border-primary/20 rounded-xl text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6" {...props}>
+                          {props.children}
+                        </h2>
+                      </div>
+                    );
+                  }
+                  return <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground" {...props}>{props.children}</h2>;
+                },
+                p: ({ node, ...props }) => {
+                  const content = props.children?.toString() || '';
+                  // Check if this paragraph contains the download link
+                  if (content.includes('Download the Complete Guide (PDF)')) {
+                    return (
+                      <div className="my-8 p-6 bg-primary text-primary-foreground rounded-lg text-center shadow-lg">
+                        <p className="text-xl font-semibold mb-0" {...props}>
+                          {props.children}
+                        </p>
+                      </div>
+                    );
+                  }
+                  return <p className="mb-4 text-muted-foreground leading-relaxed" {...props}>{props.children}</p>;
+                },
                 a: ({ node, ...props }) => {
                   const href = props.href || '';
-                  // Handle PDF downloads to prevent Chrome blocking
+                  const content = props.children?.toString() || '';
+                  
+                  // Style the PDF download link prominently
                   if (href.includes('.pdf')) {
                     return (
                       <a 
@@ -99,9 +129,9 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         download
-                        className="font-semibold text-primary hover:text-primary/80 underline"
+                        className="inline-block bg-white text-primary font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:bg-gray-50 transition-all duration-200 transform hover:scale-105 border-2 border-white/20"
                       >
-                        {props.children}
+                        📥 {props.children}
                       </a>
                     );
                   }
