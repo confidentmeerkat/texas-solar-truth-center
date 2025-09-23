@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
@@ -112,7 +113,40 @@ const About = () => {
   );
 
   return (
-    <PageTemplate
+    <>
+      <Helmet>
+        <title>About Bennett Legal | Experienced Texas Solar Fraud Attorneys</title>
+        <meta name="description" content="Meet Charles Bennett and the legal team at Bennett Legal. Over 50 years combined experience protecting Texas consumers from solar panel fraud and deceptive practices." />
+        <meta name="keywords" content="Charles Bennett attorney, Bennett Legal team, Texas consumer protection lawyer, solar fraud attorney experience, Texas legal services" />
+        <link rel="canonical" href="https://solarpanelfraud.org/about" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="About Bennett Legal | Experienced Texas Solar Fraud Attorneys" />
+        <meta property="og:description" content="Meet Charles Bennett and the legal team with over 50 years combined experience protecting Texas consumers from solar fraud." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://solarpanelfraud.org/about" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntity": {
+              "@type": "Attorney",
+              "name": "Charles Bennett",
+              "jobTitle": "Consumer Protection Attorney",
+              "worksFor": {
+                "@type": "LegalService",
+                "name": "Bennett Legal"
+              },
+              "areaOfLaw": "Consumer Protection",
+              "yearsOfExperience": "15+",
+              "specialization": "Solar Panel Fraud"
+            }
+          })}
+        </script>
+      </Helmet>
+      <PageTemplate
       heroSection={heroSection}
       sidebarContent={sidebarContent}
       breadcrumbs={breadcrumbs}
@@ -284,6 +318,7 @@ const About = () => {
         </section>
       </div>
     </PageTemplate>
+    </>
   );
 };
 

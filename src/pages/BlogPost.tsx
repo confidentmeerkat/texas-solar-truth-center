@@ -12,6 +12,7 @@ import CTASection from '@/components/ui/cta-section';
 import AudioStory from '@/components/ui/audio-story';
 
 interface BlogPostMeta {
+  slug: string;
   title: string;
   excerpt: string;
   date: string;
@@ -103,16 +104,34 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{postMeta.title} — Bennett Legal Blog</title>
+        <title>{postMeta.title} | Bennett Legal Blog</title>
         <meta name="description" content={postMeta.excerpt} />
-        <meta property="og:title" content={postMeta.title} />
+        <meta name="keywords" content={`solar fraud, ${postMeta.category.toLowerCase()}, Texas solar law, Bennett Legal, ${postMeta.title.split(':')[0]}`} />
+        <meta name="author" content={AUTHOR_INFO.name} />
+        <meta name="article:published_time" content={postMeta.date} />
+        <meta name="article:modified_time" content={postMeta.date} />
+        <meta name="article:author" content={postMeta.author} />
+        <meta name="article:section" content={postMeta.category} />
+        <meta name="article:tag" content="solar fraud, consumer protection, Texas law" />
+        
+        {/* Open Graph Article Tags */}
+        <meta property="og:title" content={`${postMeta.title} | Bennett Legal`} />
         <meta property="og:description" content={postMeta.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={articleUrl} />
+        <meta property="og:image" content={`https://solarpanelfraud.org/blog-images/${postMeta.slug}-og.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="article:published_time" content={postMeta.date} />
         <meta property="article:author" content={postMeta.author} />
         <meta property="article:section" content={postMeta.category} />
-        <meta name="author" content={AUTHOR_INFO.name} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={postMeta.title} />
+        <meta name="twitter:description" content={postMeta.excerpt} />
+        <meta name="twitter:image" content={`https://solarpanelfraud.org/blog-images/${postMeta.slug}-twitter.jpg`} />
+        
         <link rel="canonical" href={articleUrl} />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}

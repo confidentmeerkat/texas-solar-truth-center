@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
 import TableOfContents from '@/components/editorial/TableOfContents';
@@ -123,7 +124,48 @@ const Index = () => {
   );
 
   return (
-    <PageTemplate
+    <>
+      <Helmet>
+        <title>Texas Solar Panel Fraud Attorney | Bennett Legal - Consumer Protection</title>
+        <meta name="description" content="Experienced Texas solar panel fraud attorney. Free consultation for victims of solar scams. Recover losses, cancel contracts, and get justice. Call Bennett Legal today." />
+        <meta name="keywords" content="Texas solar panel fraud attorney, solar scam lawyer, solar fraud legal help, consumer protection attorney Texas, solar panel lawsuit, Bennett Legal" />
+        <link rel="canonical" href="https://solarpanelfraud.org/" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Texas Solar Panel Fraud Attorney | Bennett Legal" />
+        <meta property="og:description" content="Expert legal help for solar panel fraud victims in Texas. Free consultation, proven results, consumer protection specialists." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://solarpanelfraud.org/" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "Bennett Legal",
+            "description": "Texas solar panel fraud attorney specializing in consumer protection and solar scam recovery",
+            "url": "https://solarpanelfraud.org",
+            "telephone": "+1-214-473-5897",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "TX",
+              "addressCountry": "US"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "Texas"
+            },
+            "serviceType": "Consumer Protection Law",
+            "priceRange": "Free Consultation",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "50"
+            }
+          })}
+        </script>
+      </Helmet>
+      <PageTemplate
       heroSection={heroSection}
       sidebarContent={sidebarContent}
       showReadingProgress={true}
@@ -224,6 +266,7 @@ const Index = () => {
         </div>
       </div>
     </PageTemplate>
+    </>
   );
 };
 

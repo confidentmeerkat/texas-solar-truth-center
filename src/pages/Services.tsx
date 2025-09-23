@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import PageTemplate from '@/components/layout/PageTemplate';
 import StandardHero from '@/components/layout/StandardHero';
 import { EnhancedCard } from '@/components/ui/enhanced-card';
@@ -107,7 +108,62 @@ const Services = () => {
   );
 
   return (
-    <PageTemplate
+    <>
+      <Helmet>
+        <title>Solar Fraud Legal Services | Bennett Legal Texas Consumer Protection</title>
+        <meta name="description" content="Comprehensive solar fraud legal services in Texas. Contract cancellation, loss recovery, lawsuit representation. Free case review for solar panel fraud victims." />
+        <meta name="keywords" content="solar fraud legal services, Texas consumer protection lawyer, solar contract cancellation, solar panel lawsuit, Bennett Legal services" />
+        <link rel="canonical" href="https://solarpanelfraud.org/services" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Solar Fraud Legal Services | Bennett Legal Texas" />
+        <meta property="og:description" content="Expert legal services for solar fraud victims. Contract cancellation, loss recovery, comprehensive representation." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://solarpanelfraud.org/services" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Solar Fraud Legal Services",
+            "provider": {
+              "@type": "LegalService",
+              "name": "Bennett Legal"
+            },
+            "serviceType": "Legal Representation",
+            "areaServed": "Texas",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Legal Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Contract Cancellation"
+                  }
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Loss Recovery"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "Lawsuit Representation"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
+      </Helmet>
+      <PageTemplate
       heroSection={heroSection}
       sidebarContent={sidebarContent}
       breadcrumbs={breadcrumbs}
@@ -368,6 +424,7 @@ const Services = () => {
         </section>
       </div>
     </PageTemplate>
+    </>
   );
 };
 
