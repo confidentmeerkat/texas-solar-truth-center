@@ -78,7 +78,7 @@ const Index = () => {
       }}
       secondaryCTA={{
         text: "Learn Your Rights",
-        href: "#consumer-rights"
+        href: "/blog/texas-homeowners-legal-rights-solar-fraud"
       }}
       trustBadge={{
         text: "Over 50 Years Combined Experience",
