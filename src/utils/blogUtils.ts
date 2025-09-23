@@ -22,6 +22,26 @@ const BLOG_POSTS_METADATA: BlogPostMeta[] = [
     featured: true
   },
   {
+    slug: 'solar-dealer-fees-explained',
+    title: 'Solar Loan "Dealer Fees" Explained: What That Low APR Really Costs',
+    excerpt: 'Many solar loans hide "dealer fees" in the price. See how fees change your total cost, what to ask lenders, and how to protect yourself. Free reviews from Bennett Legal.',
+    date: '2025-02-28',
+    readTime: '12 min read',
+    category: 'Financing',
+    author: 'Charles Bennett, Bennett Legal',
+    featured: true
+  },
+  {
+    slug: 'solar-installer-ghosted-action-plan',
+    title: 'Ghosted by Your Solar Company? Here\'s Your 10-Day Action Plan',
+    excerpt: 'If your solar installer vanished, here\'s a day-by-day plan to secure records, push for activation/repairs, and escalate complaints. Free reviews from Bennett Legal.',
+    date: '2025-02-27',
+    readTime: '15 min read',
+    category: 'Legal Guidance',
+    author: 'Charles Bennett, Bennett Legal',
+    featured: true
+  },
+  {
     slug: 'solar-panel-fraud-surge-protection-guide',
     title: 'Solar Panel Fraud Surge: How to Protect Your Home and Wallet from Rising Scams',
     excerpt: 'Federal complaints about solar fraud jumped 746% since 2018. Learn how to spot the red flags, protect yourself from deceptive practices, and understand your legal options if you\'ve been victimized.',
