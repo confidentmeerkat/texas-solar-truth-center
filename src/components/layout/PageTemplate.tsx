@@ -35,13 +35,8 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 }) => {
   useEffect(() => {
     (async function () {
-        const cal = await getCalApi();
-        cal("ui", {
-          "styles": { "branding": { "brandColor": "#D4A574" } },
-          "hideEventTypeDetails": false,
-          "layout": "month_view"
-        });
-        cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
+        const cal = await getCalApi({"namespace":"client-interviews","embedJsUrl":"https://calendar.bennettlegal.com/embed/embed.js"});
+        cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
       })();
   }, []);
 
@@ -126,16 +121,10 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                         </p>
                       </div>
                       <Button
-                        onClick={() => {
-                          getCalApi().then((cal) => {
-                            cal("ui", {
-                              "styles": { "branding": { "brandColor": "#D4A574" } },
-                              "hideEventTypeDetails": false,
-                              "layout": "month_view"
-                            });
-                            cal("floatingButton", { "calLink": "cbennett/solar-fraud-consultation" });
-                          });
-                        }}
+                        data-cal-namespace="client-interviews"
+                        data-cal-link="ana/client-interviews"
+                        data-cal-origin="https://calendar.bennettlegal.com"
+                        data-cal-config='{"layout":"month_view"}'
                         className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'
                       >
                         Book Your Free Call
