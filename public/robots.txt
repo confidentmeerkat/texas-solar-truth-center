@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://texassolartruthhcenter.com/sitemap.xml
+Sitemap: https://solarpanelfraud.org/sitemap.xml
