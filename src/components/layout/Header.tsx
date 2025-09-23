@@ -123,9 +123,10 @@ const Header = () => {
               data-cal-link="ana/client-interviews"
               data-cal-origin="https://calendar.bennettlegal.com"
               data-cal-config='{"layout":"month_view"}'
-              className='w-full bg-bennett-navy hover:bg-bennett-navy/90 text-white font-semibold'
+              className="bg-bennett-gold hover:bg-bennett-gold/90 text-bennett-navy font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-bennett-navy focus:ring-opacity-50 flex items-center gap-2"
             >
-              Book Your Free Call
+              <Calendar className="h-4 w-4" />
+              Schedule Free Consultation
             </Button>
             <Button 
               asChild
